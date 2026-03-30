@@ -9,6 +9,7 @@ Small static website with no build step.
 - `styles.css`: all site styles.
 - `books-data.js`: all editable content for books and meetings.
 - `bookshelf.js`: rendering logic for the bookshelf and book detail page.
+- `images/`: directory containing the bookshelf wood texture.
 
 ## Quick edit guide (non-technical)
 
@@ -20,11 +21,12 @@ Small static website with no build step.
    - `title`
    - `author`
    - `cover` (image URL)
-   - `row`: `1` or `2` (shelf row)
    - `tags`: e.g. `["Weekly"]`, `["Monthly"]`, `["Term"]`
    - `meetings`: list of date-time strings like `"2026-04-21T19:00:00"`
    - `description`
 3. Save and refresh the browser.
+
+*Note: The website automatically sorts books chronologically by their first meeting date, and automatically categorizes them into Past, Current, and Future based on the current date.*
 
 ### Add a meeting note
 
@@ -39,8 +41,3 @@ Open `index.html` in a browser, or run:
 `python3 -m http.server`
 
 Then visit `http://localhost:8000`.
-
-## Optional analysis tools
-
-- `meeting_history_extract.py` and `analysis_output/` are helper analysis files.
-- They are not required for the website to run.
