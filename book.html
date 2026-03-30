@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book Details | Caltech Book Club</title>
+  <meta name="description" content="Book details for Caltech Book Club selections.">
+  <link rel="stylesheet" href="styles.css?v=4">
+</head>
+<body data-page="book" data-header-font="literary">
+  <a class="skip-link" href="#book-main">Skip to main content</a>
+
+  <header class="site-header site-header-compact">
+    <div class="container compact-header-row">
+      <a href="index.html" class="site-home-link">Caltech Book Club</a>
+      <p class="compact-subtitle">Book Details</p>
+    </div>
+  </header>
+
+  <main id="book-main" class="book-main">
+    <div class="container">
+      <div id="book-detail-root" class="book-detail-root"></div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; <span id="year"></span> Caltech Book Club</small>
+    </div>
+  </footer>
+
+  <script src="books-data.js" defer></script>
+  <script src="bookshelf.js" defer></script>
+</body>
+</html>

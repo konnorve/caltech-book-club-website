@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Caltech Book Club</title>
+  <meta name="description" content="Caltech Book Club: past selections, current reads, and future picks.">
+  <link rel="stylesheet" href="styles.css?v=4">
+</head>
+<body data-page="home" data-header-font="literary">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container hero-simple">
+      <h1>Caltech Book Club</h1>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section id="books" class="books-section" aria-labelledby="books-title">
+      <h2 id="books-title" class="sr-only">Books</h2>
+      <div class="bookshelf-shell">
+        <div class="bookshelf-viewport" id="bookshelf-viewport" tabindex="0" aria-label="Scrollable two-row bookshelf">
+          <div class="bookshelf-backdrop" aria-hidden="true"></div>
+          <div class="bookshelf-plane" aria-hidden="true"></div>
+          <div class="bookshelf-lip" aria-hidden="true"></div>
+          <div class="shelf-track" id="bookshelf-track"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="info" class="placeholder-section" aria-labelledby="info-title">
+      <div class="container">
+        <h2 id="info-title">Info</h2>
+        <div class="info-grid">
+          <article class="info-card">
+            <h3>Meeting location</h3>
+            <p>Meetings are in the Resnick lobby and occasionally the Beckman lawn unless otherwise noted.</p>
+          </article>
+          <article class="info-card">
+            <h3>Schedule</h3>
+            <ul class="info-list">
+              <li>Weekly meetings are often on Tuesdays.</li>
+              <li>Monthly meetings are often on Thursdays.</li>
+              <li>Meetings are typically one hour long.</li>
+            </ul>
+          </article>
+          <article class="info-card">
+            <h3>Reading pace</h3>
+            <ul class="info-list">
+              <li>Two main groups: one weekly and one monthly.</li>
+              <li>Weekly group reads about 60 pages each week.</li>
+              <li>A weekly-group book is usually discussed over 4 to 6 meetings.</li>
+              <li>Monthly-group books are usually discussed once per quarter.</li>
+            </ul>
+          </article>
+          <article class="info-card">
+            <h3>Book selection</h3>
+            <p>Books are chosen democratically via polls sent out to the club at the start of each term.</p>
+          </article>
+          <article class="info-card">
+            <h3>Connect</h3>
+            <ul class="info-list">
+              <li>Mailing list: <a href="mailto:book-club@caltech.edu">book-club@caltech.edu</a></li>
+              <li>List host: <a href="https://lists.caltech.edu">lists.caltech.edu</a></li>
+              <li>Questions: <a href="mailto:kve@caltech.edu">kve@caltech.edu</a></li>
+            </ul>
+          </article>
+          <article class="info-card">
+            <h3>Community</h3>
+            <p>Everyone is welcome, including non-Caltech folks.</p>
+          </article>
+          <article class="info-card">
+            <h3>Leadership</h3>
+            <ul class="info-list">
+              <li>Kara Lo, President</li>
+              <li>Konnor von Emster, Treasurer</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="books-data.js" defer></script>
+  <script src="bookshelf.js" defer></script>
+</body>
+</html>
