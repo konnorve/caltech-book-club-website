@@ -5,6 +5,12 @@
   for both index.html (bookshelf) and book.html (detail page).
 */
 const books = Array.isArray(window.BOOKS) ? window.BOOKS : [];
+const events = Array.isArray(window.events) ? window.events : [];
+const eventsById = new Map(
+  events
+    .filter((event) => event && typeof event.id === "string")
+    .map((event) => [event.id, event])
+);
 
 const statusMeta = {
   past: { label: "Past", className: "is-past" },
@@ -12,40 +18,53 @@ const statusMeta = {
   future: { label: "Future", className: "is-future" }
 };
 
-function parseBookDate(value) {
+function parseBookDate(value, timeValue) {
   if (!value) return null;
   if (value instanceof Date) {
     return Number.isNaN(value.getTime()) ? null : new Date(value.getTime());
   }
   const raw = String(value);
-  const normalized = raw.includes("T") ? raw : raw + "T00:00:00";
+  const normalized = raw.includes("T")
+    ? raw
+    : raw + "T" + (timeValue ? String(timeValue) : "00:00") + (timeValue ? ":00" : ":00:00");
   const date = new Date(normalized);
   return Number.isNaN(date.getTime()) ? null : date;
 }
 
-function getBookMeetings(book) {
-  if (!Array.isArray(book.meetings)) return [];
-  const normalized = book.meetings
-    .map((entry) => {
-      if (typeof entry === "string") {
-        const date = parseBookDate(entry);
-        if (!date) return null;
-        return { date: date, note: "" };
-      }
-      if (entry && typeof entry === "object") {
-        const date = parseBookDate(entry.dateTime || entry.date);
-        if (!date) return null;
-        return { date: date, note: entry.note ? String(entry.note) : "" };
-      }
-      return null;
-    })
+function getNormalizedEvent(event) {
+  if (!event || typeof event !== "object") return null;
+  const dateTime = parseBookDate(event.date, event.time || "00:00");
+  if (!dateTime) return null;
+
+  return {
+    ...event,
+    dateTime,
+    note: event.note ? String(event.note) : "",
+    location: event.location ? String(event.location) : "",
+    tags: Array.isArray(event.tags) ? event.tags : []
+  };
+}
+
+function getBookEvents(book) {
+  if (!Array.isArray(book.events)) return [];
+
+  return book.events
+    .map((eventId) => eventsById.get(String(eventId)))
+    .map((event) => getNormalizedEvent(event))
     .filter(Boolean)
-    .sort((a, b) => a.date.getTime() - b.date.getTime());
-  return normalized;
+    .sort((a, b) => a.dateTime.getTime() - b.dateTime.getTime());
 }
 
 function getBookMeetingDates(book) {
-  return getBookMeetings(book).map((meeting) => meeting.date);
+  return getBookEvents(book).map((event) => event.dateTime);
+}
+
+function getEventById(id) {
+  return getNormalizedEvent(eventsById.get(String(id)));
+}
+
+function getBookForEvent(eventId) {
+  return books.find((book) => Array.isArray(book.events) && book.events.includes(eventId)) || null;
 }
 
 function hasTag(book, tag) {
@@ -96,6 +115,17 @@ function getSortedBooks() {
   });
 }
 
+function getSortedEvents() {
+  return events
+    .map((event) => getNormalizedEvent(event))
+    .filter(Boolean)
+    .sort((a, b) => {
+      const timeDiff = a.dateTime.getTime() - b.dateTime.getTime();
+      if (timeDiff !== 0) return timeDiff;
+      return a.title.localeCompare(b.title);
+    });
+}
+
 function formatDateTime(date) {
   const datePart = date.toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" });
   const timePart = date.toLocaleTimeString(undefined, { hour: "numeric", minute: "2-digit" });
@@ -103,17 +133,17 @@ function formatDateTime(date) {
 }
 
 function getShelfMeetingLabel(book, now) {
-  const meetings = getBookMeetings(book);
-  if (!meetings.length) return "No meetings scheduled";
+  const bookEvents = getBookEvents(book);
+  if (!bookEvents.length) return "No meetings scheduled";
 
   const nowDate = now || new Date();
-  const upcoming = meetings.find((meeting) => meeting.date.getTime() >= nowDate.getTime()) || null;
+  const upcoming = bookEvents.find((event) => event.dateTime.getTime() >= nowDate.getTime()) || null;
   if (upcoming) {
-    return "Next meeting: " + formatDateTime(upcoming.date);
+    return "Next meeting: " + formatDateTime(upcoming.dateTime);
   }
 
-  const latest = meetings[meetings.length - 1];
-  return "Last meeting: " + formatDateTime(latest.date);
+  const latest = bookEvents[bookEvents.length - 1];
+  return "Last meeting: " + formatDateTime(latest.dateTime);
 }
 
 function makeBookNode(book) {
@@ -241,6 +271,260 @@ function renderHomePage() {
   setupTrackAlignment(viewport, track);
   setupBookPerspective(viewport);
   setupStickyChips(viewport, track);
+  setupInitialShelfCentering(viewport, track);
+  renderTimelineFilters();
+  renderTimeline();
+}
+
+let activeTimelineTag = "Social";
+
+function renderTimelineFilters() {
+  const container = document.getElementById("timeline-filters");
+  if (!container) return;
+
+  const allEvents = getSortedEvents();
+  const tags = new Set();
+  allEvents.forEach((e) => {
+    if (Array.isArray(e.tags)) {
+      e.tags.forEach((t) => tags.add(t));
+    }
+  });
+  const sortedTags = Array.from(tags).sort();
+
+  container.innerHTML = "";
+
+  const allBtn = document.createElement("button");
+  allBtn.className = "timeline-filter" + (activeTimelineTag === null ? " is-active" : "");
+  allBtn.textContent = "All";
+  allBtn.onclick = () => {
+    activeTimelineTag = null;
+    renderTimelineFilters();
+    renderTimeline();
+  };
+  container.appendChild(allBtn);
+
+  sortedTags.forEach((tag) => {
+    const btn = document.createElement("button");
+    btn.className = "timeline-filter" + (activeTimelineTag === tag ? " is-active" : "");
+    btn.textContent = tag;
+    btn.onclick = () => {
+      activeTimelineTag = tag;
+      renderTimelineFilters();
+      renderTimeline();
+    };
+    container.appendChild(btn);
+  });
+}
+
+function renderTimeline() {
+  const viewport = document.getElementById("timeline-viewport");
+  const track = document.getElementById("timeline-track");
+  if (!viewport || !track) return;
+
+  const allTimelineEvents = getSortedEvents();
+  const timelineEvents = activeTimelineTag
+    ? allTimelineEvents.filter((e) => Array.isArray(e.tags) && e.tags.includes(activeTimelineTag))
+    : allTimelineEvents;
+
+  if (!timelineEvents.length) {
+    track.innerHTML = "";
+    return;
+  }
+
+  track.innerHTML = "";
+
+  const axis = document.createElement("div");
+  axis.className = "timeline-axis";
+  axis.setAttribute("aria-hidden", "true");
+  track.appendChild(axis);
+
+  timelineEvents.forEach((event) => {
+    const item = document.createElement("div");
+    item.className = "timeline-event";
+    item.dataset.timestamp = String(event.dateTime.getTime());
+
+    const tick = document.createElement("span");
+    tick.className = "timeline-tick";
+    tick.setAttribute("aria-hidden", "true");
+
+    const link = document.createElement("a");
+    link.className = "timeline-event-link";
+    link.href = "event.html?id=" + encodeURIComponent(event.id);
+    link.textContent = event.title;
+    link.setAttribute("aria-label", "View event details for " + event.title);
+
+    const dateLabel = document.createElement("span");
+    dateLabel.className = "timeline-date-label";
+    dateLabel.textContent = event.dateTime.toLocaleDateString(undefined, { month: "short", day: "numeric" });
+
+    item.appendChild(tick);
+    item.appendChild(link);
+    item.appendChild(dateLabel);
+    track.appendChild(item);
+  });
+
+  let rafId = 0;
+  function updateTimelineLayout() {
+    rafId = 0;
+
+    const items = Array.from(track.querySelectorAll(".timeline-event"));
+    if (!items.length) return;
+
+    const dayMs = 1000 * 60 * 60 * 24;
+    const baseTickHeight = 22;
+    const labelGap = 6;
+    const horizontalGap = 18;
+    const sidePadding = 72;
+    const pixelsPerDay = 16;
+    const today = new Date();
+    const todayTime = new Date(today.getFullYear(), today.getMonth(), today.getDate()).getTime();
+    const rangeStart = Math.min(timelineEvents[0].dateTime.getTime(), todayTime);
+    const rangeEnd = Math.max(timelineEvents[timelineEvents.length - 1].dateTime.getTime(), todayTime);
+    const rangeDuration = Math.max(dayMs, rangeEnd - rangeStart);
+    const totalDays = Math.max(1, Math.ceil(rangeDuration / dayMs));
+    const trackWidth = Math.max(viewport.clientWidth - 1, totalDays * pixelsPerDay + sidePadding * 2);
+    const usableWidth = Math.max(1, trackWidth - sidePadding * 2);
+    const placedLabels = [];
+    const placedDates = [];
+    let maxTickHeight = baseTickHeight;
+    let maxLabelHeight = 0;
+    let maxDateHeight = 0;
+
+    track.style.width = trackWidth + "px";
+
+    items.forEach((item, index) => {
+      const link = item.querySelector(".timeline-event-link");
+      const dateLabel = item.querySelector(".timeline-date-label");
+      const event = timelineEvents[index];
+      if (!link || !dateLabel || !event) return;
+
+      const ratio = (event.dateTime.getTime() - rangeStart) / rangeDuration;
+      const naturalX = sidePadding + ratio * usableWidth;
+      const labelWidth = link.offsetWidth;
+      const labelHeight = link.offsetHeight;
+      const dateWidth = dateLabel.offsetWidth;
+      const dateHeight = dateLabel.offsetHeight;
+      const minX = sidePadding + labelWidth / 2;
+      const maxX = trackWidth - sidePadding - labelWidth / 2;
+      const x = Math.max(minX, Math.min(maxX, naturalX));
+      const startX = x - labelWidth / 2;
+      const endX = x + labelWidth / 2;
+
+      let tickHeight = baseTickHeight;
+      let hasCollision = true;
+      while (hasCollision) {
+        hasCollision = false;
+        const labelBottom = tickHeight + labelGap;
+        const labelTop = labelBottom + labelHeight;
+        for (const placed of placedLabels) {
+          if (startX <= placed.endX + horizontalGap && endX >= placed.startX - horizontalGap) {
+            if (labelBottom < placed.top && labelTop > placed.bottom) {
+              hasCollision = true;
+              tickHeight = placed.top - labelGap;
+              break;
+            }
+          }
+        }
+      }
+      placedLabels.push({ startX, endX, bottom: tickHeight + labelGap, top: tickHeight + labelGap + labelHeight + 4 });
+
+      const dateStartX = x - dateWidth / 2;
+      const dateEndX = x + dateWidth / 2;
+      let dateTopOffset = 8;
+      hasCollision = true;
+      while (hasCollision) {
+        hasCollision = false;
+        const dateBottom = dateTopOffset + dateHeight;
+        for (const placed of placedDates) {
+          if (dateStartX <= placed.endX + 8 && dateEndX >= placed.startX - 8) {
+            if (dateTopOffset < placed.bottom && dateBottom > placed.top) {
+              hasCollision = true;
+              dateTopOffset = placed.bottom;
+              break;
+            }
+          }
+        }
+      }
+      placedDates.push({ startX: dateStartX, endX: dateEndX, top: dateTopOffset, bottom: dateTopOffset + dateHeight + 2 });
+
+      maxTickHeight = Math.max(maxTickHeight, tickHeight);
+      maxLabelHeight = Math.max(maxLabelHeight, labelHeight);
+      maxDateHeight = Math.max(maxDateHeight, dateTopOffset + dateHeight);
+
+      item.style.left = x.toFixed(2) + "px";
+      item.style.setProperty("--timeline-tick-height", tickHeight + "px");
+      item.style.setProperty("--timeline-label-bottom", tickHeight + labelGap + "px");
+      item.style.setProperty("--timeline-date-top", dateTopOffset + "px");
+    });
+
+    const todayRatio = (todayTime - rangeStart) / rangeDuration;
+    const todayX = sidePadding + todayRatio * usableWidth;
+    const targetScrollLeft = Math.max(0, Math.min(trackWidth - viewport.clientWidth, todayX - viewport.clientWidth / 2));
+    viewport.scrollLeft = targetScrollLeft;
+    
+    updateTimelineHeight();
+  }
+
+  let heightRafId = 0;
+  function updateTimelineHeight() {
+    heightRafId = 0;
+    const items = Array.from(track.querySelectorAll(".timeline-event"));
+    if (!items.length) return;
+
+    const scrollLeft = viewport.scrollLeft;
+    const viewportWidth = viewport.clientWidth;
+    const visibleStart = scrollLeft;
+    const visibleEnd = scrollLeft + viewportWidth;
+
+    let visibleMaxTickHeight = 22;
+    let visibleMaxLabelHeight = 0;
+    let visibleMaxDateHeight = 0;
+
+    items.forEach((item) => {
+      const x = parseFloat(item.style.left);
+      const link = item.querySelector(".timeline-event-link");
+      const dateLabel = item.querySelector(".timeline-date-label");
+      if (!link || !dateLabel || isNaN(x)) return;
+
+      // Check if item is roughly in view (adding buffer for label width)
+      if (x >= visibleStart - 100 && x <= visibleEnd + 100) {
+        const tickHeight = parseFloat(item.style.getPropertyValue("--timeline-tick-height"));
+        const dateTop = parseFloat(item.style.getPropertyValue("--timeline-date-top"));
+        
+        visibleMaxTickHeight = Math.max(visibleMaxTickHeight, tickHeight);
+        visibleMaxLabelHeight = Math.max(visibleMaxLabelHeight, link.offsetHeight);
+        visibleMaxDateHeight = Math.max(visibleMaxDateHeight, dateTop + dateLabel.offsetHeight - 8);
+      }
+    });
+
+    const bottomOffset = visibleMaxDateHeight + 16;
+    track.style.setProperty("--timeline-bottom", bottomOffset + "px");
+    track.style.height = visibleMaxTickHeight + visibleMaxLabelHeight + 6 + bottomOffset + 16 + "px";
+  }
+
+  function queueTimelineLayout() {
+    if (rafId) return;
+    rafId = window.requestAnimationFrame(updateTimelineLayout);
+  }
+  
+  function queueTimelineHeight() {
+    if (heightRafId) return;
+    heightRafId = window.requestAnimationFrame(updateTimelineHeight);
+  }
+
+  if (track.timelineController) {
+    track.timelineController.abort();
+  }
+  track.timelineController = new AbortController();
+  const signal = track.timelineController.signal;
+
+  window.addEventListener("resize", queueTimelineLayout, { signal });
+  viewport.addEventListener("scroll", queueTimelineHeight, { passive: true, signal });
+  if (document.fonts) {
+    document.fonts.ready.then(queueTimelineLayout);
+  }
+  
+  queueTimelineLayout();
 }
 
 function setupStickyChips(viewport, track) {
@@ -386,6 +670,34 @@ function setupTrackAlignment(viewport, track) {
   window.requestAnimationFrame(updateTrackAlignment);
 }
 
+function setupInitialShelfCentering(viewport, track) {
+  const currentGroup = track.querySelector('.book-group[data-status="current"]');
+  if (!currentGroup) return;
+
+  let hasCentered = false;
+
+  function centerCurrentGroup() {
+    if (hasCentered) return;
+
+    const maxScrollLeft = Math.max(0, track.scrollWidth - viewport.clientWidth);
+    if (maxScrollLeft <= 0) {
+      hasCentered = true;
+      return;
+    }
+
+    const groupCenter = currentGroup.offsetLeft + (currentGroup.offsetWidth / 2);
+    const targetScrollLeft = Math.max(0, Math.min(maxScrollLeft, groupCenter - (viewport.clientWidth / 2)));
+    viewport.scrollLeft = targetScrollLeft;
+    hasCentered = true;
+  }
+
+  window.requestAnimationFrame(centerCurrentGroup);
+  window.addEventListener("load", centerCurrentGroup, { once: true });
+  if (document.fonts) {
+    document.fonts.ready.then(centerCurrentGroup);
+  }
+}
+
 function setupBookPerspective(viewport) {
   const bookNodes = Array.from(viewport.querySelectorAll(".book"));
   if (!bookNodes.length) return;
@@ -436,24 +748,35 @@ function renderBookDetailPage() {
     return;
   }
 
-  const bookMeetings = getBookMeetings(book);
-  const meetingDates = bookMeetings.map((meeting) => meeting.date);
+  const bookEvents = getBookEvents(book);
   const now = new Date();
-  const upcomingMeeting = bookMeetings.find((meeting) => meeting.date.getTime() >= now.getTime()) || null;
+  const upcomingEvent = bookEvents.find((event) => event.dateTime.getTime() >= now.getTime()) || null;
   const tagsHtml = (book.tags || [])
     .map((tag) => "<span class=\"book-detail-tag-chip\">" + escapeHtml(String(tag)) + "</span>")
     .join("");
-  const meetingItemsHtml = bookMeetings.length
-    ? bookMeetings
-      .map((meeting) => {
-        const suffix = meeting.date.getTime() >= now.getTime()
+  const eventItemsHtml = bookEvents.length
+    ? bookEvents
+      .map((event) => {
+        const suffix = event.dateTime.getTime() >= now.getTime()
           ? " <span class=\"meeting-chip meeting-chip-upcoming\">Upcoming</span>"
           : "";
-        const note = meeting.note ? " <span class=\"meeting-note\">(" + escapeHtml(meeting.note) + ")</span>" : "";
-        return "<li>" + escapeHtml(formatDateTime(meeting.date)) + note + suffix + "</li>";
+        const note = event.note ? " <span class=\"meeting-note\">(" + escapeHtml(event.note) + ")</span>" : "";
+        const location = event.location
+          ? "<div class=\"meeting-meta\">" + escapeHtml(event.location) + "</div>"
+          : "";
+        return (
+          "<li>" +
+          "<a class=\"meeting-link\" href=\"event.html?id=" + encodeURIComponent(event.id) + "\">" +
+          escapeHtml(formatDateTime(event.dateTime)) +
+          "</a>" +
+          note +
+          suffix +
+          location +
+          "</li>"
+        );
       })
       .join("")
-    : "<li>No meetings scheduled yet.</li>";
+    : "<li>No events scheduled yet.</li>";
 
   root.innerHTML =
     "<article class=\"book-detail\">" +
@@ -467,10 +790,12 @@ function renderBookDetailPage() {
     "    <h1>" + escapeHtml(book.title) + "</h1>" +
     "    <p class=\"book-detail-author\">by " + escapeHtml(book.author) + "</p>" +
     (tagsHtml ? "<div class=\"book-detail-tags\" aria-label=\"Book tags\">" + tagsHtml + "</div>" : "") +
-    (upcomingMeeting
+    (upcomingEvent
       ? "<p class=\"book-detail-next\"><strong>Next meeting:</strong> "
-        + escapeHtml(formatDateTime(upcomingMeeting.date))
-        + (upcomingMeeting.note ? " <span class=\"meeting-note\">(" + escapeHtml(upcomingMeeting.note) + ")</span>" : "")
+        + "<a class=\"meeting-link\" href=\"event.html?id=" + encodeURIComponent(upcomingEvent.id) + "\">"
+        + escapeHtml(formatDateTime(upcomingEvent.dateTime))
+        + "</a>"
+        + (upcomingEvent.note ? " <span class=\"meeting-note\">(" + escapeHtml(upcomingEvent.note) + ")</span>" : "")
         + "</p>"
       : "") +
     "    <section class=\"book-detail-section\">" +
@@ -478,8 +803,8 @@ function renderBookDetailPage() {
     "      <p>" + escapeHtml(book.description || book.shortDescription || "No description available.") + "</p>" +
     "    </section>" +
     "    <section class=\"book-detail-section\">" +
-    "      <h2>Meetings</h2>" +
-    "      <ul class=\"meeting-list\">" + meetingItemsHtml + "</ul>" +
+    "      <h2>Events</h2>" +
+    "      <ul class=\"meeting-list\">" + eventItemsHtml + "</ul>" +
     "    </section>" +
     (book.notes
       ? "<section class=\"book-detail-section\"><h2>Discussion Notes</h2><p>" + escapeHtml(book.notes) + "</p></section>"
@@ -498,6 +823,84 @@ function renderBookDetailPage() {
   }
 
   document.title = book.title + " | Caltech Book Club";
+}
+
+function renderEventDetailPage() {
+  const root = document.getElementById("event-detail-root");
+  if (!root) return;
+
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get("id");
+  const event = getEventById(id);
+  const book = id ? getBookForEvent(id) : null;
+
+  if (!id || !event) {
+    root.innerHTML =
+      "<article class=\"not-found\">" +
+      "<h1>Event not found</h1>" +
+      "<p>The selected event could not be found. It may have moved or the link may be incorrect.</p>" +
+      "<p><a href=\"index.html#books\">Return to the Books section</a></p>" +
+      "</article>";
+    return;
+  }
+
+  const tagsHtml = event.tags
+    .map((tag) => "<span class=\"book-detail-tag-chip\">" + escapeHtml(String(tag)) + "</span>")
+    .join("");
+  const bookSummary = book
+    ? "<p class=\"book-detail-author\">Related book: <a class=\"meeting-link\" href=\"book.html?id="
+      + encodeURIComponent(book.id)
+      + "\">"
+      + escapeHtml(book.title)
+      + "</a> by "
+      + escapeHtml(book.author)
+      + "</p>"
+    : "";
+  const noteSection = event.note
+    ? "<section class=\"book-detail-section\"><h2>Notes</h2><p>" + escapeHtml(event.note) + "</p></section>"
+    : "";
+  const relatedBookSection = book
+    ? "<section class=\"book-detail-section\"><h2>About the Book</h2><p>"
+      + escapeHtml(book.description || book.shortDescription || "No description available.")
+      + "</p></section>"
+    : "";
+  const coverHtml = book
+    ? "  <figure class=\"book-detail-cover\" id=\"detail-cover-wrap\">" +
+      "    <img id=\"detail-cover\" src=\"" + escapeAttribute(book.cover) + "\" alt=\"" + escapeAttribute(book.title + " cover") + "\">" +
+      "    <figcaption class=\"book-detail-fallback\">" + escapeHtml(book.title) + "</figcaption>" +
+      "  </figure>"
+    : "";
+
+  root.innerHTML =
+    "<article class=\"book-detail event-detail\">" +
+    "<a class=\"book-breadcrumb\" href=\"" + (book ? "book.html?id=" + encodeURIComponent(book.id) : "index.html#books") + "\">&larr; "
+      + (book ? "Back to Book" : "Back to Books") + "</a>" +
+    "<div class=\"book-detail-layout\">" +
+    coverHtml +
+    "  <div class=\"book-detail-meta\">" +
+    "    <h1>" + escapeHtml(event.title) + "</h1>" +
+    bookSummary +
+    (tagsHtml ? "<div class=\"book-detail-tags\" aria-label=\"Event tags\">" + tagsHtml + "</div>" : "") +
+    "    <div class=\"event-meta-list\">" +
+    "      <p><strong>When:</strong> " + escapeHtml(formatDateTime(event.dateTime)) + "</p>" +
+    (event.location ? "      <p><strong>Where:</strong> " + escapeHtml(event.location) + "</p>" : "") +
+    "    </div>" +
+    noteSection +
+    relatedBookSection +
+    "  </div>" +
+    "</div>" +
+    "</article>";
+
+  const detailCover = document.getElementById("detail-cover");
+  const detailWrap = document.getElementById("detail-cover-wrap");
+  if (detailCover && detailWrap) {
+    detailCover.onerror = function detailImageError() {
+      detailWrap.classList.add("no-cover");
+      detailCover.alt = "";
+    };
+  }
+
+  document.title = event.title + " | Caltech Book Club";
 }
 
 function escapeHtml(value) {
@@ -523,6 +926,7 @@ function initPage() {
   const page = document.body.getAttribute("data-page");
   if (page === "home") renderHomePage();
   if (page === "book") renderBookDetailPage();
+  if (page === "event") renderEventDetailPage();
 }
 
 document.addEventListener("DOMContentLoaded", initPage);

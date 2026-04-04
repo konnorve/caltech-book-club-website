@@ -13,6 +13,9 @@
   <header class="site-header">
     <div class="container hero-simple">
       <h1>Caltech Book Club</h1>
+      <p style="text-align: center; margin-top: 0.4rem;">
+        <a href="announcements.html" style="font-size: 0.85rem; color: var(--muted); text-decoration: underline; text-underline-offset: 0.2em;">april announcement</a>
+      </p>
     </div>
   </header>
 
@@ -29,52 +32,93 @@
       </div>
     </section>
 
+    <section class="timeline-section" aria-labelledby="timeline-title">
+      <div class="container">
+        <h2 id="timeline-title" class="timeline-title">Events Timeline</h2>
+        <div id="timeline-filters" class="timeline-filters"></div>
+      </div>
+      <div class="timeline-shell">
+        <div class="timeline-viewport" id="timeline-viewport" tabindex="0" aria-label="Scrollable event timeline">
+          <div class="timeline-track" id="timeline-track"></div>
+        </div>
+      </div>
+    </section>
+
     <section id="info" class="placeholder-section" aria-labelledby="info-title">
       <div class="container">
         <h2 id="info-title">Info</h2>
         <div class="info-grid">
           <article class="info-card">
-            <h3>Meeting location</h3>
-            <p>Meetings are in the Resnick lobby and occasionally the Beckman lawn unless otherwise noted.</p>
+            <h3>Who can join?</h3>
+            <p><strong>Everyone is welcome!</strong> You do not need to be affiliated with Caltech to join our book club or attend our events. We love having community members, friends, and non-Caltech folks read with us.</p>
           </article>
           <article class="info-card">
-            <h3>Schedule</h3>
+            <h3>Reading formats</h3>
             <ul class="info-list">
-              <li>Weekly meetings are often on Tuesdays.</li>
-              <li>Monthly meetings are often on Thursdays.</li>
-              <li>Meetings are typically one hour long.</li>
+              <li><strong>Weekly books</strong>: read together in smaller sections over several meetings.</li>
+              <li><strong>Monthly books</strong>: read at your own pace, then discuss the full book at the end of the month.</li>
+              <li><strong>Term books</strong>: books chosen for the whole term.</li>
+            </ul>
+          </article>
+		  <article class="info-card">
+            <h3>Weekly books</h3>
+            <ul class="info-list">
+              <li>Weekly books are chosen by the weekly group.</li>
+              <li>The group usually reads about 60 pages per week over 4 to 6 meetings.</li>
             </ul>
           </article>
           <article class="info-card">
-            <h3>Reading pace</h3>
+            <h3>Monthly books</h3>
             <ul class="info-list">
-              <li>Two main groups: one weekly and one monthly.</li>
-              <li>Weekly group reads about 60 pages each week.</li>
-              <li>A weekly-group book is usually discussed over 4 to 6 meetings.</li>
-              <li>Monthly-group books are usually discussed once per quarter.</li>
+              <li>Monthly books are chosen through democratic polls.</li>
+              <li>Readers fill out a monthly sign-up form at the start of the month.</li>
+              <li>You may be invited to a WhatsApp group chat for coordination.</li>
+              <li>Discussions are usually held once the group has finished the book.</li>
             </ul>
           </article>
           <article class="info-card">
-            <h3>Book selection</h3>
-            <p>Books are chosen democratically via polls sent out to the club at the start of each term.</p>
-          </article>
-          <article class="info-card">
-            <h3>Connect</h3>
+            <h3>Other events</h3>
             <ul class="info-list">
-              <li>Mailing list: <a href="mailto:book-club@caltech.edu">book-club@caltech.edu</a></li>
-              <li>List host: <a href="https://lists.caltech.edu">lists.caltech.edu</a></li>
-              <li>Questions: <a href="mailto:kve@caltech.edu">kve@caltech.edu</a></li>
+			  <li>Book store runs</li>
+              <li>Casual lunch and read</li>
+              <li>Book crafts</li>
+			  <li>Author talks</li>
             </ul>
           </article>
           <article class="info-card">
-            <h3>Community</h3>
-            <p>Everyone is welcome, including non-Caltech folks.</p>
+            <h3>Book subsidies</h3>
+            <ul class="info-list">
+              <li>The club can fund 1 book per person per term.</li>
+              <li>Funding is limited, so request a book only if you expect to finish it in time and attend discussion.</li>
+            </ul>
+          </article>
+          <article class="info-card">
+            <h3>How to find books</h3>
+            <ul class="info-list">
+              <li><a href="https://www.library.caltech.edu/" target="_blank" rel="noopener">Caltech Library</a></li>
+			  <li><a href="https://library.caltech.edu/about/policies/lending#kindles" target="_blank" rel="noopener">Caltech Library Kindle Borrowing</a></li>
+              <li><a href="https://www.cityofpasadena.net/library/" target="_blank" rel="noopener">Pasadena Public Libraries</a></li>
+			  <li><a href="https://www.lapl.org/" target="_blank" rel="noopener">Los Angeles Public Libraries</a></li>
+            </ul>
+          </article>
+          <article class="info-card">
+            <h3>Communications</h3>
+            <ul class="info-list">
+              <li>Monthly update to mailing listwith sign-up form and club events.</li>
+              <li>WhatsApp is used to coordinate meetings for participating readers.</li>
+              <li>Check our <a href="announcements.html">Announcements</a> page for monthly updates.</li>
+            </ul>
+          </article>
+          <article class="info-card">
+            <h3>Mailing list</h3>
+            <p><a href="https://lists.caltech.edu/postorius/lists/book-club.caltech.edu/">Join the Caltech Book Club mailing list</a></p>
           </article>
           <article class="info-card">
             <h3>Leadership</h3>
             <ul class="info-list">
-              <li>Kara Lo, President</li>
-              <li>Konnor von Emster, Treasurer</li>
+              <li>Kara Lo, President - <a href="mailto:karalo@caltech.edu">karalo@caltech.edu</a></li>
+              <li>Konnor von Emster, Treasurer - <a href="mailto:kve@caltech.edu">kve@caltech.edu</a></li>
+              <li>Becky Williams, Secretary - <a href="mailto:rjwillia@caltech.edu">rjwillia@caltech.edu</a></li>
             </ul>
           </article>
         </div>
