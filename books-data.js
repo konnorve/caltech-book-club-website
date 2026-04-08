@@ -315,7 +315,7 @@ window.events = [
     title: "East of Eden Meeting",
     tags: ["Discussion", "Weekly Book"],
     location: "Resnick Sustainability Center Lobby",
-    note: ""
+    note: "End of chapter 24"
   },
   {
     id: "weekly-casual-lunch-2026-04-17-1200",
