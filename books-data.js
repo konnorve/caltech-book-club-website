@@ -345,6 +345,51 @@ window.events = [
     note: "Bring your own lunch and book."
   },
   {
+    id: "weekly-casual-lunch-2026-05-01-1200",
+    date: "2026-05-01",
+    time: "12:00",
+    title: "Weekly Casual Lunch",
+    tags: ["Social", "Casual Lunch"],
+    location: "Tables between the turtle ponds and Caltech Hall",
+    note: "Bring your own lunch and book."
+  },
+  {
+    id: "weekly-casual-lunch-2026-05-08-1200",
+    date: "2026-05-08",
+    time: "12:00",
+    title: "Weekly Casual Lunch",
+    tags: ["Social", "Casual Lunch"],
+    location: "Tables between the turtle ponds and Caltech Hall",
+    note: "Bring your own lunch and book."
+  },
+  {
+    id: "weekly-casual-lunch-2026-05-15-1200",
+    date: "2026-05-15",
+    time: "12:00",
+    title: "Weekly Casual Lunch",
+    tags: ["Social", "Casual Lunch"],
+    location: "Tables between the turtle ponds and Caltech Hall",
+    note: "Bring your own lunch and book."
+  },
+  {
+    id: "weekly-casual-lunch-2026-05-22-1200",
+    date: "2026-05-22",
+    time: "12:00",
+    title: "Weekly Casual Lunch",
+    tags: ["Social", "Casual Lunch"],
+    location: "Tables between the turtle ponds and Caltech Hall",
+    note: "Bring your own lunch and book."
+  },
+  {
+    id: "weekly-casual-lunch-2026-05-29-1200",
+    date: "2026-05-29",
+    time: "12:00",
+    title: "Weekly Casual Lunch",
+    tags: ["Social", "Casual Lunch"],
+    location: "Tables between the turtle ponds and Caltech Hall",
+    note: "Bring your own lunch and book."
+  },
+  {
     id: "east-of-eden-2026-04-28",
     date: "2026-04-28",
     time: "19:00",
