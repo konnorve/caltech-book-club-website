@@ -6,11 +6,18 @@
 */
 const books = Array.isArray(window.BOOKS) ? window.BOOKS : [];
 const events = Array.isArray(window.events) ? window.events : [];
+const booksById = new Map(
+  books
+    .filter((book) => book && typeof book.id === "string")
+    .map((book) => [book.id, book])
+);
 const eventsById = new Map(
   events
     .filter((event) => event && typeof event.id === "string")
     .map((event) => [event.id, event])
 );
+const bookIdsByLength = Array.from(booksById.keys()).sort((a, b) => b.length - a.length);
+const dayMs = 1000 * 60 * 60 * 24;
 
 const statusMeta = {
   past: { label: "Past", className: "is-past" },
@@ -45,11 +52,33 @@ function getNormalizedEvent(event) {
   };
 }
 
-function getBookEvents(book) {
-  if (!Array.isArray(book.events)) return [];
+function getStartOfDayTime(date) {
+  return new Date(date.getFullYear(), date.getMonth(), date.getDate()).getTime();
+}
 
-  return book.events
-    .map((eventId) => eventsById.get(String(eventId)))
+function inferBookIdFromEventId(eventId) {
+  if (!eventId) return null;
+  const eventKey = String(eventId);
+  return bookIdsByLength.find((bookId) => eventKey === bookId || eventKey.startsWith(bookId + "-")) || null;
+}
+
+function getRelatedBookIdForEvent(event) {
+  if (!event || typeof event !== "object") return null;
+  if (typeof event.bookId === "string" && event.bookId.trim()) {
+    return event.bookId.trim();
+  }
+  return inferBookIdFromEventId(event.id);
+}
+
+function getBookEvents(book) {
+  if (!book || typeof book.id !== "string") return [];
+  const linkedEventIds = new Set(Array.isArray(book.events) ? book.events.map((eventId) => String(eventId)) : []);
+
+  return events
+    .filter((event) => {
+      if (!event || typeof event.id !== "string") return false;
+      return linkedEventIds.has(event.id) || getRelatedBookIdForEvent(event) === book.id;
+    })
     .map((event) => getNormalizedEvent(event))
     .filter(Boolean)
     .sort((a, b) => a.dateTime.getTime() - b.dateTime.getTime());
@@ -64,7 +93,12 @@ function getEventById(id) {
 }
 
 function getBookForEvent(eventId) {
-  return books.find((book) => Array.isArray(book.events) && book.events.includes(eventId)) || null;
+  const explicitBook = books.find((book) => Array.isArray(book.events) && book.events.includes(eventId)) || null;
+  if (explicitBook) return explicitBook;
+
+  const event = getEventById(eventId);
+  const relatedBookId = getRelatedBookIdForEvent(event);
+  return relatedBookId ? booksById.get(relatedBookId) || null : null;
 }
 
 function hasTag(book, tag) {
@@ -77,24 +111,29 @@ function getBookStatus(book, referenceDate) {
   const meetings = getBookMeetingDates(book);
   if (!meetings.length) return "future";
 
-  const nowTime = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime();
-  const pastMeetings = meetings.filter((d) => d.getTime() < nowTime);
-  const futureMeetings = meetings.filter((d) => d.getTime() >= nowTime);
+  const nowTime = getStartOfDayTime(now);
+  const meetingDayTimes = meetings.map((meeting) => getStartOfDayTime(meeting));
+  const pastMeetings = meetingDayTimes.filter((time) => time < nowTime);
+  const futureMeetings = meetingDayTimes.filter((time) => time >= nowTime);
+
+  if (hasTag(book, "monthly")) {
+    const isWithinMeetingMonth = meetingDayTimes.some((meetingTime) => meetingTime >= nowTime && meetingTime - nowTime <= 31 * dayMs);
+    if (isWithinMeetingMonth) return "current";
+  }
 
   if (pastMeetings.length && futureMeetings.length) return "current";
   if (pastMeetings.length && !futureMeetings.length) {
     if (hasTag(book, "weekly")) {
       const latestMeeting = pastMeetings[pastMeetings.length - 1];
-      const recencyDays = Math.ceil((nowTime - latestMeeting.getTime()) / (1000 * 60 * 60 * 24));
+      const recencyDays = Math.ceil((nowTime - latestMeeting) / dayMs);
       if (recencyDays <= 14) return "current";
     }
     return "past";
   }
 
   if (futureMeetings.length) {
-    const nearestFuture = futureMeetings.reduce((min, d) => (d < min ? d : min), futureMeetings[0]);
-    const diffDays = Math.ceil((nearestFuture.getTime() - nowTime) / (1000 * 60 * 60 * 24));
-    if (hasTag(book, "monthly") && diffDays <= 35) return "current";
+    const nearestFuture = futureMeetings.reduce((min, time) => (time < min ? time : min), futureMeetings[0]);
+    const diffDays = Math.ceil((nearestFuture - nowTime) / dayMs);
     if (hasTag(book, "term") && diffDays <= 120) return "current";
     return "future";
   }
@@ -370,7 +409,6 @@ function renderTimeline() {
     const items = Array.from(track.querySelectorAll(".timeline-event"));
     if (!items.length) return;
 
-    const dayMs = 1000 * 60 * 60 * 24;
     const baseTickHeight = 22;
     const labelGap = 6;
     const horizontalGap = 18;
