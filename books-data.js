@@ -333,11 +333,56 @@ window.events = [
     title: "East of Eden Meeting",
     tags: ["Discussion", "Weekly Book"],
     location: "Resnick Sustainability Center Lobby",
-    note: ""
+    note: "Until chapter 29"
   },
   {
     id: "weekly-casual-lunch-2026-04-24-1200",
     date: "2026-04-24",
+    time: "12:00",
+    title: "Weekly Casual Lunch",
+    tags: ["Social", "Casual Lunch"],
+    location: "Tables between the turtle ponds and Caltech Hall",
+    note: "Bring your own lunch and book."
+  },
+  {
+    id: "weekly-casual-lunch-2026-05-01-1200",
+    date: "2026-05-01",
+    time: "12:00",
+    title: "Weekly Casual Lunch",
+    tags: ["Social", "Casual Lunch"],
+    location: "Tables between the turtle ponds and Caltech Hall",
+    note: "Bring your own lunch and book."
+  },
+  {
+    id: "weekly-casual-lunch-2026-05-08-1200",
+    date: "2026-05-08",
+    time: "12:00",
+    title: "Weekly Casual Lunch",
+    tags: ["Social", "Casual Lunch"],
+    location: "Tables between the turtle ponds and Caltech Hall",
+    note: "Bring your own lunch and book."
+  },
+  {
+    id: "weekly-casual-lunch-2026-05-15-1200",
+    date: "2026-05-15",
+    time: "12:00",
+    title: "Weekly Casual Lunch",
+    tags: ["Social", "Casual Lunch"],
+    location: "Tables between the turtle ponds and Caltech Hall",
+    note: "Bring your own lunch and book."
+  },
+  {
+    id: "weekly-casual-lunch-2026-05-22-1200",
+    date: "2026-05-22",
+    time: "12:00",
+    title: "Weekly Casual Lunch",
+    tags: ["Social", "Casual Lunch"],
+    location: "Tables between the turtle ponds and Caltech Hall",
+    note: "Bring your own lunch and book."
+  },
+  {
+    id: "weekly-casual-lunch-2026-05-29-1200",
+    date: "2026-05-29",
     time: "12:00",
     title: "Weekly Casual Lunch",
     tags: ["Social", "Casual Lunch"],
