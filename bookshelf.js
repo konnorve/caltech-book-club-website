@@ -117,7 +117,7 @@ function getBookStatus(book, referenceDate) {
   const futureMeetings = meetingDayTimes.filter((time) => time >= nowTime);
 
   if (hasTag(book, "monthly")) {
-    const isWithinMeetingMonth = meetingDayTimes.some((meetingTime) => Math.abs(meetingTime - nowTime) <= 31 * dayMs);
+    const isWithinMeetingMonth = meetingDayTimes.some((meetingTime) => meetingTime >= nowTime && meetingTime - nowTime <= 31 * dayMs);
     if (isWithinMeetingMonth) return "current";
   }
 
