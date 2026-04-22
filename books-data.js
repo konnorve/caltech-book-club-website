@@ -345,6 +345,33 @@ window.events = [
     note: "Bring your own lunch and book."
   },
   {
+    id: "east-of-eden-2026-04-28",
+    date: "2026-04-28",
+    time: "19:00",
+    title: "East of Eden Meeting",
+    tags: ["Discussion", "Weekly Book"],
+    location: "Resnick Sustainability Center Lobby",
+    note: "End of Chapter 38"
+  },
+  {
+    id: "east-of-eden-2026-05-05",
+    date: "2026-05-05",
+    time: "19:00",
+    title: "East of Eden Meeting",
+    tags: ["Discussion", "Weekly Book"],
+    location: "Resnick Sustainability Center Lobby",
+    note: "End of Chapter 48"
+  },
+  {
+    id: "east-of-eden-2026-05-12",
+    date: "2026-05-12",
+    time: "19:00",
+    title: "East of Eden Meeting",
+    tags: ["Discussion", "Weekly Book"],
+    location: "Resnick Sustainability Center Lobby",
+    note: "End of book!! and snacks!"
+  },
+  {
     id: "silent-spring-2026-04-30-1800",
     date: "2026-04-30",
     time: "18:00",
