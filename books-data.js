@@ -372,10 +372,10 @@ window.events = [
     note: "End of book!! and snacks!"
   },
   {
-    id: "silent-spring-2026-04-30-1800",
-    date: "2026-04-30",
+    id: "silent-spring-2026-05-07-1800",
+    date: "2026-05-07",
     time: "18:00",
-    title: "The Silent Spring Meeting",
+    title: "Silent Spring Meeting",
     tags: ["Discussion", "Monthly Book"],
     location: "Resnick Sustainability Center Lobby",
     note: ""
@@ -569,7 +569,10 @@ window.BOOKS = [
       "east-of-eden-2026-03-31-1900",
       "east-of-eden-2026-04-07-1900",
       "east-of-eden-2026-04-14-1900",
-      "east-of-eden-2026-04-21-1900"
+      "east-of-eden-2026-04-21-1900",
+      "east-of-eden-2026-04-28",
+      "east-of-eden-2026-05-05",
+      "east-of-eden-2026-05-12"
     ],
     shortDescription: "A sweeping family epic on inheritance, choice, and moral struggle.",
     description: "A sweeping family epic on inheritance, choice, and moral struggle."
@@ -581,7 +584,7 @@ window.BOOKS = [
     cover: "https://covers.openlibrary.org/b/isbn/9780618249060-L.jpg",
     row: 2,
     tags: ["Monthly"],
-    events: ["silent-spring-2026-04-30-1800"],
+    events: ["silent-spring-2026-05-07-1800"],
     shortDescription: "Foundational environmental writing that changed public policy.",
     description: "Foundational environmental writing that changed public policy."
   },
