@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://caltech-book-club.pages.dev/sitemap.xml
