@@ -408,8 +408,8 @@ window.events = [
     note: "End of Chapter 48"
   },
   {
-    id: "east-of-eden-2026-05-12",
-    date: "2026-05-12",
+    id: "east-of-eden-2026-05-13",
+    date: "2026-05-13",
     time: "19:00",
     title: "East of Eden Meeting",
     tags: ["Discussion", "Weekly Book"],
@@ -417,8 +417,8 @@ window.events = [
     note: "End of book!! and snacks!"
   },
   {
-    id: "silent-spring-2026-05-07-1800",
-    date: "2026-05-07",
+    id: "silent-spring-2026-05-13-1800",
+    date: "2026-05-13",
     time: "18:00",
     title: "Silent Spring Meeting",
     tags: ["Discussion", "Monthly Book"],
@@ -617,7 +617,7 @@ window.BOOKS = [
       "east-of-eden-2026-04-21-1900",
       "east-of-eden-2026-04-28",
       "east-of-eden-2026-05-05",
-      "east-of-eden-2026-05-12"
+      "east-of-eden-2026-05-13"
     ],
     shortDescription: "A sweeping family epic on inheritance, choice, and moral struggle.",
     description: "A sweeping family epic on inheritance, choice, and moral struggle."
@@ -629,7 +629,7 @@ window.BOOKS = [
     cover: "https://covers.openlibrary.org/b/isbn/9780618249060-L.jpg",
     row: 2,
     tags: ["Monthly"],
-    events: ["silent-spring-2026-05-07-1800"],
+    events: ["silent-spring-2026-05-13-1800"],
     shortDescription: "Foundational environmental writing that changed public policy.",
     description: "Foundational environmental writing that changed public policy."
   },
