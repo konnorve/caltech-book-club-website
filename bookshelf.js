@@ -18,6 +18,7 @@ const eventsById = new Map(
 );
 const bookIdsByLength = Array.from(booksById.keys()).sort((a, b) => b.length - a.length);
 const dayMs = 1000 * 60 * 60 * 24;
+const siteOrigin = "https://caltech-book-club.pages.dev";
 
 const statusMeta = {
   past: { label: "Past", className: "is-past" },
@@ -169,6 +170,65 @@ function formatDateTime(date) {
   const datePart = date.toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" });
   const timePart = date.toLocaleTimeString(undefined, { hour: "numeric", minute: "2-digit" });
   return datePart + " at " + timePart;
+}
+
+function getSiteUrl(path) {
+  return new URL(path, siteOrigin + "/").href;
+}
+
+function getPlainText(value, fallback) {
+  const text = String(value || fallback || "").replace(/\s+/g, " ").trim();
+  return text;
+}
+
+function getSeoDescription(value, fallback) {
+  const text = getPlainText(value, fallback);
+  return text.length > 155 ? text.slice(0, 152).trimEnd() + "..." : text;
+}
+
+function setMetaContent(selector, content) {
+  const node = document.querySelector(selector);
+  if (node && content) node.setAttribute("content", content);
+}
+
+function setRobotsContent(content) {
+  setMetaContent("meta[name='robots']", content);
+}
+
+function setCanonicalUrl(url) {
+  let canonical = document.querySelector("link[rel='canonical']");
+  if (!canonical) {
+    canonical = document.createElement("link");
+    canonical.setAttribute("rel", "canonical");
+    document.head.appendChild(canonical);
+  }
+  canonical.setAttribute("href", url);
+}
+
+function setPageMetadata(options) {
+  const title = options.title;
+  const description = options.description;
+  const url = getSiteUrl(options.path);
+
+  document.title = title;
+  setMetaContent("meta[name='description']", description);
+  setMetaContent("meta[property='og:title']", title);
+  setMetaContent("meta[property='og:description']", description);
+  setMetaContent("meta[property='og:url']", url);
+  setMetaContent("meta[name='twitter:title']", title);
+  setMetaContent("meta[name='twitter:description']", description);
+  setCanonicalUrl(url);
+}
+
+function setStructuredData(id, data) {
+  let script = document.getElementById(id);
+  if (!script) {
+    script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = id;
+    document.head.appendChild(script);
+  }
+  script.textContent = JSON.stringify(data);
 }
 
 function getShelfMeetingLabel(book, now) {
@@ -777,6 +837,7 @@ function renderBookDetailPage() {
   const book = books.find((item) => item.id === id);
 
   if (!id || !book) {
+    setRobotsContent("noindex, follow");
     root.innerHTML =
       "<article class=\"not-found\">" +
       "<h1>Book not found</h1>" +
@@ -860,7 +921,30 @@ function renderBookDetailPage() {
     };
   }
 
-  document.title = book.title + " | Caltech Book Club";
+  const bookUrlPath = "book.html?id=" + encodeURIComponent(book.id);
+  const bookDescription = getSeoDescription(
+    "Read " + book.title + " by " + book.author + " with Caltech Book Club. "
+      + (book.shortDescription || book.description || "See book details, meeting dates, and discussion notes."),
+    "Caltech Book Club book details and discussion schedule."
+  );
+  setPageMetadata({
+    title: book.title + " by " + book.author + " | Caltech Book Club",
+    description: bookDescription,
+    path: bookUrlPath
+  });
+  setStructuredData("book-json-ld", {
+    "@context": "https://schema.org",
+    "@type": "Book",
+    "name": book.title,
+    "author": {
+      "@type": "Person",
+      "name": book.author
+    },
+    "description": bookDescription,
+    "image": book.cover,
+    "url": getSiteUrl(bookUrlPath),
+    "mainEntityOfPage": getSiteUrl(bookUrlPath)
+  });
 }
 
 function renderEventDetailPage() {
@@ -873,6 +957,7 @@ function renderEventDetailPage() {
   const book = id ? getBookForEvent(id) : null;
 
   if (!id || !event) {
+    setRobotsContent("noindex, follow");
     root.innerHTML =
       "<article class=\"not-found\">" +
       "<h1>Event not found</h1>" +
@@ -938,7 +1023,55 @@ function renderEventDetailPage() {
     };
   }
 
-  document.title = event.title + " | Caltech Book Club";
+  const eventUrlPath = "event.html?id=" + encodeURIComponent(event.id);
+  const eventDescription = getSeoDescription(
+    event.title + " with Caltech Book Club on " + formatDateTime(event.dateTime)
+      + (event.location ? " at " + event.location : "")
+      + (book ? ". Related book: " + book.title + " by " + book.author + "." : "."),
+    "Caltech Book Club event details."
+  );
+  setPageMetadata({
+    title: event.title + " | Caltech Book Club Event",
+    description: eventDescription,
+    path: eventUrlPath
+  });
+  setStructuredData("event-json-ld", {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": event.title,
+    "description": eventDescription,
+    "startDate": event.dateTime.toISOString(),
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "url": getSiteUrl(eventUrlPath),
+    "location": event.location
+      ? {
+        "@type": "Place",
+        "name": event.location,
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Pasadena",
+          "addressRegion": "CA"
+        }
+      }
+      : undefined,
+    "organizer": {
+      "@type": "Organization",
+      "name": "Caltech Book Club",
+      "url": siteOrigin + "/"
+    },
+    "workFeatured": book
+      ? {
+        "@type": "Book",
+        "name": book.title,
+        "author": {
+          "@type": "Person",
+          "name": book.author
+        },
+        "url": getSiteUrl("book.html?id=" + encodeURIComponent(book.id))
+      }
+      : undefined
+  });
 }
 
 function escapeHtml(value) {
