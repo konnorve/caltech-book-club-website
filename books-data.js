@@ -381,6 +381,15 @@ window.events = [
     note: "Bring your own lunch and book."
   },
   {
+    id: "the-temple-of-the-golden-pavilion-2026-05-26-1900",
+    date: "2026-05-26",
+    time: "19:00",
+    title: "The Temple of the Golden Pavilion Meeting",
+    tags: ["Discussion", "Weekly Book"],
+    location: "Resnick Sustainability Center Lobby",
+    note: "End of Chapter 3"
+  },
+  {
     id: "weekly-casual-lunch-2026-05-29-1200",
     date: "2026-05-29",
     time: "12:00",
@@ -388,6 +397,33 @@ window.events = [
     tags: ["Social", "Casual Lunch"],
     location: "Tables between the turtle ponds and Caltech Hall",
     note: "Bring your own lunch and book."
+  },
+  {
+    id: "the-temple-of-the-golden-pavilion-2026-06-02-1900",
+    date: "2026-06-02",
+    time: "19:00",
+    title: "The Temple of the Golden Pavilion Meeting",
+    tags: ["Discussion", "Weekly Book"],
+    location: "Resnick Sustainability Center Lobby",
+    note: "End of Chapter 5"
+  },
+  {
+    id: "the-temple-of-the-golden-pavilion-2026-06-09-1900",
+    date: "2026-06-09",
+    time: "19:00",
+    title: "The Temple of the Golden Pavilion Meeting",
+    tags: ["Discussion", "Weekly Book"],
+    location: "Resnick Sustainability Center Lobby",
+    note: "End of Chapter 7"
+  },
+  {
+    id: "the-temple-of-the-golden-pavilion-2026-06-16-1900",
+    date: "2026-06-16",
+    time: "19:00",
+    title: "The Temple of the Golden Pavilion Meeting",
+    tags: ["Discussion", "Weekly Book"],
+    location: "Resnick Sustainability Center Lobby",
+    note: "End of Chapter 10 (end of book)"
   },
   {
     id: "east-of-eden-2026-04-28",
@@ -632,6 +668,22 @@ window.BOOKS = [
     events: ["silent-spring-2026-05-13-1800"],
     shortDescription: "Foundational environmental writing that changed public policy.",
     description: "Foundational environmental writing that changed public policy."
+  },
+  {
+    id: "the-temple-of-the-golden-pavilion",
+    title: "The Temple of the Golden Pavilion",
+    author: "Yukio Mishima",
+    cover: "https://covers.openlibrary.org/b/isbn/9780679752707-L.jpg",
+    row: 2,
+    tags: ["Weekly"],
+    events: [
+      "the-temple-of-the-golden-pavilion-2026-05-26-1900",
+      "the-temple-of-the-golden-pavilion-2026-06-02-1900",
+      "the-temple-of-the-golden-pavilion-2026-06-09-1900",
+      "the-temple-of-the-golden-pavilion-2026-06-16-1900"
+    ],
+    shortDescription: "A haunting novel about beauty, obsession, and destruction in postwar Kyoto.",
+    description: "A haunting novel about beauty, obsession, and destruction in postwar Kyoto."
   },
   {
     id: "hitchhikers-guide-to-the-galaxy",
