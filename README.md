@@ -28,6 +28,14 @@ Small static website with no build step.
 
 *Note: The website automatically sorts books chronologically by their first meeting date, and automatically categorizes them into Past, Current, and Future based on the current date.*
 
+### Weekly book rollover
+
+Weekly books roll forward automatically from the dates in `books-data.js`:
+
+- A weekly book with both past and upcoming meetings is Current.
+- After that book's final meeting, the next scheduled weekly book becomes Current once its first meeting is within 14 days.
+- If no next weekly book is scheduled soon, the finished weekly book stays Current for up to 14 days as a fallback.
+
 ### Add a meeting note
 
 In `meetings`, use an object form:
@@ -41,3 +49,9 @@ Open `index.html` in a browser, or run:
 `python3 -m http.server`
 
 Then visit `http://localhost:8000`.
+
+## Verification
+
+Run the status checks with:
+
+`node tests/book-status.test.js`

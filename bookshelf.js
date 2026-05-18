@@ -18,6 +18,7 @@ const eventsById = new Map(
 );
 const bookIdsByLength = Array.from(booksById.keys()).sort((a, b) => b.length - a.length);
 const dayMs = 1000 * 60 * 60 * 24;
+const weeklyTransitionWindowDays = 14;
 const siteOrigin = "https://caltech-book-club.pages.dev";
 
 const statusMeta = {
@@ -107,6 +108,72 @@ function hasTag(book, tag) {
   return book.tags.some((bookTag) => String(bookTag).toLowerCase() === tag);
 }
 
+function getNearestFutureTime(times, nowTime) {
+  const futureTimes = times.filter((time) => time >= nowTime);
+  if (!futureTimes.length) return null;
+  return futureTimes.reduce((min, time) => (time < min ? time : min), futureTimes[0]);
+}
+
+function getWeeklyCurrentBookIds(referenceDate) {
+  const now = referenceDate || new Date();
+  const nowTime = getStartOfDayTime(now);
+  const weeklyBooks = getSortedBooks()
+    .filter((book) => hasTag(book, "weekly"))
+    .map((book) => ({
+      book,
+      meetingDayTimes: getBookMeetingDates(book).map((meeting) => getStartOfDayTime(meeting))
+    }))
+    .filter((item) => item.meetingDayTimes.length);
+
+  const ongoingBookIds = weeklyBooks
+    .filter((item) => {
+      const hasPast = item.meetingDayTimes.some((time) => time < nowTime);
+      const hasFuture = item.meetingDayTimes.some((time) => time >= nowTime);
+      return hasPast && hasFuture;
+    })
+    .map((item) => item.book.id);
+
+  if (ongoingBookIds.length) return new Set(ongoingBookIds);
+
+  const nearestFutureBook = weeklyBooks
+    .map((item) => ({
+      book: item.book,
+      nearestFuture: getNearestFutureTime(item.meetingDayTimes, nowTime)
+    }))
+    .filter((item) => item.nearestFuture !== null)
+    .sort((a, b) => {
+      if (a.nearestFuture !== b.nearestFuture) return a.nearestFuture - b.nearestFuture;
+      return a.book.title.localeCompare(b.book.title);
+    })[0] || null;
+
+  if (nearestFutureBook) {
+    const diffDays = Math.ceil((nearestFutureBook.nearestFuture - nowTime) / dayMs);
+    if (diffDays <= weeklyTransitionWindowDays) {
+      return new Set([nearestFutureBook.book.id]);
+    }
+  }
+
+  const recentEndedBook = weeklyBooks
+    .map((item) => ({
+      book: item.book,
+      latestPast: item.meetingDayTimes.filter((time) => time < nowTime).pop() || null
+    }))
+    .filter((item) => item.latestPast !== null)
+    .sort((a, b) => {
+      if (a.latestPast !== b.latestPast) return b.latestPast - a.latestPast;
+      return a.book.title.localeCompare(b.book.title);
+    })[0] || null;
+
+  if (recentEndedBook) {
+    const recencyDays = Math.ceil((nowTime - recentEndedBook.latestPast) / dayMs);
+    if (recencyDays <= weeklyTransitionWindowDays) {
+      return new Set([recentEndedBook.book.id]);
+    }
+  }
+
+  return new Set();
+}
+
 function getBookStatus(book, referenceDate) {
   const now = referenceDate || new Date();
   const meetings = getBookMeetingDates(book);
@@ -117,23 +184,22 @@ function getBookStatus(book, referenceDate) {
   const pastMeetings = meetingDayTimes.filter((time) => time < nowTime);
   const futureMeetings = meetingDayTimes.filter((time) => time >= nowTime);
 
+  if (hasTag(book, "weekly")) {
+    return getWeeklyCurrentBookIds(now).has(book.id)
+      ? "current"
+      : (futureMeetings.length ? "future" : "past");
+  }
+
   if (hasTag(book, "monthly")) {
     const isWithinMeetingMonth = meetingDayTimes.some((meetingTime) => meetingTime >= nowTime && meetingTime - nowTime <= 31 * dayMs);
     if (isWithinMeetingMonth) return "current";
   }
 
   if (pastMeetings.length && futureMeetings.length) return "current";
-  if (pastMeetings.length && !futureMeetings.length) {
-    if (hasTag(book, "weekly")) {
-      const latestMeeting = pastMeetings[pastMeetings.length - 1];
-      const recencyDays = Math.ceil((nowTime - latestMeeting) / dayMs);
-      if (recencyDays <= 14) return "current";
-    }
-    return "past";
-  }
+  if (pastMeetings.length && !futureMeetings.length) return "past";
 
   if (futureMeetings.length) {
-    const nearestFuture = futureMeetings.reduce((min, time) => (time < min ? time : min), futureMeetings[0]);
+    const nearestFuture = getNearestFutureTime(meetingDayTimes, nowTime);
     const diffDays = Math.ceil((nearestFuture - nowTime) / dayMs);
     if (hasTag(book, "term") && diffDays <= 120) return "current";
     return "future";
