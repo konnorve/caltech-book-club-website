@@ -58,6 +58,32 @@ function getStartOfDayTime(date) {
   return new Date(date.getFullYear(), date.getMonth(), date.getDate()).getTime();
 }
 
+function getTimelineRange(timelineEvents, referenceDate) {
+  const eventDayTimes = timelineEvents
+    .map((event) => getStartOfDayTime(event.dateTime))
+    .sort((a, b) => a - b);
+  if (!eventDayTimes.length) return null;
+
+  const today = referenceDate || new Date();
+  const todayTime = getStartOfDayTime(today);
+  const rangeStart = Math.min(eventDayTimes[0], todayTime);
+  const rangeEnd = Math.max(eventDayTimes[eventDayTimes.length - 1], todayTime);
+  const rangeDuration = Math.max(dayMs, rangeEnd - rangeStart);
+
+  return {
+    startTime: rangeStart,
+    endTime: rangeEnd,
+    duration: rangeDuration,
+    totalDays: Math.max(1, Math.ceil(rangeDuration / dayMs))
+  };
+}
+
+function getTimelineDateX(date, range, sidePadding, usableWidth) {
+  const dayTime = getStartOfDayTime(date);
+  const ratio = (dayTime - range.startTime) / range.duration;
+  return sidePadding + ratio * usableWidth;
+}
+
 function inferBookIdFromEventId(eventId) {
   if (!eventId) return null;
   const eventKey = String(eventId);
@@ -538,15 +564,14 @@ function renderTimeline() {
     const baseTickHeight = 22;
     const labelGap = 6;
     const horizontalGap = 18;
+    const labelEdgePadding = 8;
     const sidePadding = 72;
     const pixelsPerDay = 16;
     const today = new Date();
-    const todayTime = new Date(today.getFullYear(), today.getMonth(), today.getDate()).getTime();
-    const rangeStart = Math.min(timelineEvents[0].dateTime.getTime(), todayTime);
-    const rangeEnd = Math.max(timelineEvents[timelineEvents.length - 1].dateTime.getTime(), todayTime);
-    const rangeDuration = Math.max(dayMs, rangeEnd - rangeStart);
-    const totalDays = Math.max(1, Math.ceil(rangeDuration / dayMs));
-    const trackWidth = Math.max(viewport.clientWidth - 1, totalDays * pixelsPerDay + sidePadding * 2);
+    const timelineRange = getTimelineRange(timelineEvents, today);
+    if (!timelineRange) return;
+
+    const trackWidth = Math.max(viewport.clientWidth - 1, timelineRange.totalDays * pixelsPerDay + sidePadding * 2);
     const usableWidth = Math.max(1, trackWidth - sidePadding * 2);
     const placedLabels = [];
     const placedDates = [];
@@ -562,17 +587,17 @@ function renderTimeline() {
       const event = timelineEvents[index];
       if (!link || !dateLabel || !event) return;
 
-      const ratio = (event.dateTime.getTime() - rangeStart) / rangeDuration;
-      const naturalX = sidePadding + ratio * usableWidth;
       const labelWidth = link.offsetWidth;
       const labelHeight = link.offsetHeight;
       const dateWidth = dateLabel.offsetWidth;
       const dateHeight = dateLabel.offsetHeight;
-      const minX = sidePadding + labelWidth / 2;
-      const maxX = trackWidth - sidePadding - labelWidth / 2;
-      const x = Math.max(minX, Math.min(maxX, naturalX));
-      const startX = x - labelWidth / 2;
-      const endX = x + labelWidth / 2;
+      const tickX = getTimelineDateX(event.dateTime, timelineRange, sidePadding, usableWidth);
+      const minLabelX = Math.max(labelEdgePadding + labelWidth / 2, 0);
+      const maxLabelX = Math.max(minLabelX, trackWidth - labelEdgePadding - labelWidth / 2);
+      const labelX = Math.max(minLabelX, Math.min(maxLabelX, tickX));
+      const labelOffsetX = labelX - tickX;
+      const startX = labelX - labelWidth / 2;
+      const endX = labelX + labelWidth / 2;
 
       let tickHeight = baseTickHeight;
       let hasCollision = true;
@@ -592,8 +617,8 @@ function renderTimeline() {
       }
       placedLabels.push({ startX, endX, bottom: tickHeight + labelGap, top: tickHeight + labelGap + labelHeight + 4 });
 
-      const dateStartX = x - dateWidth / 2;
-      const dateEndX = x + dateWidth / 2;
+      const dateStartX = tickX - dateWidth / 2;
+      const dateEndX = tickX + dateWidth / 2;
       let dateTopOffset = 8;
       hasCollision = true;
       while (hasCollision) {
@@ -615,14 +640,14 @@ function renderTimeline() {
       maxLabelHeight = Math.max(maxLabelHeight, labelHeight);
       maxDateHeight = Math.max(maxDateHeight, dateTopOffset + dateHeight);
 
-      item.style.left = x.toFixed(2) + "px";
+      item.style.left = tickX.toFixed(2) + "px";
+      link.style.left = labelOffsetX.toFixed(2) + "px";
       item.style.setProperty("--timeline-tick-height", tickHeight + "px");
       item.style.setProperty("--timeline-label-bottom", tickHeight + labelGap + "px");
       item.style.setProperty("--timeline-date-top", dateTopOffset + "px");
     });
 
-    const todayRatio = (todayTime - rangeStart) / rangeDuration;
-    const todayX = sidePadding + todayRatio * usableWidth;
+    const todayX = getTimelineDateX(today, timelineRange, sidePadding, usableWidth);
     const targetScrollLeft = Math.max(0, Math.min(trackWidth - viewport.clientWidth, todayX - viewport.clientWidth / 2));
     viewport.scrollLeft = targetScrollLeft;
     

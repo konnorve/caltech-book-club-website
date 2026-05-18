@@ -56,6 +56,26 @@ function getStatus(sandbox, bookId, date) {
   );
 }
 
+function getTimelinePositions(sandbox) {
+  return vm.runInContext(
+    `(() => {
+      const range = getTimelineRange([
+        { dateTime: new Date("2026-01-01T19:00:00") },
+        { dateTime: new Date("2026-01-08T12:00:00") },
+        { dateTime: new Date("2026-01-22T08:00:00") }
+      ], new Date("2026-01-01T00:00:00"));
+
+      return {
+        jan1: getTimelineDateX(new Date("2026-01-01T19:00:00"), range, 50, 210),
+        jan8Morning: getTimelineDateX(new Date("2026-01-08T08:00:00"), range, 50, 210),
+        jan8Night: getTimelineDateX(new Date("2026-01-08T23:00:00"), range, 50, 210),
+        jan22: getTimelineDateX(new Date("2026-01-22T08:00:00"), range, 50, 210)
+      };
+    })()`,
+    sandbox
+  );
+}
+
 const sandbox = loadSiteContext();
 
 assert.strictEqual(
@@ -77,6 +97,17 @@ assert.strictEqual(
   getStatus(sandbox, "the-temple-of-the-golden-pavilion", "2026-05-18T12:00:00"),
   "current",
   "The next scheduled weekly book should become current during the transition window"
+);
+
+const timelinePositions = getTimelinePositions(sandbox);
+assert.strictEqual(
+  timelinePositions.jan8Morning,
+  timelinePositions.jan8Night,
+  "Events on the same calendar date should share one timeline position"
+);
+assert(
+  Math.abs((timelinePositions.jan8Morning - timelinePositions.jan1) * 3 - (timelinePositions.jan22 - timelinePositions.jan1)) < 0.0001,
+  "Timeline spacing should remain proportional to elapsed calendar days"
 );
 
 console.log("Book status tests passed.");
