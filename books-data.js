@@ -489,10 +489,10 @@ window.events = [
     note: ""
   },
   {
-    id: "abundance-2026-08-27-1800",
+    id: "how-big-things-get-done-2026-08-27-1800",
     date: "2026-08-27",
     time: "18:00",
-    title: "Abundance Meeting",
+    title: "How Big Things Get Done Meeting",
     tags: ["Discussion", "Monthly Book"],
     location: "Resnick Sustainability Center Lobby",
     note: ""
@@ -730,14 +730,14 @@ window.BOOKS = [
     description: "A novel of race, voice, and friendship in 1960s Mississippi."
   },
   {
-    id: "abundance",
-    title: "Abundance",
-    author: "Ezra Klein and Derek Thompson",
-    cover: "https://covers.openlibrary.org/b/isbn/9781668023488-L.jpg",
+    id: "how-big-things-get-done",
+    title: "How Big Things Get Done",
+    author: "Bent Flyvbjerg and Dan Gardner",
+    cover: "https://covers.openlibrary.org/b/isbn/9780593239513-L.jpg",
     row: 2,
     tags: ["Monthly"],
-    events: ["abundance-2026-08-27-1800"],
-    shortDescription: "Contemporary nonfiction on growth, systems, and policy choices.",
-    description: "Contemporary nonfiction on growth, systems, and policy choices."
+    events: ["how-big-things-get-done-2026-08-27-1800"],
+    shortDescription: "A nonfiction look at why major projects succeed or fail.",
+    description: "A nonfiction look at why major projects succeed or fail."
   }
 ];
