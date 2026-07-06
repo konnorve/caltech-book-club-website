@@ -462,12 +462,66 @@ window.events = [
     note: ""
   },
   {
+    id: "pride-and-prejudice-2026-07-06-1900",
+    date: "2026-07-06",
+    time: "19:00",
+    title: "Pride and Prejudice Meeting",
+    tags: ["Discussion", "Weekly Book"],
+    location: "Beckman Lawn",
+    note: "End of Chapter 9"
+  },
+  {
+    id: "pride-and-prejudice-2026-07-13-1900",
+    date: "2026-07-13",
+    time: "19:00",
+    title: "Pride and Prejudice Meeting",
+    tags: ["Discussion", "Weekly Book"],
+    location: "Beckman Lawn",
+    note: "End of Chapter 18"
+  },
+  {
+    id: "pride-and-prejudice-2026-07-20-1900",
+    date: "2026-07-20",
+    time: "19:00",
+    title: "Pride and Prejudice Meeting",
+    tags: ["Discussion", "Weekly Book"],
+    location: "Beckman Lawn",
+    note: "End of Chapter 28"
+  },
+  {
+    id: "pride-and-prejudice-2026-07-27-1900",
+    date: "2026-07-27",
+    time: "19:00",
+    title: "Pride and Prejudice Meeting",
+    tags: ["Discussion", "Weekly Book"],
+    location: "Beckman Lawn",
+    note: "End of Chapter 39"
+  },
+  {
+    id: "pride-and-prejudice-2026-08-03-1900",
+    date: "2026-08-03",
+    time: "19:00",
+    title: "Pride and Prejudice Meeting",
+    tags: ["Discussion", "Weekly Book"],
+    location: "Beckman Lawn",
+    note: "End of Chapter 50"
+  },
+  {
+    id: "pride-and-prejudice-2026-08-10-1900",
+    date: "2026-08-10",
+    time: "19:00",
+    title: "Pride and Prejudice Meeting",
+    tags: ["Discussion", "Weekly Book"],
+    location: "Beckman Lawn",
+    note: "End of book"
+  },
+  {
     id: "the-silent-patient-2026-07-30-1800",
     date: "2026-07-30",
     time: "18:00",
     title: "The Silent Patient Meeting",
     tags: ["Discussion", "Monthly Book"],
-    location: "Resnick Sustainability Center Lobby",
+    location: "Beckman Lawn",
     note: ""
   },
   {
@@ -476,7 +530,7 @@ window.events = [
     time: "18:00",
     title: "How Big Things Get Done Meeting",
     tags: ["Discussion", "Monthly Book"],
-    location: "Resnick Sustainability Center Lobby",
+    location: "Beckman Lawn",
     note: ""
   },
   {
@@ -485,7 +539,7 @@ window.events = [
     time: "18:00",
     title: "The Help Meeting",
     tags: ["Discussion", "Monthly Book"],
-    location: "Resnick Sustainability Center Lobby",
+    location: "Beckman Lawn",
     note: ""
   }
 ];
@@ -688,6 +742,24 @@ window.BOOKS = [
     events: ["surely-youre-joking-mr-feynman-2026-06-25-1800"],
     shortDescription: "Memoirs of curiosity, playfulness, and scientific thinking.",
     description: "Memoirs of curiosity, playfulness, and scientific thinking."
+  },
+  {
+    id: "pride-and-prejudice",
+    title: "Pride and Prejudice",
+    author: "Jane Austen",
+    cover: "https://covers.openlibrary.org/b/isbn/9780141439518-L.jpg",
+    row: 1,
+    tags: ["Weekly"],
+    events: [
+      "pride-and-prejudice-2026-07-06-1900",
+      "pride-and-prejudice-2026-07-13-1900",
+      "pride-and-prejudice-2026-07-20-1900",
+      "pride-and-prejudice-2026-07-27-1900",
+      "pride-and-prejudice-2026-08-03-1900",
+      "pride-and-prejudice-2026-08-10-1900"
+    ],
+    shortDescription: "A sharp comedy of manners about love, class, and first impressions.",
+    description: "A sharp comedy of manners about love, class, and first impressions."
   },
   {
     id: "the-silent-patient",
