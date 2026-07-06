@@ -99,6 +99,7 @@ assert.strictEqual(
   "The next scheduled weekly book should become current during the transition window"
 );
 
+
 const timelinePositions = getTimelinePositions(sandbox);
 assert.strictEqual(
   timelinePositions.jan8Morning,

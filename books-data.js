@@ -372,6 +372,33 @@ window.events = [
     note: "Bring your own lunch and book."
   },
   {
+    id: "weekly-casual-lunch-2026-07-10-1200",
+    date: "2026-07-10",
+    time: "12:00",
+    title: "Weekly Casual Lunch",
+    tags: ["Social", "Casual Lunch"],
+    location: "Tables between the turtle ponds and Caltech Hall",
+    note: "Bring your own lunch and book."
+  },
+  {
+    id: "weekly-casual-lunch-2026-07-17-1200",
+    date: "2026-07-17",
+    time: "12:00",
+    title: "Weekly Casual Lunch",
+    tags: ["Social", "Casual Lunch"],
+    location: "Tables between the turtle ponds and Caltech Hall",
+    note: "Bring your own lunch and book."
+  },
+  {
+    id: "weekly-casual-lunch-2026-07-31-1200",
+    date: "2026-07-31",
+    time: "12:00",
+    title: "Weekly Casual Lunch",
+    tags: ["Social", "Casual Lunch"],
+    location: "Tables between the turtle ponds and Caltech Hall",
+    note: "Bring your own lunch and book."
+  },
+  {
     id: "the-temple-of-the-golden-pavilion-2026-05-26-1900",
     date: "2026-05-26",
     time: "19:00",
