@@ -522,7 +522,7 @@ window.events = [
     title: "Pride and Prejudice Meeting",
     tags: ["Discussion", "Weekly Book"],
     location: "Beckman Lawn",
-    note: "End of Chapter 39"
+    note: "End of Volume 2"
   },
   {
     id: "pride-and-prejudice-2026-08-03-1900",
@@ -534,13 +534,22 @@ window.events = [
     note: "End of Chapter 50"
   },
   {
-    id: "pride-and-prejudice-2026-08-10-1900",
-    date: "2026-08-10",
+    id: "pride-and-prejudice-2026-08-05-1900",
+    date: "2026-08-05",
     time: "19:00",
     title: "Pride and Prejudice Meeting",
     tags: ["Discussion", "Weekly Book"],
     location: "Beckman Lawn",
     note: "End of book"
+  },
+  {
+    id: "house-of-leaves-2026-08-10-1900",
+    date: "2026-08-10",
+    time: "19:00",
+    title: "House of Leaves Meeting",
+    tags: ["Discussion", "Weekly Book"],
+    location: "Beckman Lawn",
+    note: ""
   },
   {
     id: "the-silent-patient-2026-07-30-1800",
@@ -783,10 +792,21 @@ window.BOOKS = [
       "pride-and-prejudice-2026-07-20-1900",
       "pride-and-prejudice-2026-07-27-1900",
       "pride-and-prejudice-2026-08-03-1900",
-      "pride-and-prejudice-2026-08-10-1900"
+      "pride-and-prejudice-2026-08-05-1900"
     ],
     shortDescription: "A sharp comedy of manners about love, class, and first impressions.",
     description: "A sharp comedy of manners about love, class, and first impressions."
+  },
+  {
+    id: "house-of-leaves",
+    title: "House of Leaves",
+    author: "Mark Z. Danielewski",
+    cover: "https://covers.openlibrary.org/b/isbn/9780375703768-L.jpg",
+    row: 2,
+    tags: ["Weekly"],
+    events: ["house-of-leaves-2026-08-10-1900"],
+    shortDescription: "A labyrinthine novel about a house larger on the inside than the outside.",
+    description: "A labyrinthine novel about a house larger on the inside than the outside."
   },
   {
     id: "the-silent-patient",
