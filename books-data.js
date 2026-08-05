@@ -489,8 +489,8 @@ window.events = [
     note: ""
   },
   {
-    id: "pride-and-prejudice-2026-07-06-1900",
-    date: "2026-07-06",
+    id: "pride-and-prejudice-2026-07-07-1900",
+    date: "2026-07-07",
     time: "19:00",
     title: "Pride and Prejudice Meeting",
     tags: ["Discussion", "Weekly Book"],
@@ -498,8 +498,8 @@ window.events = [
     note: "End of Chapter 9"
   },
   {
-    id: "pride-and-prejudice-2026-07-13-1900",
-    date: "2026-07-13",
+    id: "pride-and-prejudice-2026-07-14-1900",
+    date: "2026-07-14",
     time: "19:00",
     title: "Pride and Prejudice Meeting",
     tags: ["Discussion", "Weekly Book"],
@@ -507,17 +507,8 @@ window.events = [
     note: "End of Chapter 18"
   },
   {
-    id: "pride-and-prejudice-2026-07-20-1900",
-    date: "2026-07-20",
-    time: "19:00",
-    title: "Pride and Prejudice Meeting",
-    tags: ["Discussion", "Weekly Book"],
-    location: "Beckman Lawn",
-    note: "End of Chapter 28"
-  },
-  {
-    id: "pride-and-prejudice-2026-07-27-1900",
-    date: "2026-07-27",
+    id: "pride-and-prejudice-2026-07-21-1900",
+    date: "2026-07-21",
     time: "19:00",
     title: "Pride and Prejudice Meeting",
     tags: ["Discussion", "Weekly Book"],
@@ -525,8 +516,8 @@ window.events = [
     note: "End of Volume 2"
   },
   {
-    id: "pride-and-prejudice-2026-08-03-1900",
-    date: "2026-08-03",
+    id: "pride-and-prejudice-2026-07-28-1900",
+    date: "2026-07-28",
     time: "19:00",
     title: "Pride and Prejudice Meeting",
     tags: ["Discussion", "Weekly Book"],
@@ -534,8 +525,8 @@ window.events = [
     note: "End of Chapter 50"
   },
   {
-    id: "pride-and-prejudice-2026-08-05-1900",
-    date: "2026-08-05",
+    id: "pride-and-prejudice-2026-08-04-1900",
+    date: "2026-08-04",
     time: "19:00",
     title: "Pride and Prejudice Meeting",
     tags: ["Discussion", "Weekly Book"],
@@ -543,8 +534,8 @@ window.events = [
     note: "End of book"
   },
   {
-    id: "house-of-leaves-2026-08-10-1900",
-    date: "2026-08-10",
+    id: "house-of-leaves-2026-08-11-1900",
+    date: "2026-08-11",
     time: "19:00",
     title: "House of Leaves Meeting",
     tags: ["Discussion", "Weekly Book"],
@@ -787,12 +778,11 @@ window.BOOKS = [
     row: 1,
     tags: ["Weekly"],
     events: [
-      "pride-and-prejudice-2026-07-06-1900",
-      "pride-and-prejudice-2026-07-13-1900",
-      "pride-and-prejudice-2026-07-20-1900",
-      "pride-and-prejudice-2026-07-27-1900",
-      "pride-and-prejudice-2026-08-03-1900",
-      "pride-and-prejudice-2026-08-05-1900"
+      "pride-and-prejudice-2026-07-07-1900",
+      "pride-and-prejudice-2026-07-14-1900",
+      "pride-and-prejudice-2026-07-21-1900",
+      "pride-and-prejudice-2026-07-28-1900",
+      "pride-and-prejudice-2026-08-04-1900"
     ],
     shortDescription: "A sharp comedy of manners about love, class, and first impressions.",
     description: "A sharp comedy of manners about love, class, and first impressions."
@@ -804,7 +794,7 @@ window.BOOKS = [
     cover: "https://covers.openlibrary.org/b/isbn/9780375703768-L.jpg",
     row: 2,
     tags: ["Weekly"],
-    events: ["house-of-leaves-2026-08-10-1900"],
+    events: ["house-of-leaves-2026-08-11-1900"],
     shortDescription: "A labyrinthine novel about a house larger on the inside than the outside.",
     description: "A labyrinthine novel about a house larger on the inside than the outside."
   },
