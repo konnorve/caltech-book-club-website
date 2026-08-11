@@ -338,6 +338,7 @@ body[data-header-font="modern"] {
 }
 
 .shelf-track {
+  --shelf-edge-padding: max(1.5rem, 50vw);
   position: relative;
   z-index: 1;
   min-width: max-content;
@@ -345,7 +346,7 @@ body[data-header-font="modern"] {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 0.95rem;
-  padding: 1.5rem 1.5rem 2rem;
+  padding: 1.5rem var(--shelf-edge-padding) 2rem;
   border-radius: 0;
   background-color: #d4b895;
   background-image: url('images/maple-wood-even.png');

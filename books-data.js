@@ -540,7 +540,7 @@ window.events = [
     title: "House of Leaves Meeting",
     tags: ["Discussion", "Weekly Book"],
     location: "Beckman Lawn",
-    note: ""
+    note: "End of Chapter 3"
   },
   {
     id: "the-silent-patient-2026-07-30-1800",
