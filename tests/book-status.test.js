@@ -98,6 +98,16 @@ assert.strictEqual(
   "current",
   "The next scheduled weekly book should become current during the transition window"
 );
+assert.strictEqual(
+  getStatus(sandbox, "house-of-leaves", "2026-08-11T12:00:00"),
+  "current",
+  "House of Leaves should be current for its August 11 meeting"
+);
+assert.strictEqual(
+  vm.runInContext(`getEventById("house-of-leaves-2026-08-11-1900").note`, sandbox),
+  "End of Chapter 3",
+  "The August 11 House of Leaves assignment should end at Chapter 3"
+);
 
 
 const timelinePositions = getTimelinePositions(sandbox);
