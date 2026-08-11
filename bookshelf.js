@@ -460,7 +460,6 @@ function renderHomePage() {
 
   track.appendChild(fragment);
   setupTrackAlignment(viewport, track);
-  setupBookPerspective(viewport);
   setupStickyChips(viewport, track);
   setupInitialShelfCentering(viewport, track);
   renderTimelineFilters();
@@ -885,38 +884,6 @@ function setupInitialShelfCentering(viewport, track) {
   if (document.fonts) {
     document.fonts.ready.then(centerCurrentGroup);
   }
-}
-
-function setupBookPerspective(viewport) {
-  const bookNodes = Array.from(viewport.querySelectorAll(".book"));
-  if (!bookNodes.length) return;
-
-  let rafId = 0;
-
-  function updatePerspective() {
-    rafId = 0;
-    const viewportRect = viewport.getBoundingClientRect();
-    const viewportCenterX = viewportRect.left + (viewportRect.width / 2);
-    const halfWidth = Math.max(1, viewportRect.width / 2);
-
-    bookNodes.forEach((bookNode) => {
-      const rect = bookNode.getBoundingClientRect();
-      const bookCenterX = rect.left + (rect.width / 2);
-      const normalizedOffset = (bookCenterX - viewportCenterX) / halfWidth;
-      const clamped = Math.max(-1, Math.min(1, normalizedOffset));
-      const tilt = clamped * 3.5; // subtle lean at viewport edges
-      bookNode.style.setProperty("--edge-lean", tilt.toFixed(3) + "deg");
-    });
-  }
-
-  function queueUpdate() {
-    if (rafId) return;
-    rafId = window.requestAnimationFrame(updatePerspective);
-  }
-
-  viewport.addEventListener("scroll", queueUpdate, { passive: true });
-  window.addEventListener("resize", queueUpdate);
-  queueUpdate();
 }
 
 function renderBookDetailPage() {
