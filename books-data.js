@@ -543,6 +543,15 @@ window.events = [
     note: "End of Chapter 3"
   },
   {
+    id: "house-of-leaves-2026-08-18-1900",
+    date: "2026-08-18",
+    time: "19:00",
+    title: "House of Leaves Meeting",
+    tags: ["Discussion", "Weekly Book"],
+    location: "Beckman Lawn",
+    note: "End of Chapter 6"
+  },
+  {
     id: "the-silent-patient-2026-07-30-1800",
     date: "2026-07-30",
     time: "18:00",
@@ -794,7 +803,10 @@ window.BOOKS = [
     cover: "https://covers.openlibrary.org/b/isbn/9780375703768-L.jpg",
     row: 2,
     tags: ["Weekly"],
-    events: ["house-of-leaves-2026-08-11-1900"],
+    events: [
+      "house-of-leaves-2026-08-11-1900",
+      "house-of-leaves-2026-08-18-1900"
+    ],
     shortDescription: "A labyrinthine novel about a house larger on the inside than the outside.",
     description: "A labyrinthine novel about a house larger on the inside than the outside."
   },

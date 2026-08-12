@@ -104,9 +104,19 @@ assert.strictEqual(
   "House of Leaves should be current for its August 11 meeting"
 );
 assert.strictEqual(
+  getStatus(sandbox, "house-of-leaves", "2026-08-18T12:00:00"),
+  "current",
+  "House of Leaves should be current for its August 18 meeting"
+);
+assert.strictEqual(
   vm.runInContext(`getEventById("house-of-leaves-2026-08-11-1900").note`, sandbox),
   "End of Chapter 3",
   "The August 11 House of Leaves assignment should end at Chapter 3"
+);
+assert.strictEqual(
+  vm.runInContext(`getEventById("house-of-leaves-2026-08-18-1900").note`, sandbox),
+  "End of Chapter 6",
+  "The August 18 House of Leaves assignment should end at Chapter 6"
 );
 
 
