@@ -1,13 +1,14 @@
 # Caltech Book Club Website
 
-Small static website. A dependency-free build copies only public files into `dist/`.
+Small static website with no build step. Website files live in `public/`; repository-only documents live in `governance/`.
 
 ## Files that run the site
 
+Paths below are relative to `public/`, except the governance document.
+
 - `index.html`: home page with the bookshelf and short participation summaries.
 - `guidelines.html`: full expectations and discussion guidelines.
-- `governance/Draft-Constitution.pdf`: original draft, repository-only; never included in the site build.
-- `scripts/build.mjs`: explicit public-file allowlist for deployment.
+- `governance/Draft-Constitution.pdf`: original draft, repository-only; outside the published website directory.
 - `book.html`: detail page for one book.
 - `styles.css`: all site styles.
 - `books-data.js`: all editable content for books and meetings.
@@ -47,9 +48,7 @@ In `meetings`, use an object form:
 
 ## Simple local preview
 
-Run `node scripts/build.mjs`, then:
-
-`python3 -m http.server --directory dist`
+Run `python3 -m http.server --directory public`
 
 Then visit `http://localhost:8000`.
 
@@ -59,11 +58,11 @@ Run the status checks with:
 
 `node tests/book-status.test.js`
 
-## Deployment: required before merging this change
+## Deployment
 
-In the existing Cloudflare Pages project, set the build command to `node scripts/build.mjs` and the build output directory to `dist`. Do not deploy the repository root: it now contains repository-only governance documents. `wrangler.toml` pins the output to `dist` on supported Pages builds (v2 or later). The dashboard build command is not changed by this pull request; until configured, a preview may fail because `dist` does not exist. Verify them before merging or enabling a branch preview.
+No build step is needed. Keep the Cloudflare Pages build command as `exit 0` (if changed to the previous build script, change it back). `wrangler.toml` sets the output directory to the committed `public/` folder. The project root stays unchanged.
 
-The constitution is intentionally absent from navigation, the sitemap, and the built output. It remains accessible in this public GitHub repository.
+The constitution remains in `governance/`, outside the published folder. Do not configure deployment to serve the repository root. It remains accessible in this public GitHub repository.
 
 ## Updating member guidance
 
