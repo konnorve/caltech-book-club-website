@@ -90,4 +90,5 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
+  <url><loc>https://caltech-book-club.pages.dev/guidelines</loc></url>
 </urlset>
