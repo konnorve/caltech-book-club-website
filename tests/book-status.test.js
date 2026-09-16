@@ -118,6 +118,26 @@ assert.strictEqual(
   "End of Chapter 6",
   "The August 18 House of Leaves assignment should end at Chapter 6"
 );
+assert.strictEqual(
+  getStatus(sandbox, "house-of-leaves", "2026-09-30T12:00:00"),
+  "current",
+  "An ongoing weekly schedule should keep House of Leaves current"
+);
+assert.strictEqual(
+  vm.runInContext(`formatEventDateTime(getEventById("house-of-leaves-weekly-2026-09"))`, sandbox),
+  "Weekly; time and location vary",
+  "The ongoing schedule should not invent a time or location"
+);
+assert.strictEqual(
+  vm.runInContext(`getEventById("vromans-run-2026-09-09-1830").dateTime.getHours()`, sandbox),
+  18,
+  "The Vroman’s run should be scheduled for 6:30 PM"
+);
+assert.strictEqual(
+  vm.runInContext(`activeTimelineTag`, sandbox),
+  null,
+  "The timeline should default to All"
+);
 
 
 const timelinePositions = getTimelinePositions(sandbox);

@@ -48,6 +48,9 @@ function getNormalizedEvent(event) {
   return {
     ...event,
     dateTime,
+    hasTime: Boolean(event.time),
+    ongoing: event.ongoing === true,
+    schedule: event.schedule ? String(event.schedule) : "",
     note: event.note ? String(event.note) : "",
     location: event.location ? String(event.location) : "",
     tags: Array.isArray(event.tags) ? event.tags : []
@@ -150,6 +153,14 @@ function getWeeklyCurrentBookIds(referenceDate) {
       meetingDayTimes: getBookMeetingDates(book).map((meeting) => getStartOfDayTime(meeting))
     }))
     .filter((item) => item.meetingDayTimes.length);
+
+  const explicitlyOngoingBookIds = weeklyBooks
+    .filter((item) => getBookEvents(item.book).some((event) => (
+      event.ongoing && getStartOfDayTime(event.dateTime) <= nowTime
+    )))
+    .map((item) => item.book.id);
+
+  if (explicitlyOngoingBookIds.length) return new Set(explicitlyOngoingBookIds);
 
   const ongoingBookIds = weeklyBooks
     .filter((item) => {
@@ -258,6 +269,14 @@ function getSortedEvents() {
     });
 }
 
+function formatEventDateTime(event) {
+  if (event.schedule) return event.schedule;
+  if (!event.hasTime) {
+    return event.dateTime.toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" });
+  }
+  return formatDateTime(event.dateTime);
+}
+
 function formatDateTime(date) {
   const datePart = date.toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" });
   const timePart = date.toLocaleTimeString(undefined, { hour: "numeric", minute: "2-digit" });
@@ -328,13 +347,13 @@ function getShelfMeetingLabel(book, now) {
   if (!bookEvents.length) return "No meetings scheduled";
 
   const nowDate = now || new Date();
-  const upcoming = bookEvents.find((event) => event.dateTime.getTime() >= nowDate.getTime()) || null;
+  const upcoming = bookEvents.find((event) => event.ongoing || event.dateTime.getTime() >= nowDate.getTime()) || null;
   if (upcoming) {
-    return "Next meeting: " + formatDateTime(upcoming.dateTime);
+    return "Next meeting: " + formatEventDateTime(upcoming);
   }
 
   const latest = bookEvents[bookEvents.length - 1];
-  return "Last meeting: " + formatDateTime(latest.dateTime);
+  return latest.ongoing ? latest.schedule : "Last meeting: " + formatEventDateTime(latest);
 }
 
 function makeBookNode(book) {
@@ -466,7 +485,7 @@ function renderHomePage() {
   renderTimeline();
 }
 
-let activeTimelineTag = "Social";
+let activeTimelineTag = null;
 
 function renderTimelineFilters() {
   const container = document.getElementById("timeline-filters");
@@ -545,7 +564,7 @@ function renderTimeline() {
 
     const dateLabel = document.createElement("span");
     dateLabel.className = "timeline-date-label";
-    dateLabel.textContent = event.dateTime.toLocaleDateString(undefined, { month: "short", day: "numeric" });
+    dateLabel.textContent = event.ongoing ? "Weekly" : event.dateTime.toLocaleDateString(undefined, { month: "short", day: "numeric" });
 
     item.appendChild(tick);
     item.appendChild(link);
@@ -907,14 +926,14 @@ function renderBookDetailPage() {
 
   const bookEvents = getBookEvents(book);
   const now = new Date();
-  const upcomingEvent = bookEvents.find((event) => event.dateTime.getTime() >= now.getTime()) || null;
+  const upcomingEvent = bookEvents.find((event) => event.ongoing || event.dateTime.getTime() >= now.getTime()) || null;
   const tagsHtml = (book.tags || [])
     .map((tag) => "<span class=\"book-detail-tag-chip\">" + escapeHtml(String(tag)) + "</span>")
     .join("");
   const eventItemsHtml = bookEvents.length
     ? bookEvents
       .map((event) => {
-        const suffix = event.dateTime.getTime() >= now.getTime()
+        const suffix = event.ongoing || event.dateTime.getTime() >= now.getTime()
           ? " <span class=\"meeting-chip meeting-chip-upcoming\">Upcoming</span>"
           : "";
         const note = event.note ? " <span class=\"meeting-note\">(" + escapeHtml(event.note) + ")</span>" : "";
@@ -924,7 +943,7 @@ function renderBookDetailPage() {
         return (
           "<li>" +
           "<a class=\"meeting-link\" href=\"event.html?id=" + encodeURIComponent(event.id) + "\">" +
-          escapeHtml(formatDateTime(event.dateTime)) +
+          escapeHtml(formatEventDateTime(event)) +
           "</a>" +
           note +
           suffix +
@@ -950,7 +969,7 @@ function renderBookDetailPage() {
     (upcomingEvent
       ? "<p class=\"book-detail-next\"><strong>Next meeting:</strong> "
         + "<a class=\"meeting-link\" href=\"event.html?id=" + encodeURIComponent(upcomingEvent.id) + "\">"
-        + escapeHtml(formatDateTime(upcomingEvent.dateTime))
+        + escapeHtml(formatEventDateTime(upcomingEvent))
         + "</a>"
         + (upcomingEvent.note ? " <span class=\"meeting-note\">(" + escapeHtml(upcomingEvent.note) + ")</span>" : "")
         + "</p>"
@@ -1063,7 +1082,7 @@ function renderEventDetailPage() {
     bookSummary +
     (tagsHtml ? "<div class=\"book-detail-tags\" aria-label=\"Event tags\">" + tagsHtml + "</div>" : "") +
     "    <div class=\"event-meta-list\">" +
-    "      <p><strong>When:</strong> " + escapeHtml(formatDateTime(event.dateTime)) + "</p>" +
+    "      <p><strong>When:</strong> " + escapeHtml(formatEventDateTime(event)) + "</p>" +
     (event.location ? "      <p><strong>Where:</strong> " + escapeHtml(event.location) + "</p>" : "") +
     "    </div>" +
     noteSection +
@@ -1083,7 +1102,7 @@ function renderEventDetailPage() {
 
   const eventUrlPath = "event.html?id=" + encodeURIComponent(event.id);
   const eventDescription = getSeoDescription(
-    event.title + " with Caltech Book Club on " + formatDateTime(event.dateTime)
+    event.title + " with Caltech Book Club: " + formatEventDateTime(event)
       + (event.location ? " at " + event.location : "")
       + (book ? ". Related book: " + book.title + " by " + book.author + "." : "."),
     "Caltech Book Club event details."
@@ -1093,7 +1112,7 @@ function renderEventDetailPage() {
     description: eventDescription,
     path: eventUrlPath
   });
-  setStructuredData("event-json-ld", {
+  if (!event.ongoing) setStructuredData("event-json-ld", {
     "@context": "https://schema.org",
     "@type": "Event",
     "name": event.title,
