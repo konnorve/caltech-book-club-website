@@ -570,6 +570,26 @@ window.events = [
     note: ""
   },
   {
+    id: "vromans-run-2026-09-09-1830",
+    date: "2026-09-09",
+    time: "18:30",
+    title: "Vroman’s Run",
+    tags: ["Social", "Bookstore"],
+    location: "",
+    note: ""
+  },
+  {
+    id: "house-of-leaves-weekly-2026-09",
+    date: "2026-09-16",
+    time: "",
+    title: "House of Leaves Weekly Meetings",
+    tags: ["Discussion", "Weekly Book"],
+    location: "",
+    ongoing: true,
+    schedule: "Weekly; time and location vary",
+    note: "Specific meeting details are coordinated with the weekly reading group"
+  },
+  {
     id: "the-help-2026-09-24-1800",
     date: "2026-09-24",
     time: "18:00",
@@ -805,7 +825,8 @@ window.BOOKS = [
     tags: ["Weekly"],
     events: [
       "house-of-leaves-2026-08-11-1900",
-      "house-of-leaves-2026-08-18-1900"
+      "house-of-leaves-2026-08-18-1900",
+      "house-of-leaves-weekly-2026-09"
     ],
     shortDescription: "A labyrinthine novel about a house larger on the inside than the outside.",
     description: "A labyrinthine novel about a house larger on the inside than the outside."

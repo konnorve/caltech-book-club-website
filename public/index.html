@@ -15,7 +15,7 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Caltech Book Club">
   <meta name="twitter:description" content="A Caltech community reading group in Pasadena with book discussions, lunches, outings, and events.">
-  <link rel="stylesheet" href="styles.css?v=4">
+  <link rel="stylesheet" href="styles.css?v=9">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -57,15 +57,12 @@
       <h2 id="books-title" class="sr-only">Books</h2>
       <div class="bookshelf-shell">
         <div class="bookshelf-viewport" id="bookshelf-viewport" tabindex="0" aria-label="Scrollable two-row bookshelf">
-          <div class="bookshelf-backdrop" aria-hidden="true"></div>
-          <div class="bookshelf-plane" aria-hidden="true"></div>
-          <div class="bookshelf-lip" aria-hidden="true"></div>
           <div class="shelf-track" id="bookshelf-track"></div>
         </div>
       </div>
     </section>
 
-    <section class="timeline-section" aria-labelledby="timeline-title">
+    <section id="events" class="timeline-section" aria-labelledby="timeline-title">
       <div class="container">
         <h2 id="timeline-title" class="timeline-title">Events Timeline</h2>
         <div id="timeline-filters" class="timeline-filters"></div>
@@ -110,12 +107,30 @@
           <article class="info-card">
             <h3>Other events</h3>
             <ul class="info-list">
-			  <li>Book store runs</li>
+              <li>Book store runs</li>
               <li>Casual lunch and read</li>
               <li>Book crafts</li>
-			  <li>Author talks</li>
-			  <li>Book swap</li>
-			  <li>Little free library tour</li>
+              <li>Author talks</li>
+              <li>Book swap</li>
+              <li>Little free library tour</li>
+            </ul>
+          </article>
+          <article class="info-card">
+            <h3>Expectations</h3>
+            <ul class="info-list">
+              <li>Opt in or out of individual books</li>
+              <li>Read to the agreed page, but not beyond</li>
+              <li>Try to attend all meetings for a book you start</li>
+              <li><a href="guidelines.html#expectations">Full expectations</a></li>
+            </ul>
+          </article>
+          <article class="info-card">
+            <h3>Discussion guidelines</h3>
+            <ul class="info-list">
+              <li>Don’t talk over people</li>
+              <li>Be kind and open-minded</li>
+              <li>Respect others’ privacy</li>
+              <li><a href="guidelines.html#discussion">Full discussion guidelines</a></li>
             </ul>
           </article>
           <article class="info-card">
@@ -148,7 +163,7 @@
 			  	<li><a href="https://www.goodreads.com/group/show/7262568-caltech-book-club" target="_blank" rel="noopener">Join the Goodreads group</a>.</li>
 			  </ul>
           </article>
-          <article class="info-card">
+          <article id="leadership" class="info-card">
             <h3>Leadership</h3>
             <ul class="info-list">
               <li>Becky Williams, Co-President - <a href="mailto:rjwillia@caltech.edu">rjwillia@caltech.edu</a></li>
@@ -161,7 +176,27 @@
     </section>
   </main>
 
-  <script src="books-data.js" defer></script>
-  <script src="bookshelf.js" defer></script>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><a class="footer-brand" href="index.html">Caltech Book Club</a></div>
+      <nav aria-label="Site map"><h2>Explore</h2><ul>
+        <li><a href="index.html#books">Bookshelf</a></li>
+        <li><a href="index.html#events">Events timeline</a></li>
+        <li><a href="announcements.html">Announcements</a></li>
+      </ul></nav>
+      <nav aria-label="Club information"><h2>Our club</h2><ul>
+        <li><a href="index.html#info">About &amp; joining</a></li>
+        <li><a href="guidelines.html">Expectations &amp; discussion guidelines</a></li>
+        <li><a href="index.html#leadership">Contact the officers</a></li>
+      </ul></nav>
+      <nav aria-label="Community links"><h2>Stay connected</h2><ul>
+        <li><a href="https://lists.caltech.edu/postorius/lists/book-club.caltech.edu/">Mailing list</a></li>
+        <li><a href="https://www.goodreads.com/group/show/7262568-caltech-book-club">Goodreads group</a></li>
+      </ul></nav>
+    </div>
+  </footer>
+
+  <script src="books-data.js?v=2" defer></script>
+  <script src="bookshelf.js?v=2" defer></script>
 </body>
 </html>

@@ -2,3 +2,4 @@
 analysis_output/
 __pycache__/
 *.pyc
+dist/

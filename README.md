@@ -1,10 +1,14 @@
 # Caltech Book Club Website
 
-Small static website with no build step.
+Small static website with no build step. Website files live in `public/`; repository-only documents live in `governance/`.
 
 ## Files that run the site
 
-- `index.html`: home page with the bookshelf.
+Paths below are relative to `public/`, except the governance document.
+
+- `index.html`: home page with the bookshelf and short participation summaries.
+- `guidelines.html`: full expectations and discussion guidelines.
+- `governance/Draft-Constitution.pdf`: original draft, repository-only; outside the published website directory.
 - `book.html`: detail page for one book.
 - `styles.css`: all site styles.
 - `books-data.js`: all editable content for books and meetings.
@@ -44,9 +48,7 @@ In `meetings`, use an object form:
 
 ## Simple local preview
 
-Open `index.html` in a browser, or run:
-
-`python3 -m http.server`
+Run `python3 -m http.server --directory public`
 
 Then visit `http://localhost:8000`.
 
@@ -55,3 +57,13 @@ Then visit `http://localhost:8000`.
 Run the status checks with:
 
 `node tests/book-status.test.js`
+
+## Deployment
+
+No build step is needed. Keep the Cloudflare Pages build command as `exit 0` (if changed to the previous build script, change it back). `wrangler.toml` sets the output directory to the committed `public/` folder. The project root stays unchanged.
+
+The constitution remains in `governance/`, outside the published folder. Do not configure deployment to serve the repository root. It remains accessible in this public GitHub repository.
+
+## Updating member guidance
+
+Edit the full wording in `guidelines.html` and keep the two short homepage summaries in sync. The shared footer is static HTML on each of the five pages so navigation also works without JavaScript; update all five copies together.
