@@ -932,3 +932,6 @@ body[data-header-font="modern"] {
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 1.5rem; }
 }
 @media (max-width: 380px) { .footer-grid { grid-template-columns: 1fr; } }
+
+#discussion.info-card h3 { margin: 1rem 0 .45rem; }
+#discussion.info-card > p { margin-top: 1rem; }
