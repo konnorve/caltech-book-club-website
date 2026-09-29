@@ -1,0 +1,329 @@
+person,title,author,isbn13,source,note,catalog_title,work_id,match,group_id
+Serena,Intermezzo,Sally Rooney,,book_list_rearranged(1).txt,,Intermezzo,/works/OL37949460W,title_author,/works/OL37949460W
+Serena,Colorless Tsukuru Tazaki and His Years of Pilgrimage,Haruki Murakami,,book_list_rearranged(1).txt,,,,unresolved,title:colorless tsukuru tazaki and his years of pilgrimage
+Serena,The Briefcase,Hiromi Kawakami,,book_list_rearranged(1).txt,,,,unresolved,title:briefcase
+Serena,Strangers,Taichi Yamada,,book_list_rearranged(1).txt,,Strangers,/works/OL5769591W,title_author,/works/OL5769591W
+Serena,The Sailor Who Fell from Grace with the Sea,Yukio Mishima,,book_list_rearranged(1).txt,,The Sailor Who Fell from Grace with the Sea,/works/OL45262818W,title_author,/works/OL45262818W
+Serena,The Story of a Body,Daniel Pennac,,book_list_rearranged(1).txt,,,,unresolved,title:story of a body
+Serena,Ties (Lacci),Domenico Starnone,,book_list_rearranged(1).txt,,,,unresolved,title:ties lacci
+Serena,Near to the Wild Heart,Clarice Lispector,,book_list_rearranged(1).txt,,,/works/OL1002139W,same_title_as_catalog_match,/works/OL1002139W
+Serena,Paradise Rot,Jenny Hval,,book_list_rearranged(1).txt,,Paradise Rot,/works/OL19764418W,title_author,/works/OL19764418W
+Serena,Babel: Or the Necessity of Violence,R. F. Kuang,,book_list_rearranged(1).txt,,,,unresolved,title:babel or the necessity of violence
+Serena,Dreams of Trespass: Tales of a Harem Girlhood,Fatema Mernissi,,book_list_rearranged(1).txt,,,,unresolved,title:dreams of trespass tales of a harem girlhood
+Serena,To Live,Yu Hua,,book_list_rearranged(1).txt,,,,unresolved,title:to live
+Serena,The Year of the Death of Ricardo Reis,José Saramago,,book_list_rearranged(1).txt,,The year of the death of Ricardo Reis,/works/OL17692777W,title_author,/works/OL17692777W
+Serena,"Tomorrow, and Tomorrow, and Tomorrow",Gabrielle Zevin,,book_list_rearranged(1).txt,,"Tomorrow, and Tomorrow, and Tomorrow",/works/OL26004554W,title_author,/works/OL26004554W
+Serena,Tuesdays with Morrie,Mitch Albom,,book_list_rearranged(1).txt,,Tuesdays with Morrie,/works/OL1822313W,title_author,/works/OL1822313W
+Serena,Tattoo,Earl Thompson,,book_list_rearranged(1).txt,,Tattoo,/works/OL6090876W,title_author,/works/OL6090876W
+Serena,Come Closer,Sara Gran,,book_list_rearranged(1).txt,,Come Closer,/works/OL5850729W,title_author,/works/OL5850729W
+Serena,Tender Is the Flesh,Agustina Bazterrica,,book_list_rearranged(1).txt,,,,unresolved,title:tender is the flesh
+Serena,The Trial,Franz Kafka,,book_list_rearranged(1).txt,,,,unresolved,title:trial
+Serena,The Lottery,Shirley Jackson,,book_list_rearranged(1).txt,,The Lottery,/works/OL3171085W,title_author,/works/OL3171085W
+Serena,Hard-Boiled Wonderland and the End of the World,Haruki Murakami,,book_list_rearranged(1).txt,,,,unresolved,title:hard boiled wonderland and the end of the world
+Serena,The Lime Works,Thomas Bernhard,,book_list_rearranged(1).txt,,The Lime Works,/works/OL14992190W,title_author,/works/OL14992190W
+Serena,The Eye,Vladimir Nabokov,,book_list_rearranged(1).txt,,,,unresolved,title:eye
+Serena,Disturbance,Thomas Bernhard,,book_list_rearranged(1).txt,,,,unresolved,title:disturbance
+Serena,Steps,Jerzy Kosiński,,book_list_rearranged(1).txt,,Steps,/works/OL104658W,title_author,/works/OL104658W
+Serena,Naked Lunch,William S. Burroughs,,book_list_rearranged(1).txt,,Naked Lunch,/works/OL258134W,title_author,/works/OL258134W
+Serena,Hunger,Choi Jin-young,,book_list_rearranged(1).txt,,,,unresolved,title:hunger
+Serena,My Year of Rest and Relaxation,Ottessa Moshfegh,,book_list_rearranged(1).txt,,My Year of Rest and Relaxation,/works/OL17889978W,title_author,/works/OL17889978W
+Serena,House of Leaves,Mark Z. Danielewski,,book_list_rearranged(1).txt,,House of Leaves,/works/OL32195W,title_author,/works/OL32195W
+Serena,Someday This Pain Will Be Useful to You,Peter Cameron,,book_list_rearranged(1).txt,,Someday This Pain Will Be Useful to You,/works/OL1841423W,title_author,/works/OL1841423W
+Serena,The Transitions,Pajtim Statovci,,book_list_rearranged(1).txt,,,,unresolved,title:transitions
+Serena,God or Space?,Walter Mehrer,,book_list_rearranged(1).txt,,,,unresolved,title:god or space
+Serena,Stoner,John Edward Williams,,book_list_rearranged(1).txt,,Stoner,/works/OL3511459W,title_author,/works/OL3511459W
+Serena,If Cats Disappeared from the World,Genki Kawakami,,book_list_rearranged(1).txt,,,,unresolved,title:if cats disappeared from the world
+Serena,Why Fish Don't Exist,Lulu Miller,,book_list_rearranged(1).txt,,Why Fish Don't Exist,/works/OL20732649W,title_author,/works/OL20732649W
+Serena,Baumgartner,Paul Auster,,book_list_rearranged(1).txt,,Baumgartner,/works/OL35721188W,title_author,/works/OL35721188W
+Serena,Cleopatra and Frankenstein,Coco Mellors,,book_list_rearranged(1).txt,,Cleopatra and Frankenstein,/works/OL25345096W,title_author,/works/OL25345096W
+Serena,Assembly,Natasha Brown,,book_list_rearranged(1).txt,,Assembly,/works/OL24811392W,title_author,/works/OL24811392W
+Serena,Women Who Run with the Wolves,Clarissa Pinkola Estés,,book_list_rearranged(1).txt,,Women Who Run with the Wolves,/works/OL2960639W,title_author,/works/OL2960639W
+Serena,Everything I Know About Love,Dolly Alderton,,book_list_rearranged(1).txt,,Everything I Know About Love,/works/OL20654212W,title_author,/works/OL20654212W
+Serena,Notes on Heartbreak,Annie Lord,,book_list_rearranged(1).txt,,Notes on Heartbreak,/works/OL25814731W,title_author,/works/OL25814731W
+Serena,Alison,Lizzy Stewart,,book_list_rearranged(1).txt,,,,unresolved,title:alison
+Serena,A Room of One's Own,Virginia Woolf,,book_list_rearranged(1).txt,,A Room of One's Own,/works/OL39379W,title_author,/works/OL39379W
+Serena,The Idiot,Elif Batuman,,book_list_rearranged(1).txt,,The Idiot,/works/OL17771503W,title_author,/works/OL17771503W
+Serena,A Little Life,Hanya Yanagihara,,book_list_rearranged(1).txt,,A Little Life,/works/OL17370186W,title_author,/works/OL17370186W
+Serena,Never Let Me Go,Kazuo Ishiguro,,book_list_rearranged(1).txt,,Never Let Me Go,/works/OL59038W,title_author,/works/OL59038W
+Serena,Heaven,Mieko Kawakami,,book_list_rearranged(1).txt,,,,unresolved,title:heaven
+Serena,Giovanni's Room,James Baldwin,,book_list_rearranged(1).txt,,Giovanni's Room,/works/OL228702W,title_author,/works/OL228702W
+Serena,Blue Sisters,Coco Mellors,,book_list_rearranged(1).txt,,Blue Sisters,/works/OL37567597W,title_author,/works/OL37567597W
+Serena,Rebecca,Daphne du Maurier,,book_list_rearranged(1).txt,,Rebecca,/works/OL36633W,title_author,/works/OL36633W
+Serena,The Castle of Otranto,Horace Walpole,,book_list_rearranged(1).txt,,The Castle of Otranto,/works/OL183675W,title_author,/works/OL183675W
+Serena,The Monk,Matthew Lewis,,book_list_rearranged(1).txt,,The monk,/works/OL21407351W,title_author,/works/OL21407351W
+Serena,Interview with the Vampire,Anne Rice,,book_list_rearranged(1).txt,,Interview With the Vampire,/works/OL77826W,title_author,/works/OL77826W
+Serena,The Fall of the House of Usher,Edgar Allan Poe,,book_list_rearranged(1).txt,,The Fall of the House of Usher,/works/OL41078W,title_author,/works/OL41078W
+Serena,The Mysteries of Udolpho,Ann Radcliffe,,book_list_rearranged(1).txt,,The Mysteries of Udolpho,/works/OL695211W,title_author,/works/OL695211W
+Serena,Sharp Objects,Gillian Flynn,,book_list_rearranged(1).txt,,Sharp Objects,/works/OL5842018W,title_author,/works/OL5842018W
+Serena,The Count of Monte Cristo,Alexandre Dumas,,book_list_rearranged(1).txt,,The Count of Monte Cristo,/works/OL43161739W,title_author,/works/OL43161739W
+Serena,Anna Karenina,Leo Tolstoy,,book_list_rearranged(1).txt,,,/works/OL17519279W,same_title_as_catalog_match,/works/OL17519279W
+Serena,The Phantom of the Opera,Gaston Leroux,,book_list_rearranged(1).txt,,Phantom of the Opera,/works/OL29954624W,title_author,/works/OL29954624W
+Serena,The Plague,Albert Camus,,book_list_rearranged(1).txt,,,,unresolved,title:plague
+Serena,The Black Tulip,Alexandre Dumas,,book_list_rearranged(1).txt,,,,unresolved,title:black tulip
+Serena,The Setting Sun,Osamu Dazai,,book_list_rearranged(1).txt,,The Setting Sun,/works/OL31495975W,title_author,/works/OL31495975W
+Serena,Solaris,Stanisław Lem,,book_list_rearranged(1).txt,,Solaris,/works/OL109524W,title_author,/works/OL109524W
+Serena,Suite Française,Irène Némirovsky,,book_list_rearranged(1).txt,,Suite française,/works/OL1308096W,title_author,/works/OL1308096W
+Serena,The Kreutzer Sonata,Leo Tolstoy,,book_list_rearranged(1).txt,,,,unresolved,title:kreutzer sonata
+Serena,First Love,Ivan Turgenev,,book_list_rearranged(1).txt,,First Love,/works/OL28645904W,title_author,/works/OL28645904W
+Serena,The Scarlet Letter,Nathaniel Hawthorne,,book_list_rearranged(1).txt,,The Scarlet Letter,/works/OL455305W,title_author,/works/OL455305W
+Serena,East of Eden,John Steinbeck,,book_list_rearranged(1).txt,,East of Eden,/works/OL23166W,title_author,/works/OL23166W
+Serena,History (La storia),Elsa Morante,,book_list_rearranged(1).txt,,,,unresolved,title:history la storia
+Serena,The Beautiful Summer (Una bella estate),Cesare Pavese,,book_list_rearranged(1).txt,,,,unresolved,title:beautiful summer una bella estate
+Serena,The Child of Pleasure (Il Piacere),Gabriele D'Annunzio,,book_list_rearranged(1).txt,,,,unresolved,title:child of pleasure il piacere
+Serena,Zeno's Conscience (La coscienza di Zeno),Italo Svevo,,book_list_rearranged(1).txt,,,,unresolved,title:zeno s conscience la coscienza di zeno
+Anon 1,Things My Son Needs to Know About the World,Fredrik Backman,,lists(1).rtf,,Things My Son Needs to Know about the World,/works/OL20153588W,title_author,/works/OL20153588W
+Anon 1,Anna Karenina,Lev Tolstoy,,lists(1).rtf,,,/works/OL17519279W,same_title_as_catalog_match,/works/OL17519279W
+Anon 1,My Uncle Oswald,Roald Dahl,,lists(1).rtf,,My Uncle Oswald,/works/OL45871W,title_author,/works/OL45871W
+Anon 1,Odyssey,,,lists(1).rtf,,The Odyssey,/works/OL26446888W,title_only,/works/OL26446888W
+Anon 2,Sound and the Fury,Faulkner,,lists(1).rtf,alternative choices; count at most one for this person,The Sound and the Fury,/works/OL82870W,title_author,/works/OL82870W
+Anon 2,"Absalom, Absalom",Faulkner,,lists(1).rtf,alternative choices; count at most one for this person,"Absalom, Absalom!",/works/OL82928W,title_author,/works/OL82928W
+Anon 2,Dubliners,Joyce,,lists(1).rtf,,Dubliners,/works/OL86320W,title_author,/works/OL86320W
+Anon 2,On the Road,Kerouac,,lists(1).rtf,alternative choices; count at most one for this person,On The Road,/works/OL65906W,title_author,/works/OL65906W
+Anon 2,Dharma Bums,Kerouac,,lists(1).rtf,alternative choices; count at most one for this person,The Dharma Bums,/works/OL65897W,title_author,/works/OL65897W
+Anon 2,Catch 22,Heller,,lists(1).rtf,,Catch-22,/works/OL276798W,title_author,/works/OL276798W
+Anon 2,To the Lighthouse,Woolf,,lists(1).rtf,,To the Lighthouse,/works/OL39396W,title_author,/works/OL39396W
+Anon 2,Lord of the Flies,Golding,,lists(1).rtf,,Lord of the Flies,/works/OL455327W,title_author,/works/OL455327W
+Anon 2,A Clockwork Orange,Burgess,,lists(1).rtf,,A Clockwork Orange,/works/OL261794W,title_author,/works/OL261794W
+Anon 2,Kim,Kipling,,lists(1).rtf,,Kim,/works/OL19908W,title_author,/works/OL19908W
+Anon 2,Lolita,Nabokov,,lists(1).rtf,alternative choices; count at most one for this person,Lolita,/works/OL627084W,title_author,/works/OL627084W
+Anon 2,Pale Fire,Nabokov,,lists(1).rtf,alternative choices; count at most one for this person,Pale Fire,/works/OL627081W,title_author,/works/OL627081W
+Anon 3,How to Rule the World,Theo Baker,,lists(1).rtf,,,,unresolved,title:how to rule the world
+Anon 4,Stoner,John Williams,,lists(1).rtf,,Stoner,/works/OL3511459W,title_author,/works/OL3511459W
+Anon 4,The Haunting of Hill House,Shirley Jackson,,lists(1).rtf,,The Haunting of Hill House,/works/OL3171069W,title_author,/works/OL3171069W
+Anon 4,Mother Mary Comes to Me,Arundhati Roy,,lists(1).rtf,,Mother Mary Comes to Me,/works/OL42542753W,title_author,/works/OL42542753W
+Anon 4,Sula,Toni Morrison,,lists(1).rtf,,Sula,/works/OL50567W,title_author,/works/OL50567W
+Anon 4,Giovanni’s Room,James Baldwin,,lists(1).rtf,,Giovanni's Room,/works/OL228702W,title_author,/works/OL228702W
+Anon 4,The Covenant of Water,Abraham Verghese,,lists(1).rtf,,The Covenant of Water,/works/OL29192912W,title_author,/works/OL29192912W
+Anon 4,The Color of Magic,Terry Pratchett,,lists(1).rtf,,,,unresolved,title:color of magic
+Anon 4,The Heart is a Lonely Hunter,Carson McCullers,,lists(1).rtf,,The Heart is a Lonely Hunter,/works/OL11081469W,title_author,/works/OL11081469W
+Anon 4,The People in the Trees,Hanya Yanagihara,,lists(1).rtf,,The People in the Trees,/works/OL19111131W,title_author,/works/OL19111131W
+Anon 4,Half Broke Horses,Jeanette Walls,,lists(1).rtf,,Half broke horses,/works/OL46759W,title_author,/works/OL46759W
+Anon 4,What We Can Know,Ian McEwan,,lists(1).rtf,,What We Can Know,/works/OL44084313W,title_author,/works/OL44084313W
+Anon 4,The Library at Mt Char,Scott Hawkins,,lists(1).rtf,,,,unresolved,title:library at mt char
+Anon 4,This is How You Lose the Time War,Amal El-Mohtar,,lists(1).rtf,,This is How You Lose the Time War,/works/OL19859295W,title_author,/works/OL19859295W
+Anon 4,Annihilation,Jeff Vandermere,,lists(1).rtf,,,/works/OL17268007W,same_title_as_catalog_match,/works/OL17268007W
+Anon 4,Cloud Cuckoo Land,,,lists(1).rtf,,Cloud Cuckoo Land,/works/OL24164954W,title_only,/works/OL24164954W
+Anon 5,things in nature merely grow,Yiyun Li,,lists(1).rtf,,Things in Nature Merely Grow,/works/OL42429940W,title_author,/works/OL42429940W
+Anon 5,Agua Viva,Clarice Lispector,,lists(1).rtf,,Água viva,/works/OL1002156W,title_author,/works/OL1002156W
+Anon 5,Near to the Wild Heart,Clarice Lispector,,lists(1).rtf,,,/works/OL1002139W,same_title_as_catalog_match,/works/OL1002139W
+Anon 5,The Goldfinch,Donna tartt,,lists(1).rtf,,The Goldfinch,/works/OL16809803W,title_author,/works/OL16809803W
+Anon 5,If Beale Street could talk,james baldwin,,lists(1).rtf,,If Beale Street Could Talk,/works/OL228720W,title_author,/works/OL228720W
+Anon 6,Death With Interruptions,José Saramago,,lists(1).rtf,,Death with interruptions,/works/OL18200468W,title_author,/works/OL18200468W
+Anon 6,Blood Meridian,Cormac McCarthy,,lists(1).rtf,,Blood Meridian,/works/OL40879W,title_author,/works/OL40879W
+Anon 7,Annihilation,Jeff Vandermeer,,lists(1).rtf,,Annihilation,/works/OL17268007W,title_author,/works/OL17268007W
+Anon 7,Cloud Cuckoo Land,Anthony Doerr,,lists(1).rtf,,Cloud Cuckoo Land,/works/OL24164954W,title_author,/works/OL24164954W
+Anon 7,The Thursday Murder Club,,,lists(1).rtf,,The Thursday Murder Club,/works/OL20878311W,title_only,/works/OL20878311W
+Anon 7,The Kite Runner,,,lists(1).rtf,,The Kite Runner,/works/OL5781992W,title_only,/works/OL5781992W
+Anon 7,Flowers for Algernon,,,lists(1).rtf,,Flowers for Algernon,/works/OL515754W,title_only,/works/OL515754W
+Anon 7,Red Rising,,,lists(1).rtf,,Red Rising,/works/OL17076473W,title_only,/works/OL17076473W
+Anon 7,And Then There Were None,,,lists(1).rtf,,And Then There Were None,/works/OL471565W,title_only,/works/OL471565W
+Anon 7,Piranesi,,,lists(1).rtf,,Piranesi,/works/OL20893680W,title_only,/works/OL20893680W
+Anon 7,Slaughterhouse Five,,,lists(1).rtf,,Slaughterhouse-Five,/works/OL98459W,title_only,/works/OL98459W
+Anon 7,The God of the Woods,,,lists(1).rtf,,The God of the Woods,/works/OL37827517W,title_only,/works/OL37827517W
+Konnor,My First Summer in the Sierra,"Muir, John",9780486437354,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,My first summer in the Sierra,/works/OL1618182W,isbn,/works/OL1618182W
+Konnor,The Yosemite,"Muir, John",9781426421457,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,The Yosemite,/works/OL1618177W,isbn,/works/OL1618177W
+Konnor,The Wild Muir: Twenty- Two of John Muir's Greatest Adventures,"Muir, John",9780939666751,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,The wild Muir,/works/OL1618155W,isbn,/works/OL1618155W
+Konnor,Wilderness Essays,"Muir, John",9781423607120,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,Wilderness essays,/works/OL17739668W,isbn,/works/OL17739668W
+Konnor,The Jungle,"Sinclair, Upton",9781884365300,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,The Jungle,/works/OL114967W,isbn,/works/OL114967W
+Konnor,The Ins-N-Outs of In-N- Out Burger: The Inside Story of California's First Drive-Through and How it Became a Beloved Cultural Icon,"Snyder, Lynsi",9781400242993,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,Ins and Outs of In-N-Out,/works/OL34242066W,isbn,/works/OL34242066W
+Konnor,Making Votes Count: Strategic Coordination in the World's Electoral Systems (Political Economy of Institutions and Decisions) (Political Economy of Institutions and Decisions) (Volume 0),"Cox, Gary W.",9780521585279,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,Making votes count,/works/OL3298691W,isbn,/works/OL3298691W
+Konnor,Foe,"Reid, Iain",9781501127427,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,Foe,/works/OL19749336W,isbn,/works/OL19749336W
+Konnor,If We Burn: The Mass Protest Decade and the Missing Revolution,"Bevins, Vincent",9781541788978,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,If We Burn,/works/OL29187700W,isbn,/works/OL29187700W
+Konnor,Think Again: The Power of Knowing What You Don't Know,"Grant, Adam M.",9781984878106,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,Think Again,/works/OL22484556W,isbn,/works/OL22484556W
+Konnor,Eichmann in Jerusalem: A Report on the Banality of Evil,"Arendt, Hannah",,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,,,unresolved,title:eichmann in jerusalem a report on the banality of evil
+Konnor,And Then There Were None,"Christie, Agatha",9780312330873,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,And Then There Were None,/works/OL471565W,isbn,/works/OL471565W
+Konnor,"The Mirror Crack'd From Side to Side (Miss Marple, #8)","Christie, Agatha",9780007120987,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,The Mirror Crack'd from Side to Side,/works/OL471990W,isbn,/works/OL471990W
+Konnor,The God of the Woods,"Moore, Liz",,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,The God of the Woods,/works/OL37827517W,title_author,/works/OL37827517W
+Konnor,Hello Beautiful,"Napolitano, Ann",,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,Hello Beautiful,/works/OL28723763W,title_author,/works/OL28723763W
+Konnor,Evicted: Poverty and Profit in the American City,"Desmond, Matthew",9780553447439,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,Evicted,/works/OL17828326W,isbn,/works/OL17828326W
+Konnor,"Poverty, by America","Desmond,",9780593239919,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,"Poverty, by America",/works/OL28357053W,isbn,/works/OL28357053W
+Konnor,"Why Fish Don’t Exist: A Story of Loss, Love, and the Hidden Order of Life","Miller, Lulu",,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,,,unresolved,title:why fish don t exist a story of loss love and the hidden order of life
+Konnor,Blindness,"Saramago, José",,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,,,unresolved,title:blindness
+Konnor,A Thousand Splendid Suns,"Hosseini, Khaled",9781594489501,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,A Thousand Splendid Suns,/works/OL5782000W,isbn,/works/OL5782000W
+Konnor,The Checklist Manifesto: How to Get Things Right,"Gawande, Atul",9780805091748,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,The Checklist Manifesto,/works/OL15436462W,isbn,/works/OL15436462W
+Konnor,Our Town,"Wilder, Thornton",9780060512637,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,Our town,/works/OL482841W,isbn,/works/OL482841W
+Konnor,The Banshees of Inisherin,"McDonagh, Martin",9780571381708,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,Banshees of Inisherin,/works/OL29046544W,isbn,/works/OL29046544W
+Konnor,Good Energy: The Surprising Connection Between Metabolism and Limitless Health,"Means, Casey",9780593712641,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,Good Energy,/works/OL37826565W,isbn,/works/OL37826565W
+Konnor,Bastard Out of Carolina,"Allison, Dorothy",9780452287051,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,Bastarda,/works/OL1810279W,isbn,/works/OL1810279W
+Konnor,The Amazing Adventures of Kavalier & Clay,"Chabon, Michael",9780312282998,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,The Amazing Adventures of Kavalier & Clay,/works/OL119436W,isbn,/works/OL119436W
+Konnor,Vineland,"Pynchon, Thomas",9783499136283,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,Vineland,/works/OL2636662W,isbn,/works/OL2636662W
+Konnor,The Idea Factory: Bell Labs and the Great Age of American Innovation,"Gertner, Jon",9781594203282,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,The Idea Factory,/works/OL16184356W,isbn,/works/OL16184356W
+Konnor,Science: The Endless Frontier,"Bush, Vannevar",9781597400268,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,Science--the endless frontier,/works/OL5098597W,isbn,/works/OL5098597W
+Konnor,"How Big Things Get Done: The Surprising Factors That Determine the Fate of Every Project, from Home Renovations to Space Exploration and Everything In Between","Flyvbjerg, Bent",9780593239513,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,How Big Things Get Done,/works/OL28442176W,isbn,/works/OL28442176W
+Konnor,Recoding America: Why Government Is Failing in the Digital Age and How We Can Do Better,"Pahlka, Jennifer",9781250266774,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,Recoding America,/works/OL28847212W,isbn,/works/OL28847212W
+Konnor,Dog Days,"Labarge, Emily",9798893380477,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,,,unresolved,title:dog days
+Konnor,I Who Have Never Known Men,"Harpman, Jacqueline",9781945492600,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,Moi qui n'ai pas connu les hommes,/works/OL102360W,isbn,/works/OL102360W
+Konnor,Last Rites,"Osbourne, Ozzy",9781538775417,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,Last Rites,/works/OL44553081W,isbn,/works/OL44553081W
+Konnor,Stoner,"Williams, John",9781590171998,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,Stoner,/works/OL3511459W,isbn,/works/OL3511459W
+Konnor,Regime Change: Inside the Imperial Presidency of Donald Trump,"Haberman, Maggie",9781668067246,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,Regime Change,/works/OL45361467W,isbn,/works/OL45361467W
+Konnor,Manufacturing Consent: The Political Economy of the Mass Media,"Herman, Edward S.",9780375714498,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,Manufacturing consent,/works/OL31013W,isbn,/works/OL31013W
+Konnor,The Communist Manifesto,"Marx, Karl",9780140447576,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,Manifest der Kommunistischen Partei,/works/OL629052W,isbn,/works/OL629052W
+Konnor,Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones,"Clear, James",,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,,,unresolved,title:atomic habits an easy proven way to build good habits break bad ones
+Konnor,A World Appears: A Journey into Consciousness,"Pollan, Michael",9781984881991,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,A World Appears,/works/OL45011996W,isbn,/works/OL45011996W
+Konnor,"The Infinity Machine: Demis Hassabis, DeepMind, and the Quest for Superintelligence","Mallaby, Sebastian",9780593831847,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,The Infinity Machine,/works/OL45068494W,isbn,/works/OL45068494W
+Konnor,Impro: Improvisation and the Theatre,"Johnstone, Keith",9780878301171,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,Impro,/works/OL29969W,isbn,/works/OL29969W
+Konnor,The Idiot,"Batuman, Elif",9781594205613,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,The Idiot,/works/OL17771503W,isbn,/works/OL17771503W
+Konnor,Bliss Montage,"Ma, Ling",9780374293512,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,Bliss Montage,/works/OL27640543W,isbn,/works/OL27640543W
+Konnor,Severance,"Ma, Ling",9780374261597,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,Severance,/works/OL19748973W,isbn,/works/OL19748973W
+Konnor,"Say It Well: Find Your Voice, Speak Your Mind, Inspire Any Audience","Szuplat, Terry",9780063337718,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,Say It Well,/works/OL37859079W,isbn,/works/OL37859079W
+Konnor,The Snowball: Warren Buffett and the Business of Life,"Schroeder, Alice",9780553805093,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,The Snowball,/works/OL9450331W,isbn,/works/OL9450331W
+Konnor,"The Daily Stoic: 366 Meditations on Wisdom, Perseverance, and the Art of Living","Holiday, Ryan",,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,,,unresolved,title:daily stoic 366 meditations on wisdom perseverance and the art of living
+Konnor,This Is Your Mind on Plants,"Pollan, Michael",9780593296905,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,This Is Your Mind on Plants,/works/OL23527042W,isbn,/works/OL23527042W
+Konnor,Breakfast of Champions,"Vonnegut Jr., Kurt",9780385334204,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,Breakfast of Champions,/works/OL98488W,isbn,/works/OL98488W
+Konnor,The Sirens of Titan,"Vonnegut Jr., Kurt",,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,The Sirens of Titan,/works/OL98485W,title_author,/works/OL98485W
+Konnor,Galápagos,"Vonnegut Jr., Kurt",9780385333870,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,Galápagos,/works/OL98471W,isbn,/works/OL98471W
+Konnor,Of Mice and Men,"Steinbeck, John",9780142000670,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,Of Mice and Men,/works/OL23204W,isbn,/works/OL23204W
+Konnor,The Pearl,"Steinbeck, John",9780142000694,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,The Pearl,/works/OL7966118W,isbn,/works/OL7966118W
+Konnor,"Cannery Row (Cannery Row, #1)","Steinbeck, John",9780142000687,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,Cannery Row,/works/OL23199W,isbn,/works/OL23199W
+Konnor,Travels with Charley: In Search of America,"Steinbeck, John",9780142000700,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,Travels with Charley,/works/OL23192W,isbn,/works/OL23192W
+Konnor,Tortilla Flat,"Steinbeck, John",9780582461505,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,Tortilla Flat,/works/OL23201W,isbn,/works/OL23201W
+Konnor,The Red Pony,"Steinbeck, John",9780141962825,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,The Red Pony,/works/OL23197W,isbn,/works/OL23197W
+Konnor,The Sun Does Shine: How I Found Life and Freedom on Death Row,"Hinton, Anthony Ray",9781250124715,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,The sun does shine,/works/OL19732648W,isbn,/works/OL19732648W
+Konnor,Wild: From Lost to Found on the Pacific Crest Trail,"Strayed, Cheryl",9780307592736,Konnor Von Emster’s 'to-read' books on Goodreads (160 books) pt 2.pdf,,Wild,/works/OL16142316W,isbn,/works/OL16142316W
+Konnor,1984,"Orwell, George",,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,,/works/OL1168083W,same_title_as_catalog_match,/works/OL1168083W
+Konnor,"Alice's Adventures in Wonderland (Alice's Adventures in Wonderland, #1)","Carroll, Lewis",,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,"Alice's Adventures in Wonderland (Alice's Adventures in Wonderland, #1)",/works/OL40610723W,title_author,/works/OL40610723W
+Konnor,The Selfish Gene,"Dawkins, Richard",9780199291151,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,The Selfish Gene,/works/OL1966488W,isbn,/works/OL1966488W
+Konnor,"Thinking, Fast and Slow","Kahneman, Daniel",9780374275631,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,"Thinking, fast and slow",/works/OL15992072W,isbn,/works/OL15992072W
+Konnor,There There,"Orange, Tommy",,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,There There,/works/OL18143930W,title_author,/works/OL18143930W
+Konnor,Caste: The Origins of Our Discontents,"Wilkerson, Isabel",9780593230251,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,Caste,/works/OL20878310W,isbn,/works/OL20878310W
+Konnor,The Outsiders,"Hinton, S.E.",9780670532575,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,The Outsiders,/works/OL2718328W,isbn,/works/OL2718328W
+Konnor,The Sun Also Rises,"Hemingway, Ernest",,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,The Sun Also Rises,/works/OL62979W,title_author,/works/OL62979W
+Konnor,A Farewell to Arms,"Hemingway, Ernest",9780099910107,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,A Farewell to Arms,/works/OL63072W,isbn,/works/OL63072W
+Konnor,The Portrait of Dorian Gray,"Wilde, Oscar",9785992503692,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,The Picture of Dorian Gray,/works/OL8193416W,isbn,/works/OL8193416W
+Konnor,A Tale of Two Cities,"Dickens, Charles",9780141439600,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,A Tale of Two Cities,/works/OL8193465W,isbn,/works/OL8193465W
+Konnor,Why We're Polarized,"Klein, Ezra",9781476700328,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,Why We're Polarized,/works/OL20648056W,isbn,/works/OL20648056W
+Konnor,A People’s History of the United States: 1492 - Present,"Zinn, Howard",9780060838652,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,A People's History of the United States,/works/OL50283W,isbn,/works/OL50283W
+Konnor,Permission to Feel: The Power of Emotional Intelligence to Achieve Well-Being and Success,"Brackett, Marc",9781250212849,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,Permission to Feel,/works/OL20128926W,isbn,/works/OL20128926W
+Konnor,The Republic,Plato,9780140449143,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,πολιτεία,/works/OL51831W,isbn,/works/OL51831W
+Konnor,How Not to Be Wrong: The Power of Mathematical Thinking,"Ellenberg, Jordan",9781594205224,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,How Not to Be Wrong,/works/OL17062668W,isbn,/works/OL17062668W
+Konnor,Do Androids Dream of Electric Sheep?,"Dick, Philip K.",,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,Do Androids Dream of Electric Sheep?,/works/OL2172356W,title_author,/works/OL2172356W
+Konnor,A Random Walk Down Wall Street: The Time- Tested Strategy for Successful Investing,"Malkiel, Burton G.",9781324002185,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,A Random Walk Down Wall Street,/works/OL21139737W,isbn,/works/OL21139737W
+Konnor,"Power, Sex, Suicide: Mitochondria and the Meaning of Life","Lane, Nick",9780199205646,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,"Power, Sex, Suicide",/works/OL7998481W,isbn,/works/OL7998481W
+Konnor,The Doors of Perception,"Huxley, Aldous",,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,The doors of perception,/works/OL64441W,title_author,/works/OL64441W
+Konnor,The Intelligent Investor,"Graham, Benjamin",9780060555665,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,The Intelligent Investor,/works/OL273184W,isbn,/works/OL273184W
+Konnor,Renegades: Born in the USA,"Obama, Barack",9780593236314,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,Renegades,/works/OL24760401W,isbn,/works/OL24760401W
+Konnor,How to Be an Antiracist,"Kendi, Ibram X.",9780525509288,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,How to Be an Antiracist,/works/OL20086330W,isbn,/works/OL20086330W
+Konnor,The Emperor of All Maladies: A Biography of Cancer,"Mukherjee, Siddhartha",,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,,,unresolved,title:emperor of all maladies a biography of cancer
+Konnor,On Tyranny: Twenty Lessons from the Twentieth Century,"Snyder, Timothy",9780804190114,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,On Tyranny,/works/OL17710110W,isbn,/works/OL17710110W
+Konnor,The Art of Racing in the Rain,"Stein, Garth",9781554681723,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,The Art of Racing in the Rain,/works/OL2756026W,isbn,/works/OL2756026W
+Konnor,"Red Rising (Red Rising Saga, #1)","Brown, Pierce",,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,,/works/OL17076473W,same_title_as_catalog_match,/works/OL17076473W
+Konnor,The Elementary Particles,"Houellebecq, Michel",9780375727016,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,Les particules élémentaires,/works/OL2286729W,isbn,/works/OL2286729W
+Konnor,Journey to the End of the Night,"Céline, Louis- Ferdinand",9780811216548,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,Voyage au bout de la nuit,/works/OL1287903W,isbn,/works/OL1287903W
+Konnor,"When the Tempest Gathers: From Mogadishu to the Fight Against ISIS, a Marine Special Operations Commander at War","Milburn, Andrew",9781526750556,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,When the Tempest Gathers,/works/OL21909046W,isbn,/works/OL21909046W
+Konnor,"Tuesdays with Morrie: An Old Man, a Young Man, and Life's Greatest Lesson","Albom, Mitch",,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,,,unresolved,title:tuesdays with morrie an old man a young man and life s greatest lesson
+Konnor,The Accidental Superpower: The Next Generation of American Preeminence and the Coming Global Disorder,"Zeihan, Peter",9781455583669,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,The accidental superpower,/works/OL19989832W,isbn,/works/OL19989832W
+Konnor,Cat’s Cradle,"Vonnegut Jr., Kurt",,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,Cat's Cradle,/works/OL98454W,title_author,/works/OL98454W
+Konnor,The Inconvenient Indian: A Curious Account of Native People in North America,"King, Thomas",9780385674058,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,,,unresolved,title:inconvenient indian a curious account of native people in north america
+Konnor,"General Theory of Employment, Interest, and Money","Keynes, John Maynard",9781573921398,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,"The general theory of employment, interest and money",/works/OL35951W,isbn,/works/OL35951W
+Konnor,"The Exceptions: Nancy Hopkins, MIT, and the Fight for Women in Science","Zernike, Kate",9781982131838,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,The Exceptions,/works/OL28402636W,isbn,/works/OL28402636W
+Konnor,A Man Called Ove,"Backman, Fredrik",9781476738017,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,En man som heter Ove,/works/OL16793865W,isbn,/works/OL16793865W
+Konnor,In Defense of Food: An Eater's Manifesto,"Pollan, Michael",9781594201455,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,In Defense of Food,/works/OL3296482W,isbn,/works/OL3296482W
+Konnor,Lifespan: Why We Age―and Why We Don't Have To,"Sinclair, David",9781501191978,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,Lifespan,/works/OL20128048W,isbn,/works/OL20128048W
+Konnor,The Bright Hour: A Memoir of Living and Dying,"Riggs, Nina",9781501169359,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,The Bright Hour,/works/OL19721897W,isbn,/works/OL19721897W
+Konnor,The Poisonwood Bible,"Kingsolver, Barbara",9780060786502,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,The Poisonwood Bible,/works/OL1846845W,isbn,/works/OL1846845W
+Konnor,Into the Wild,"Krakauer, Jon",9780385486804,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,Into the Wild,/works/OL1974546W,isbn,/works/OL1974546W
+Konnor,The Covenant of Water,"Verghese, Abraham",9780802162175,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,The Covenant of Water,/works/OL29192912W,isbn,/works/OL29192912W
+Konnor,Cu#ng for Stone,"Verghese, Abraham",9780375414497,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,Cutting for Stone,/works/OL14933038W,isbn,/works/OL14933038W
+Konnor,Why I Am Not a Christian and Other Essays on Religion and Related Subjects,"Russell, Bertrand",9780671203238,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,Why I am not a Christian,/works/OL1088563W,isbn,/works/OL1088563W
+Konnor,All I Really Need to Know I Learned in Kindergarten,"Fulghum, Robert",9780345466396,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,All I Ever Really Needed to Know I Learned in Kindergarten,/works/OL10332831W,isbn,/works/OL10332831W
+Konnor,Great Circle,"Shipstead, Maggie",,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,Great Circle,/works/OL24145606W,title_author,/works/OL24145606W
+Konnor,Never Cry Wolf: The Amazing True Story of Life Among Arctic Wolves,"Mowat, Farley",9780316881791,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,Never Cry Wolf,/works/OL479072W,isbn,/works/OL479072W
+Konnor,Long Way Round: Chasing Shadows Across the World,"McGregor, Ewan",9780743499330,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,Long way round,/works/OL5760039W,isbn,/works/OL5760039W
+Konnor,Love in the Time of Cholera,"García Márquez, Gabriel",9781400034680,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,El amor en los tiempos del cólera,/works/OL274518W,isbn,/works/OL274518W
+Konnor,The Serengeti Rules: The Quest to Discover How Life Works and Why It Matters,"Carroll, Sean B.",9780691167428,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,The Serengeti rules,/works/OL20022363W,isbn,/works/OL20022363W
+Konnor,The Triumph of Injustice: How the Rich Dodge Taxes and How to Make Them Pay,"Saez, Emmanuel",9781324002727,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,Triumph of Injustice,/works/OL21652953W,isbn,/works/OL21652953W
+Konnor,"The Art of Focus: Find Meaning, Reinvent Yourself and Create Your Ideal Future","Koe, Dan",,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,,,unresolved,title:art of focus find meaning reinvent yourself and create your ideal future
+Konnor,The Color Purple,"Walker, Alice",9780143135692,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,The Color Purple,/works/OL273644W,isbn,/works/OL273644W
+Konnor,"I Know Why the Caged Bird Sings (Maya Angelou's Autobiography, #1)","Angelou, Maya",9780553279375,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,I Know Why the Caged Bird Sings,/works/OL80021W,isbn,/works/OL80021W
+Konnor,The Princess Bride,"Goldman, William",9780345418265,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,The Princess Bride,/works/OL486967W,isbn,/works/OL486967W
+Konnor,Atlas Shrugged,"Rand, Ayn",9780452011878,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,Atlas Shrugged (Centennial Ed. HC),/works/OL731644W,isbn,/works/OL731644W
+Konnor,"Walden or, Life in the Woods","Thoreau, Henry David",,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,"Walden; Or, Life in the Woods",/works/OL44142169W,title_author,/works/OL44142169W
+Konnor,Don Quixote,"Cervantes Saavedra,",,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,,,unresolved,title:don quixote
+Konnor,Invisible Man,"Ellison, Ralph",,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,Invisible Man,/works/OL495470W,title_author,/works/OL495470W
+Konnor,A Passage to India,"Forster, E.M.",9780141441160,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,A Passage to India,/works/OL88809W,isbn,/works/OL88809W
+Konnor,The Grapes of Wrath,"Steinbeck, John",9780670016907,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,The Grapes of Wrath,/works/OL23205W,isbn,/works/OL23205W
+Konnor,The Art of War,Sun Tzu,,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,The Art of War,/works/OL244537W,title_author,/works/OL244537W
+Konnor,A Little Life,"Yanagihara, Hanya",9780385539258,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,A Little Life,/works/OL17370186W,isbn,/works/OL17370186W
+Konnor,"Entangled Life: How Fungi Make Our Worlds, Change Our Minds & Shape Our Futures","Sheldrake, Merlin",9780525510314,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,Entangled Life,/works/OL20758206W,isbn,/works/OL20758206W
+Konnor,When You're Food: Raw: A Fighter’s View of Predatory Aggression: The Forever Autumn Press Edition,"Lafond, James",9781530215836,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,When You're Food : Raw : A Fighter's View of Predatory Aggression,/works/OL40422939W,isbn,/works/OL40422939W
+Konnor,Get Out the Voteti: How to Increase Voter Turnout,"Green, Donald P.",9780815732693,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,Get out the vote!,/works/OL18168037W,isbn,/works/OL18168037W
+Konnor,"Troubled: A Memoir of Foster Care, Family, and Social Class","Henderson, Rob",9781982168551,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,Troubled,/works/OL37612351W,isbn,/works/OL37612351W
+Konnor,Understanding Power: The Indispensable Chomsky,"Chomsky, Noam",9781565847033,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,Understanding Power,/works/OL71716W,isbn,/works/OL71716W
+Konnor,On Palestine,"Chomsky, Noam",9781608464708,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,On Palestine,/works/OL20494296W,isbn,/works/OL20494296W
+Konnor,Requiem for the American Dream: The 10 Principles of Concentration of Wealth & Power,"Chomsky, Noam",,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,,,unresolved,title:requiem for the american dream the 10 principles of concentration of wealth power
+Konnor,Civil Disobedience and Other Essays,"Thoreau, Henry David",9781420925227,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,Civil Disobedience And Other Essays the Collected Essays of Henry David Thoreau,/works/OL15032538W,isbn,/works/OL15032538W
+Konnor,The Trinity of Fundamentals,"Rafeedie, Wisam",9798988260219,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,al- Aqānīm al-thalāthah,/works/OL12627441W,isbn,/works/OL12627441W
+Konnor,The Righteous Mind: Why Good People Are Divided by Politics and Religion,"Haidt, Jonathan",,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,,,unresolved,title:righteous mind why good people are divided by politics and religion
+Konnor,The Prophet,"Gibran, Kahlil",9780001000391,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,The Prophet,/works/OL318900W,isbn,/works/OL318900W
+Konnor,Dracula,"Stoker, Bram",9780393970128,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,Dracula,/works/OL85892W,isbn,/works/OL85892W
+Konnor,The Iliad / The Odyssey,Homer,9780147712554,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,Iliad and Odyssey boxed set,/works/OL15103313W,isbn,/works/OL15103313W
+Konnor,A Christmas Carol,"Dickens, Charles",9781561797462,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,A Christmas Carol,/works/OL32466W,isbn,/works/OL32466W
+Konnor,Treasure Island,"Stevenson, Robert",9780753453803,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,Treasure Island,/works/OL24034W,isbn,/works/OL24034W
+Konnor,The Adventures of Tom Sawyer,"Twain, Mark",9780143039563,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,The Adventures of Tom Sawyer,/works/OL53919W,isbn,/works/OL53919W
+Konnor,Wuthering Heights,"Brontë, Emily",,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,Wuthering Heights,/works/OL21177W,title_author,/works/OL21177W
+Konnor,Great Expectations,"Dickens, Charles",9780192833594,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,Great Expectations,/works/OL8721462W,isbn,/works/OL8721462W
+Konnor,Robinson Crusoe,"Defoe, Daniel",,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,Robinson Crusoe,/works/OL45089W,title_author,/works/OL45089W
+Konnor,Oliver Twist,"Dickens, Charles",,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,Oliver Twist,/works/OL8193478W,title_author,/works/OL8193478W
+Konnor,David Copperfield,"Dickens, Charles",,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,David Copperfield,/works/OL8662242W,title_author,/works/OL8662242W
+Konnor,War and Peace,"Tolstoy, Leo",9780192833983,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,War and Peace,/works/OL267171W,isbn,/works/OL267171W
+Konnor,Heart of Darkness,"Conrad, Joseph",9781892295491,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,Heart of Darkness,/works/OL38663W,isbn,/works/OL38663W
+Konnor,The Call of the Wild,"London, Jack",,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,The Call of the Wild,/works/OL14942956W,title_author,/works/OL14942956W
+Konnor,Uncle Tom’s Cabin,"Stowe, Harriet",,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,Uncle Tom's Cabin,/works/OL152161W,title_author,/works/OL152161W
+Konnor,The Divine Comedy: Inferno - Purgatorio - Paradiso,Dante Alighieri,9780679433132,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,La Divina Commedia,/works/OL93082W,isbn,/works/OL93082W
+Konnor,The Epic of Gilgamesh,Unknown,9780141026282,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,The Epic of Gilgamesh,/works/OL14908074W,isbn,/works/OL14908074W
+Konnor,Mrs. Dalloway,"Woolf, Virginia",9780151009985,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,Mrs. Dalloway,/works/OL39349W,isbn,/works/OL39349W
+Konnor,Aesop’s Fables,Aesop,9780192840509,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,Aesop's fables,/works/OL18980010W,isbn,/works/OL18980010W
+Konnor,Twelve Years a Slave,"Northup, Solomon",9780989794800,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,Twelve years a slave,/works/OL78871W,isbn,/works/OL78871W
+Konnor,Narrative of the Life of Frederick Douglass,"Douglass, Frederick",9781580495769,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,Narrative of the life of Frederick Douglass,/works/OL69178W,isbn,/works/OL69178W
+Konnor,The Complete Sherlock Holmes,"Doyle, Arthur Conan",,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,The Complete Sherlock Holmes,/works/OL45362891W,title_author,/works/OL45362891W
+Konnor,Common Sense,"Paine, Thomas",9780143036258,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,Common Sense,/works/OL60358W,isbn,/works/OL60358W
+Konnor,Meditations,Marcus Aurelius,9780140449334,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,Meditations,/works/OL1317211W,isbn,/works/OL1317211W
+Konnor,The Diary of a Young Girl,"Frank, Anne",,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,The diary of a young girl,/works/OL2948954W,title_author,/works/OL2948954W
+Konnor,The Federalist Papers,"Hamilton, Alexander",9781542099424,Konnor Von Emster’s 'to-read' books on Goodreads (160 books).pdf,,,,unresolved,title:federalist papers
+Meryl,The Inner Game of Tennis: The Classic Guide to the Mental Side of Peak Performance,"Gallwey, W. Timothy",9780679778318,Meryl’s 'to-read' books on Goodreads (47 books).pdf,,The Inner Game of Tennis,/works/OL2619508W,isbn,/works/OL2619508W
+Meryl,ADHD 2.0: New Science and Essential Strategies for Thriving with Distraction— From Childhood Through Adulthood,"Hallowell, Edward M.",9780399178733,Meryl’s 'to-read' books on Goodreads (47 books).pdf,,ADHD 2. 0,/works/OL21914859W,isbn,/works/OL21914859W
+Meryl,Near to the Wild Heart,"Lispector, Clarice",9780811211406,Meryl’s 'to-read' books on Goodreads (47 books).pdf,,PERTO DO CORAÇÃO SELVAGEM -(EURO 11.47),/works/OL1002139W,isbn,/works/OL1002139W
+Meryl,Água Viva,"Lispector, Clarice",9780811219907,Meryl’s 'to-read' books on Goodreads (47 books).pdf,,Água viva,/works/OL1002156W,isbn,/works/OL1002156W
+Meryl,Probability Theory: The Logic of Science,"Jaynes, E.T.",9780521592710,Meryl’s 'to-read' books on Goodreads (47 books).pdf,,Probability Theory,/works/OL5911565W,isbn,/works/OL5911565W
+Meryl,The Goldfinch,"Tartt, Donna",9780316055437,Meryl’s 'to-read' books on Goodreads (47 books).pdf,,The Goldfinch,/works/OL16809803W,isbn,/works/OL16809803W
+Meryl,"Poverty, by America","Desmond,",9780593239919,Meryl’s 'to-read' books on Goodreads (47 books).pdf,,"Poverty, by America",/works/OL28357053W,isbn,/works/OL28357053W
+Meryl,The Past Is Red,"Valente,",9781250301130,Meryl’s 'to-read' books on Goodreads (47 books).pdf,,The Past Is Red,/works/OL22561936W,isbn,/works/OL22561936W
+Meryl,This Side of Paradise,"Fitzgerald, F.",9780684843780,Meryl’s 'to-read' books on Goodreads (47 books).pdf,,This Side of Paradise,/works/OL468488W,isbn,/works/OL468488W
+Meryl,Things in Nature Merely Grow,"Li, Yiyun",9780374617318,Meryl’s 'to-read' books on Goodreads (47 books).pdf,,Things in Nature Merely Grow,/works/OL42429940W,isbn,/works/OL42429940W
+Meryl,Infinite Jest,"Wallace, David",,Meryl’s 'to-read' books on Goodreads (47 books).pdf,,Infinite Jest,/works/OL2943602W,title_author,/works/OL2943602W
+Meryl,Another Country,"Baldwin, James",9780141186375,Meryl’s 'to-read' books on Goodreads (47 books).pdf,,Another Country,/works/OL228715W,isbn,/works/OL228715W
+Meryl,Never Let Me Go,"Ishiguro, Kazuo",9781400078776,Meryl’s 'to-read' books on Goodreads (47 books).pdf,,Never Let Me Go,/works/OL59038W,isbn,/works/OL59038W
+Meryl,The Bell Jar,"Plath, Sylvia",9780060837020,Meryl’s 'to-read' books on Goodreads (47 books).pdf,,The Bell Jar,/works/OL1865528W,isbn,/works/OL1865528W
+Meryl,Anna Karenina,"Tolstoy, Leo",9780345803924,Meryl’s 'to-read' books on Goodreads (47 books).pdf,,Anna Karenina,/works/OL17519279W,isbn,/works/OL17519279W
+Meryl,The Memory Police,"Ogawa, Yōko",9781101870600,Meryl’s 'to-read' books on Goodreads (47 books).pdf,,密やかな結晶,/works/OL11690127W,isbn,/works/OL11690127W
+Meryl,"Dune (Dune, #1)","Herbert, Frank",9780593099322,Meryl’s 'to-read' books on Goodreads (47 books).pdf,,Dune,/works/OL893414W,isbn,/works/OL893414W
+Meryl,Rocannon’s World,"Le Guin, Ursula",9780441732968,Meryl’s 'to-read' books on Goodreads (47 books).pdf,,Rocannon's World,/works/OL59850W,isbn,/works/OL59850W
+Meryl,Sea of Tranquility,"Mandel, Emily St.",9780593321447,Meryl’s 'to-read' books on Goodreads (47 books).pdf,,Sea of Tranquility,/works/OL24731706W,isbn,/works/OL24731706W
+Meryl,"The Three-Body Problem (Remembrance of Earth’s Past, #1)","Liu, Cixin",,Meryl’s 'to-read' books on Goodreads (47 books).pdf,,,,unresolved,title:three body problem
+Meryl,"Foundation (Foundation, #1)","Asimov, Isaac",9780553803716,Meryl’s 'to-read' books on Goodreads (47 books).pdf,,Foundation,/works/OL46125W,isbn,/works/OL46125W
+Meryl,The Selfish Gene,"Dawkins, Richard",9780199291151,Meryl’s 'to-read' books on Goodreads (47 books).pdf,,The Selfish Gene,/works/OL1966488W,isbn,/works/OL1966488W
+Meryl,Crime and Punishment,"Dostoevsky,",,Meryl’s 'to-read' books on Goodreads (47 books).pdf,,,,unresolved,title:crime and punishment
+Meryl,Existentialism is a Humanism,"Sartre, Jean-Paul",9780300115468,Meryl’s 'to-read' books on Goodreads (47 books).pdf,,Existentialism Is a Humanism,/works/OL1161181W,isbn,/works/OL1161181W
+Meryl,Beyond Good and Evil,"Nietzsche,",9780140449235,Meryl’s 'to-read' books on Goodreads (47 books).pdf,,Jenseits von Gut und Böse,/works/OL98174W,isbn,/works/OL98174W
+Meryl,Meditations,Marcus Aurelius,9780140449334,Meryl’s 'to-read' books on Goodreads (47 books).pdf,,Meditations,/works/OL1317211W,isbn,/works/OL1317211W
+Meryl,On Earth We're Briefly Gorgeous,"Vuong, Ocean",9780525562023,Meryl’s 'to-read' books on Goodreads (47 books).pdf,,On Earth We're Briefly Gorgeous,/works/OL20783698W,isbn,/works/OL20783698W
+Meryl,Between the World and Me,"Coates, Ta- Nehisi",,Meryl’s 'to-read' books on Goodreads (47 books).pdf,,Between the World and Me,/works/OL17201654W,title_author,/works/OL17201654W
+Meryl,"Guns, Germs, and Steel: The Fates of Human Societies 約束のネバーランド","Diamond, Jared",9780739467350,Meryl’s 'to-read' books on Goodreads (47 books).pdf,,"Guns, Germs, and Steel",/works/OL276558W,isbn,/works/OL276558W
+Meryl,1 [Yakusoku no Neverland 1],"Shirai, Kaiu",9784088808727,Meryl’s 'to-read' books on Goodreads (47 books).pdf,,約束のネバーランド 1,/works/OL19731688W,isbn,/works/OL19731688W
+Meryl,Yellowface,"Kuang, R.F.",,Meryl’s 'to-read' books on Goodreads (47 books).pdf,,Yellowface,/works/OL29050559W,title_author,/works/OL29050559W
+Meryl,"The Fellowship of the Ring (The Lord of the Rings, #1)","Tolkien, J.R.R.",,Meryl’s 'to-read' books on Goodreads (47 books).pdf,,,,unresolved,title:fellowship of the ring
+Meryl,Pride and Prejudice,"Austen, Jane",,Meryl’s 'to-read' books on Goodreads (47 books).pdf,,Pride and Prejudice,/works/OL66554W,title_author,/works/OL66554W
+Meryl,The Age of Innocence,"Wharton, Edith",9781593081430,Meryl’s 'to-read' books on Goodreads (47 books).pdf,,The Age of Innocence,/works/OL98491W,isbn,/works/OL98491W
+Meryl,Flowers for Algernon,"Keyes, Daniel",9780156030083,Meryl’s 'to-read' books on Goodreads (47 books).pdf,,Flowers for Algernon,/works/OL515754W,isbn,/works/OL515754W
+Meryl,War and Peace,"Tolstoy, Leo",9780192833983,Meryl’s 'to-read' books on Goodreads (47 books).pdf,,War and Peace,/works/OL267171W,isbn,/works/OL267171W
+Meryl,The Grapes of Wrath,"Steinbeck, John",9780670016907,Meryl’s 'to-read' books on Goodreads (47 books).pdf,,The Grapes of Wrath,/works/OL23205W,isbn,/works/OL23205W
+Meryl,The Stranger,"Camus, Albert",,Meryl’s 'to-read' books on Goodreads (47 books).pdf,,,,unresolved,title:stranger
+Meryl,Les Misérables,"Hugo, Victor",9780451525260,Meryl’s 'to-read' books on Goodreads (47 books).pdf,,Les Misérables,/works/OL1063588W,isbn,/works/OL1063588W
+Meryl,The Metamorphosis,"Ka$a, Franz",9780553213690,Meryl’s 'to-read' books on Goodreads (47 books).pdf,,Metamorphosis,/works/OL498556W,isbn,/works/OL498556W
+Meryl,Great Expectations,"Dickens, Charles",9780192833594,Meryl’s 'to-read' books on Goodreads (47 books).pdf,,Great Expectations,/works/OL8721462W,isbn,/works/OL8721462W
+Meryl,Brave New World,"Huxley, Aldous",9780060929879,Meryl’s 'to-read' books on Goodreads (47 books).pdf,,Brave New World,/works/OL64365W,isbn,/works/OL64365W
+Meryl,A Tale of Two Cities,"Dickens, Charles",9780141439600,Meryl’s 'to-read' books on Goodreads (47 books).pdf,,A Tale of Two Cities,/works/OL8193465W,isbn,/works/OL8193465W
+Meryl,The Catcher in the Rye,"Salinger, J.D.",9780316769174,Meryl’s 'to-read' books on Goodreads (47 books).pdf,,The Catcher in the Rye,/works/OL3335245W,isbn,/works/OL3335245W
+Meryl,The Picture of Dorian Gray,"Wilde, Oscar",9780141439570,Meryl’s 'to-read' books on Goodreads (47 books).pdf,,The Picture of Dorian Gray,/works/OL8193416W,isbn,/works/OL8193416W
+Meryl,1984,"Orwell, George",9780452284234,Meryl’s 'to-read' books on Goodreads (47 books).pdf,,Nineteen Eighty-Four,/works/OL1168083W,isbn,/works/OL1168083W
+Meryl,The Outsiders,"Hinton, S.E.",9780142407332,Meryl’s 'to-read' books on Goodreads (47 books).pdf,,The Outsiders,/works/OL2718328W,isbn,/works/OL2718328W

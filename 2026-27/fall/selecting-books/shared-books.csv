@@ -1,0 +1,299 @@
+group_id,title,people,people_count,match
+/works/OL17519279W,Anna Karenina,Anon 1; Meryl; Serena,3,isbn; same_title_as_catalog_match
+/works/OL1002139W,Near to the Wild Heart,Anon 5; Meryl; Serena,3,isbn; same_title_as_catalog_match
+/works/OL3511459W,Stoner,Anon 4; Konnor; Serena,3,isbn; title_author
+/works/OL1168083W,1984,Konnor; Meryl,2,isbn; same_title_as_catalog_match
+/works/OL17370186W,A Little Life,Konnor; Serena,2,isbn; title_author
+/works/OL8193465W,A Tale of Two Cities,Konnor; Meryl,2,isbn
+/works/OL1002156W,Agua Viva,Anon 5; Meryl,2,isbn; title_author
+/works/OL471565W,And Then There Were None,Anon 7; Konnor,2,isbn; title_only
+/works/OL17268007W,Annihilation,Anon 4; Anon 7,2,same_title_as_catalog_match; title_author
+/works/OL24164954W,Cloud Cuckoo Land,Anon 4; Anon 7,2,title_author; title_only
+/works/OL515754W,Flowers for Algernon,Anon 7; Meryl,2,isbn; title_only
+/works/OL228702W,Giovanni's Room,Anon 4; Serena,2,title_author
+/works/OL8721462W,Great Expectations,Konnor; Meryl,2,isbn
+/works/OL1317211W,Meditations,Konnor; Meryl,2,isbn
+/works/OL59038W,Never Let Me Go,Meryl; Serena,2,isbn; title_author
+/works/OL28357053W,"Poverty, by America",Konnor; Meryl,2,isbn
+/works/OL17076473W,Red Rising,Anon 7; Konnor,2,same_title_as_catalog_match; title_only
+/works/OL29192912W,The Covenant of Water,Anon 4; Konnor,2,isbn; title_author
+/works/OL37827517W,The God of the Woods,Anon 7; Konnor,2,title_author; title_only
+/works/OL16809803W,The Goldfinch,Anon 5; Meryl,2,isbn; title_author
+/works/OL23205W,The Grapes of Wrath,Konnor; Meryl,2,isbn
+/works/OL17771503W,The Idiot,Konnor; Serena,2,isbn; title_author
+/works/OL2718328W,The Outsiders,Konnor; Meryl,2,isbn
+/works/OL8193416W,The Portrait of Dorian Gray,Konnor; Meryl,2,isbn
+/works/OL1966488W,The Selfish Gene,Konnor; Meryl,2,isbn
+/works/OL267171W,War and Peace,Konnor; Meryl,2,isbn
+/works/OL42429940W,things in nature merely grow,Anon 5; Meryl,2,isbn; title_author
+/works/OL19731688W,1 [Yakusoku no Neverland 1],Meryl,1,isbn
+/works/OL32466W,A Christmas Carol,Konnor,1,isbn
+/works/OL261794W,A Clockwork Orange,Anon 2,1,title_author
+/works/OL63072W,A Farewell to Arms,Konnor,1,isbn
+/works/OL16793865W,A Man Called Ove,Konnor,1,isbn
+/works/OL88809W,A Passage to India,Konnor,1,isbn
+/works/OL50283W,A People’s History of the United States: 1492 - Present,Konnor,1,isbn
+/works/OL21139737W,A Random Walk Down Wall Street: The Time- Tested Strategy for Successful Investing,Konnor,1,isbn
+/works/OL39379W,A Room of One's Own,Serena,1,title_author
+/works/OL5782000W,A Thousand Splendid Suns,Konnor,1,isbn
+/works/OL45011996W,A World Appears: A Journey into Consciousness,Konnor,1,isbn
+/works/OL21914859W,ADHD 2.0: New Science and Essential Strategies for Thriving with Distraction— From Childhood Through Adulthood,Meryl,1,isbn
+/works/OL82928W,"Absalom, Absalom",Anon 2,1,title_author
+/works/OL18980010W,Aesop’s Fables,Konnor,1,isbn
+/works/OL40610723W,"Alice's Adventures in Wonderland (Alice's Adventures in Wonderland, #1)",Konnor,1,title_author
+title:alison,Alison,Serena,1,unresolved
+/works/OL10332831W,All I Really Need to Know I Learned in Kindergarten,Konnor,1,isbn
+/works/OL228715W,Another Country,Meryl,1,isbn
+/works/OL24811392W,Assembly,Serena,1,title_author
+/works/OL731644W,Atlas Shrugged,Konnor,1,isbn
+title:atomic habits an easy proven way to build good habits break bad ones,Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones,Konnor,1,unresolved
+title:babel or the necessity of violence,Babel: Or the Necessity of Violence,Serena,1,unresolved
+/works/OL1810279W,Bastard Out of Carolina,Konnor,1,isbn
+/works/OL35721188W,Baumgartner,Serena,1,title_author
+/works/OL17201654W,Between the World and Me,Meryl,1,title_author
+/works/OL98174W,Beyond Good and Evil,Meryl,1,isbn
+title:blindness,Blindness,Konnor,1,unresolved
+/works/OL27640543W,Bliss Montage,Konnor,1,isbn
+/works/OL40879W,Blood Meridian,Anon 6,1,title_author
+/works/OL37567597W,Blue Sisters,Serena,1,title_author
+/works/OL64365W,Brave New World,Meryl,1,isbn
+/works/OL98488W,Breakfast of Champions,Konnor,1,isbn
+/works/OL23199W,"Cannery Row (Cannery Row, #1)",Konnor,1,isbn
+/works/OL20878310W,Caste: The Origins of Our Discontents,Konnor,1,isbn
+/works/OL276798W,Catch 22,Anon 2,1,title_author
+/works/OL98454W,Cat’s Cradle,Konnor,1,title_author
+/works/OL15032538W,Civil Disobedience and Other Essays,Konnor,1,isbn
+/works/OL25345096W,Cleopatra and Frankenstein,Serena,1,title_author
+title:colorless tsukuru tazaki and his years of pilgrimage,Colorless Tsukuru Tazaki and His Years of Pilgrimage,Serena,1,unresolved
+/works/OL5850729W,Come Closer,Serena,1,title_author
+/works/OL60358W,Common Sense,Konnor,1,isbn
+title:crime and punishment,Crime and Punishment,Meryl,1,unresolved
+/works/OL14933038W,Cu#ng for Stone,Konnor,1,isbn
+/works/OL8662242W,David Copperfield,Konnor,1,title_author
+/works/OL18200468W,Death With Interruptions,Anon 6,1,title_author
+/works/OL65897W,Dharma Bums,Anon 2,1,title_author
+title:disturbance,Disturbance,Serena,1,unresolved
+/works/OL2172356W,Do Androids Dream of Electric Sheep?,Konnor,1,title_author
+title:dog days,Dog Days,Konnor,1,unresolved
+title:don quixote,Don Quixote,Konnor,1,unresolved
+/works/OL85892W,Dracula,Konnor,1,isbn
+title:dreams of trespass tales of a harem girlhood,Dreams of Trespass: Tales of a Harem Girlhood,Serena,1,unresolved
+/works/OL86320W,Dubliners,Anon 2,1,title_author
+/works/OL893414W,"Dune (Dune, #1)",Meryl,1,isbn
+/works/OL23166W,East of Eden,Serena,1,title_author
+title:eichmann in jerusalem a report on the banality of evil,Eichmann in Jerusalem: A Report on the Banality of Evil,Konnor,1,unresolved
+/works/OL20758206W,"Entangled Life: How Fungi Make Our Worlds, Change Our Minds & Shape Our Futures",Konnor,1,isbn
+/works/OL20654212W,Everything I Know About Love,Serena,1,title_author
+/works/OL17828326W,Evicted: Poverty and Profit in the American City,Konnor,1,isbn
+/works/OL1161181W,Existentialism is a Humanism,Meryl,1,isbn
+/works/OL28645904W,First Love,Serena,1,title_author
+/works/OL19749336W,Foe,Konnor,1,isbn
+/works/OL46125W,"Foundation (Foundation, #1)",Meryl,1,isbn
+/works/OL98471W,Galápagos,Konnor,1,isbn
+/works/OL35951W,"General Theory of Employment, Interest, and Money",Konnor,1,isbn
+/works/OL18168037W,Get Out the Voteti: How to Increase Voter Turnout,Konnor,1,isbn
+title:god or space,God or Space?,Serena,1,unresolved
+/works/OL37826565W,Good Energy: The Surprising Connection Between Metabolism and Limitless Health,Konnor,1,isbn
+/works/OL24145606W,Great Circle,Konnor,1,title_author
+/works/OL276558W,"Guns, Germs, and Steel: The Fates of Human Societies 約束のネバーランド",Meryl,1,isbn
+/works/OL46759W,Half Broke Horses,Anon 4,1,title_author
+title:hard boiled wonderland and the end of the world,Hard-Boiled Wonderland and the End of the World,Serena,1,unresolved
+/works/OL38663W,Heart of Darkness,Konnor,1,isbn
+title:heaven,Heaven,Serena,1,unresolved
+/works/OL28723763W,Hello Beautiful,Konnor,1,title_author
+title:history la storia,History (La storia),Serena,1,unresolved
+/works/OL32195W,House of Leaves,Serena,1,title_author
+/works/OL28442176W,"How Big Things Get Done: The Surprising Factors That Determine the Fate of Every Project, from Home Renovations to Space Exploration and Everything In Between",Konnor,1,isbn
+/works/OL17062668W,How Not to Be Wrong: The Power of Mathematical Thinking,Konnor,1,isbn
+/works/OL20086330W,How to Be an Antiracist,Konnor,1,isbn
+title:how to rule the world,How to Rule the World,Anon 3,1,unresolved
+title:hunger,Hunger,Serena,1,unresolved
+/works/OL80021W,"I Know Why the Caged Bird Sings (Maya Angelou's Autobiography, #1)",Konnor,1,isbn
+/works/OL102360W,I Who Have Never Known Men,Konnor,1,isbn
+/works/OL228720W,If Beale Street could talk,Anon 5,1,title_author
+title:if cats disappeared from the world,If Cats Disappeared from the World,Serena,1,unresolved
+/works/OL29187700W,If We Burn: The Mass Protest Decade and the Missing Revolution,Konnor,1,isbn
+/works/OL29969W,Impro: Improvisation and the Theatre,Konnor,1,isbn
+/works/OL3296482W,In Defense of Food: An Eater's Manifesto,Konnor,1,isbn
+/works/OL2943602W,Infinite Jest,Meryl,1,title_author
+/works/OL37949460W,Intermezzo,Serena,1,title_author
+/works/OL77826W,Interview with the Vampire,Serena,1,title_author
+/works/OL1974546W,Into the Wild,Konnor,1,isbn
+/works/OL495470W,Invisible Man,Konnor,1,title_author
+/works/OL1287903W,Journey to the End of the Night,Konnor,1,isbn
+/works/OL19908W,Kim,Anon 2,1,title_author
+/works/OL44553081W,Last Rites,Konnor,1,isbn
+/works/OL1063588W,Les Misérables,Meryl,1,isbn
+/works/OL20128048W,Lifespan: Why We Age―and Why We Don't Have To,Konnor,1,isbn
+/works/OL627084W,Lolita,Anon 2,1,title_author
+/works/OL5760039W,Long Way Round: Chasing Shadows Across the World,Konnor,1,isbn
+/works/OL455327W,Lord of the Flies,Anon 2,1,title_author
+/works/OL274518W,Love in the Time of Cholera,Konnor,1,isbn
+/works/OL3298691W,Making Votes Count: Strategic Coordination in the World's Electoral Systems (Political Economy of Institutions and Decisions) (Political Economy of Institutions and Decisions) (Volume 0),Konnor,1,isbn
+/works/OL31013W,Manufacturing Consent: The Political Economy of the Mass Media,Konnor,1,isbn
+/works/OL42542753W,Mother Mary Comes to Me,Anon 4,1,title_author
+/works/OL39349W,Mrs. Dalloway,Konnor,1,isbn
+/works/OL1618182W,My First Summer in the Sierra,Konnor,1,isbn
+/works/OL45871W,My Uncle Oswald,Anon 1,1,title_author
+/works/OL17889978W,My Year of Rest and Relaxation,Serena,1,title_author
+/works/OL258134W,Naked Lunch,Serena,1,title_author
+/works/OL69178W,Narrative of the Life of Frederick Douglass,Konnor,1,isbn
+/works/OL479072W,Never Cry Wolf: The Amazing True Story of Life Among Arctic Wolves,Konnor,1,isbn
+/works/OL25814731W,Notes on Heartbreak,Serena,1,title_author
+/works/OL26446888W,Odyssey,Anon 1,1,title_only
+/works/OL23204W,Of Mice and Men,Konnor,1,isbn
+/works/OL8193478W,Oliver Twist,Konnor,1,title_author
+/works/OL20783698W,On Earth We're Briefly Gorgeous,Meryl,1,isbn
+/works/OL20494296W,On Palestine,Konnor,1,isbn
+/works/OL17710110W,On Tyranny: Twenty Lessons from the Twentieth Century,Konnor,1,isbn
+/works/OL65906W,On the Road,Anon 2,1,title_author
+/works/OL482841W,Our Town,Konnor,1,isbn
+/works/OL627081W,Pale Fire,Anon 2,1,title_author
+/works/OL19764418W,Paradise Rot,Serena,1,title_author
+/works/OL20128926W,Permission to Feel: The Power of Emotional Intelligence to Achieve Well-Being and Success,Konnor,1,isbn
+/works/OL20893680W,Piranesi,Anon 7,1,title_only
+/works/OL7998481W,"Power, Sex, Suicide: Mitochondria and the Meaning of Life",Konnor,1,isbn
+/works/OL66554W,Pride and Prejudice,Meryl,1,title_author
+/works/OL5911565W,Probability Theory: The Logic of Science,Meryl,1,isbn
+/works/OL36633W,Rebecca,Serena,1,title_author
+/works/OL28847212W,Recoding America: Why Government Is Failing in the Digital Age and How We Can Do Better,Konnor,1,isbn
+/works/OL45361467W,Regime Change: Inside the Imperial Presidency of Donald Trump,Konnor,1,isbn
+/works/OL24760401W,Renegades: Born in the USA,Konnor,1,isbn
+title:requiem for the american dream the 10 principles of concentration of wealth power,Requiem for the American Dream: The 10 Principles of Concentration of Wealth & Power,Konnor,1,unresolved
+/works/OL45089W,Robinson Crusoe,Konnor,1,title_author
+/works/OL59850W,Rocannon’s World,Meryl,1,isbn
+/works/OL37859079W,"Say It Well: Find Your Voice, Speak Your Mind, Inspire Any Audience",Konnor,1,isbn
+/works/OL5098597W,Science: The Endless Frontier,Konnor,1,isbn
+/works/OL24731706W,Sea of Tranquility,Meryl,1,isbn
+/works/OL19748973W,Severance,Konnor,1,isbn
+/works/OL5842018W,Sharp Objects,Serena,1,title_author
+/works/OL98459W,Slaughterhouse Five,Anon 7,1,title_only
+/works/OL109524W,Solaris,Serena,1,title_author
+/works/OL1841423W,Someday This Pain Will Be Useful to You,Serena,1,title_author
+/works/OL82870W,Sound and the Fury,Anon 2,1,title_author
+/works/OL104658W,Steps,Serena,1,title_author
+/works/OL5769591W,Strangers,Serena,1,title_author
+/works/OL1308096W,Suite Française,Serena,1,title_author
+/works/OL50567W,Sula,Anon 4,1,title_author
+/works/OL6090876W,Tattoo,Serena,1,title_author
+title:tender is the flesh,Tender Is the Flesh,Serena,1,unresolved
+/works/OL19989832W,The Accidental Superpower: The Next Generation of American Preeminence and the Coming Global Disorder,Konnor,1,isbn
+/works/OL53919W,The Adventures of Tom Sawyer,Konnor,1,isbn
+/works/OL98491W,The Age of Innocence,Meryl,1,isbn
+/works/OL119436W,The Amazing Adventures of Kavalier & Clay,Konnor,1,isbn
+title:art of focus find meaning reinvent yourself and create your ideal future,"The Art of Focus: Find Meaning, Reinvent Yourself and Create Your Ideal Future",Konnor,1,unresolved
+/works/OL2756026W,The Art of Racing in the Rain,Konnor,1,isbn
+/works/OL244537W,The Art of War,Konnor,1,title_author
+/works/OL29046544W,The Banshees of Inisherin,Konnor,1,isbn
+title:beautiful summer una bella estate,The Beautiful Summer (Una bella estate),Serena,1,unresolved
+/works/OL1865528W,The Bell Jar,Meryl,1,isbn
+title:black tulip,The Black Tulip,Serena,1,unresolved
+title:briefcase,The Briefcase,Serena,1,unresolved
+/works/OL19721897W,The Bright Hour: A Memoir of Living and Dying,Konnor,1,isbn
+/works/OL14942956W,The Call of the Wild,Konnor,1,title_author
+/works/OL183675W,The Castle of Otranto,Serena,1,title_author
+/works/OL3335245W,The Catcher in the Rye,Meryl,1,isbn
+/works/OL15436462W,The Checklist Manifesto: How to Get Things Right,Konnor,1,isbn
+title:child of pleasure il piacere,The Child of Pleasure (Il Piacere),Serena,1,unresolved
+/works/OL273644W,The Color Purple,Konnor,1,isbn
+title:color of magic,The Color of Magic,Anon 4,1,unresolved
+/works/OL629052W,The Communist Manifesto,Konnor,1,isbn
+/works/OL45362891W,The Complete Sherlock Holmes,Konnor,1,title_author
+/works/OL43161739W,The Count of Monte Cristo,Serena,1,title_author
+title:daily stoic 366 meditations on wisdom perseverance and the art of living,"The Daily Stoic: 366 Meditations on Wisdom, Perseverance, and the Art of Living",Konnor,1,unresolved
+/works/OL2948954W,The Diary of a Young Girl,Konnor,1,title_author
+/works/OL93082W,The Divine Comedy: Inferno - Purgatorio - Paradiso,Konnor,1,isbn
+/works/OL64441W,The Doors of Perception,Konnor,1,title_author
+/works/OL2286729W,The Elementary Particles,Konnor,1,isbn
+title:emperor of all maladies a biography of cancer,The Emperor of All Maladies: A Biography of Cancer,Konnor,1,unresolved
+/works/OL14908074W,The Epic of Gilgamesh,Konnor,1,isbn
+/works/OL28402636W,"The Exceptions: Nancy Hopkins, MIT, and the Fight for Women in Science",Konnor,1,isbn
+title:eye,The Eye,Serena,1,unresolved
+/works/OL41078W,The Fall of the House of Usher,Serena,1,title_author
+title:federalist papers,The Federalist Papers,Konnor,1,unresolved
+title:fellowship of the ring,"The Fellowship of the Ring (The Lord of the Rings, #1)",Meryl,1,unresolved
+/works/OL3171069W,The Haunting of Hill House,Anon 4,1,title_author
+/works/OL11081469W,The Heart is a Lonely Hunter,Anon 4,1,title_author
+/works/OL16184356W,The Idea Factory: Bell Labs and the Great Age of American Innovation,Konnor,1,isbn
+/works/OL15103313W,The Iliad / The Odyssey,Konnor,1,isbn
+title:inconvenient indian a curious account of native people in north america,The Inconvenient Indian: A Curious Account of Native People in North America,Konnor,1,unresolved
+/works/OL45068494W,"The Infinity Machine: Demis Hassabis, DeepMind, and the Quest for Superintelligence",Konnor,1,isbn
+/works/OL2619508W,The Inner Game of Tennis: The Classic Guide to the Mental Side of Peak Performance,Meryl,1,isbn
+/works/OL34242066W,The Ins-N-Outs of In-N- Out Burger: The Inside Story of California's First Drive-Through and How it Became a Beloved Cultural Icon,Konnor,1,isbn
+/works/OL273184W,The Intelligent Investor,Konnor,1,isbn
+/works/OL114967W,The Jungle,Konnor,1,isbn
+/works/OL5781992W,The Kite Runner,Anon 7,1,title_only
+title:kreutzer sonata,The Kreutzer Sonata,Serena,1,unresolved
+title:library at mt char,The Library at Mt Char,Anon 4,1,unresolved
+/works/OL14992190W,The Lime Works,Serena,1,title_author
+/works/OL3171085W,The Lottery,Serena,1,title_author
+/works/OL11690127W,The Memory Police,Meryl,1,isbn
+/works/OL498556W,The Metamorphosis,Meryl,1,isbn
+/works/OL471990W,"The Mirror Crack'd From Side to Side (Miss Marple, #8)",Konnor,1,isbn
+/works/OL21407351W,The Monk,Serena,1,title_author
+/works/OL695211W,The Mysteries of Udolpho,Serena,1,title_author
+/works/OL22561936W,The Past Is Red,Meryl,1,isbn
+/works/OL7966118W,The Pearl,Konnor,1,isbn
+/works/OL19111131W,The People in the Trees,Anon 4,1,title_author
+/works/OL29954624W,The Phantom of the Opera,Serena,1,title_author
+title:plague,The Plague,Serena,1,unresolved
+/works/OL1846845W,The Poisonwood Bible,Konnor,1,isbn
+/works/OL486967W,The Princess Bride,Konnor,1,isbn
+/works/OL318900W,The Prophet,Konnor,1,isbn
+/works/OL23197W,The Red Pony,Konnor,1,isbn
+/works/OL51831W,The Republic,Konnor,1,isbn
+title:righteous mind why good people are divided by politics and religion,The Righteous Mind: Why Good People Are Divided by Politics and Religion,Konnor,1,unresolved
+/works/OL45262818W,The Sailor Who Fell from Grace with the Sea,Serena,1,title_author
+/works/OL455305W,The Scarlet Letter,Serena,1,title_author
+/works/OL20022363W,The Serengeti Rules: The Quest to Discover How Life Works and Why It Matters,Konnor,1,isbn
+/works/OL31495975W,The Setting Sun,Serena,1,title_author
+/works/OL98485W,The Sirens of Titan,Konnor,1,title_author
+/works/OL9450331W,The Snowball: Warren Buffett and the Business of Life,Konnor,1,isbn
+title:story of a body,The Story of a Body,Serena,1,unresolved
+title:stranger,The Stranger,Meryl,1,unresolved
+/works/OL62979W,The Sun Also Rises,Konnor,1,title_author
+/works/OL19732648W,The Sun Does Shine: How I Found Life and Freedom on Death Row,Konnor,1,isbn
+title:three body problem,"The Three-Body Problem (Remembrance of Earth’s Past, #1)",Meryl,1,unresolved
+/works/OL20878311W,The Thursday Murder Club,Anon 7,1,title_only
+title:transitions,The Transitions,Serena,1,unresolved
+title:trial,The Trial,Serena,1,unresolved
+/works/OL12627441W,The Trinity of Fundamentals,Konnor,1,isbn
+/works/OL21652953W,The Triumph of Injustice: How the Rich Dodge Taxes and How to Make Them Pay,Konnor,1,isbn
+/works/OL1618155W,The Wild Muir: Twenty- Two of John Muir's Greatest Adventures,Konnor,1,isbn
+/works/OL17692777W,The Year of the Death of Ricardo Reis,Serena,1,title_author
+/works/OL1618177W,The Yosemite,Konnor,1,isbn
+/works/OL18143930W,There There,Konnor,1,title_author
+/works/OL20153588W,Things My Son Needs to Know About the World,Anon 1,1,title_author
+/works/OL22484556W,Think Again: The Power of Knowing What You Don't Know,Konnor,1,isbn
+/works/OL15992072W,"Thinking, Fast and Slow",Konnor,1,isbn
+/works/OL23527042W,This Is Your Mind on Plants,Konnor,1,isbn
+/works/OL468488W,This Side of Paradise,Meryl,1,isbn
+/works/OL19859295W,This is How You Lose the Time War,Anon 4,1,title_author
+title:ties lacci,Ties (Lacci),Serena,1,unresolved
+title:to live,To Live,Serena,1,unresolved
+/works/OL39396W,To the Lighthouse,Anon 2,1,title_author
+/works/OL26004554W,"Tomorrow, and Tomorrow, and Tomorrow",Serena,1,title_author
+/works/OL23201W,Tortilla Flat,Konnor,1,isbn
+/works/OL23192W,Travels with Charley: In Search of America,Konnor,1,isbn
+/works/OL24034W,Treasure Island,Konnor,1,isbn
+/works/OL37612351W,"Troubled: A Memoir of Foster Care, Family, and Social Class",Konnor,1,isbn
+/works/OL1822313W,Tuesdays with Morrie,Serena,1,title_author
+title:tuesdays with morrie an old man a young man and life s greatest lesson,"Tuesdays with Morrie: An Old Man, a Young Man, and Life's Greatest Lesson",Konnor,1,unresolved
+/works/OL78871W,Twelve Years a Slave,Konnor,1,isbn
+/works/OL152161W,Uncle Tom’s Cabin,Konnor,1,title_author
+/works/OL71716W,Understanding Power: The Indispensable Chomsky,Konnor,1,isbn
+/works/OL2636662W,Vineland,Konnor,1,isbn
+/works/OL44142169W,"Walden or, Life in the Woods",Konnor,1,title_author
+/works/OL44084313W,What We Can Know,Anon 4,1,title_author
+/works/OL40422939W,When You're Food: Raw: A Fighter’s View of Predatory Aggression: The Forever Autumn Press Edition,Konnor,1,isbn
+/works/OL21909046W,"When the Tempest Gathers: From Mogadishu to the Fight Against ISIS, a Marine Special Operations Commander at War",Konnor,1,isbn
+/works/OL20732649W,Why Fish Don't Exist,Serena,1,title_author
+title:why fish don t exist a story of loss love and the hidden order of life,"Why Fish Don’t Exist: A Story of Loss, Love, and the Hidden Order of Life",Konnor,1,unresolved
+/works/OL1088563W,Why I Am Not a Christian and Other Essays on Religion and Related Subjects,Konnor,1,isbn
+/works/OL20648056W,Why We're Polarized,Konnor,1,isbn
+/works/OL16142316W,Wild: From Lost to Found on the Pacific Crest Trail,Konnor,1,isbn
+/works/OL17739668W,Wilderness Essays,Konnor,1,isbn
+/works/OL2960639W,Women Who Run with the Wolves,Serena,1,title_author
+/works/OL21177W,Wuthering Heights,Konnor,1,title_author
+/works/OL29050559W,Yellowface,Meryl,1,title_author
+title:zeno s conscience la coscienza di zeno,Zeno's Conscience (La coscienza di Zeno),Serena,1,unresolved
