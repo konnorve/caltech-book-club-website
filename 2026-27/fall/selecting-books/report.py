@@ -106,8 +106,9 @@ def main():
                .agg(title=("title", "first"),
                     people=("person", lambda s: "; ".join(sorted(set(s)))),
                     people_count=("person", "nunique"),
-                    match=("match", lambda s: "; ".join(sorted(set(s)))))
-               .sort_values(["people_count", "title"], ascending=[False, True]))
+                    match=("match", lambda s: "; ".join(sorted(set(s))))))
+    grouped["sort_title"] = grouped.title.str.replace(r"^The\s+", "", case=False, regex=True).str.casefold()
+    grouped = grouped.sort_values(["people_count", "sort_title"], ascending=[False, True]).drop(columns="sort_title")
     grouped.to_csv(HERE / "shared-books.csv", index=False)
     shared = grouped[grouped.people_count.ge(2)]
     lines = ["# Shared book suggestions", "", f"{len(resolved)} suggestions from {resolved.person.nunique()} people; {len(grouped)} distinct book groups.",

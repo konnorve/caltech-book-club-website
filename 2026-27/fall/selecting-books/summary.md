@@ -16,20 +16,20 @@ Counts are distinct people, not repeated entries. An ‘or’ pair is an alterna
 | And Then There Were None | 2 | Anon 7; Konnor |
 | Annihilation | 2 | Anon 4; Anon 7 |
 | Cloud Cuckoo Land | 2 | Anon 4; Anon 7 |
+| The Covenant of Water | 2 | Anon 4; Konnor |
 | Flowers for Algernon | 2 | Anon 7; Meryl |
 | Giovanni's Room | 2 | Anon 4; Serena |
-| Great Expectations | 2 | Konnor; Meryl |
-| Meditations | 2 | Konnor; Meryl |
-| Never Let Me Go | 2 | Meryl; Serena |
-| Poverty, by America | 2 | Konnor; Meryl |
-| Red Rising | 2 | Anon 7; Konnor |
-| The Covenant of Water | 2 | Anon 4; Konnor |
 | The God of the Woods | 2 | Anon 7; Konnor |
 | The Goldfinch | 2 | Anon 5; Meryl |
 | The Grapes of Wrath | 2 | Konnor; Meryl |
+| Great Expectations | 2 | Konnor; Meryl |
 | The Idiot | 2 | Konnor; Serena |
+| Meditations | 2 | Konnor; Meryl |
+| Never Let Me Go | 2 | Meryl; Serena |
 | The Outsiders | 2 | Konnor; Meryl |
 | The Portrait of Dorian Gray | 2 | Konnor; Meryl |
+| Poverty, by America | 2 | Konnor; Meryl |
+| Red Rising | 2 | Anon 7; Konnor |
 | The Selfish Gene | 2 | Konnor; Meryl |
-| War and Peace | 2 | Konnor; Meryl |
 | things in nature merely grow | 2 | Anon 5; Meryl |
+| War and Peace | 2 | Konnor; Meryl |
