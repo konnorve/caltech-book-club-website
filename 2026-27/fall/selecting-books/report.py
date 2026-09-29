@@ -32,6 +32,21 @@ def normalize(value):
     return value.replace("portrait of dorian gray", "picture of dorian gray")
 
 
+def author_key(author):
+    """A small matching key that handles both 'Last, First' and 'First Last'."""
+    author = author.split(",", 1)[0] if "," in author else author
+    words = normalize(author).split()
+    return words[-1] if words else ""
+
+
+def compact(docs, lookup):
+    """Keep only the catalog fields needed to repeat this particular match."""
+    return [{"key": doc.get("key", ""), "title": doc.get("title", ""),
+             "author_name": doc.get("author_name", []),
+             "isbn": [lookup] if lookup in doc.get("isbn", []) else []}
+            for doc in docs]
+
+
 def search(title, author, isbn):
     params = {"fields": "key,title,author_name,isbn", "limit": 5}
     if isbn:
@@ -42,7 +57,7 @@ def search(title, author, isbn):
     for attempt in range(3):
         try:
             with urlopen(Request(url, headers={"User-Agent": "caltech-book-club/1.0 (book-selection)"}), timeout=15) as response:
-                return json.load(response).get("docs", [])
+                return compact(json.load(response).get("docs", []), isbn)
         except Exception as exc:
             if attempt == 2:
                 print(f"Lookup failed for {title!r}: {exc}", file=sys.stderr)
@@ -71,36 +86,51 @@ def match(row, docs):
 def main():
     rows = pd.read_csv(HERE / "suggestions.csv", dtype=str).fillna("")
     cache = json.loads(CACHE.read_text()) if CACHE.exists() else {}
+    needed = {row.isbn13 or normalize(row.title) + "|" + normalize(row.author)
+              for row in rows.itertuples(index=False)}
+    cache = {key: compact(docs, key) for key, docs in cache.items() if key in needed}
     refresh = "--refresh" in sys.argv
     pending = {}
     for row in rows.itertuples(index=False):
         lookup = row.isbn13 or normalize(row.title) + "|" + normalize(row.author)
         if refresh or lookup not in cache:
             pending[lookup] = (row.title, row.author, row.isbn13)
-    with ThreadPoolExecutor(max_workers=8) as pool:
+    with ThreadPoolExecutor(max_workers=12) as pool:
         jobs = {pool.submit(search, *args): key for key, args in pending.items()}
         for i, job in enumerate(as_completed(jobs), 1):
             cache[jobs[job]] = job.result()
             if i % 20 == 0 or i == len(jobs):
                 CACHE.write_text(json.dumps(cache, ensure_ascii=False) + "\n")
                 print(f"Looked up {i}/{len(jobs)} titles", flush=True)
+    CACHE.write_text(json.dumps(cache, ensure_ascii=False) + "\n")
     results = []
     for row in rows.itertuples(index=False):
         lookup = row.isbn13 or normalize(row.title) + "|" + normalize(row.author)
         results.append(match(row, cache[lookup]))
     resolved = pd.concat([rows, pd.DataFrame(results)], axis=1)
     resolved["title_key"] = resolved.title.map(normalize)
-    known = (resolved.loc[resolved.work_id.ne("")].groupby("title_key").work_id
-             .agg(lambda ids: ids.iloc[0] if ids.nunique() == 1 else ""))
-    missing = resolved.work_id.eq("") & resolved.title_key.map(known).fillna("").ne("")
-    resolved.loc[missing, "work_id"] = resolved.loc[missing, "title_key"].map(known)
-    resolved.loc[missing, "match"] = "same_title_as_catalog_match"
+    resolved["author_key"] = resolved.author.map(author_key)
+    known_pairs = (resolved.loc[resolved.work_id.ne("") & resolved.author_key.ne("")]
+                   .groupby(["title_key", "author_key"]).work_id
+                   .agg(lambda ids: ids.value_counts().index[0]))
+    pair_id = pd.Series([known_pairs.get((title, author), "")
+                         for title, author in zip(resolved.title_key, resolved.author_key)], index=resolved.index)
+    known_titles = (resolved.loc[resolved.work_id.ne("")].groupby("title_key").work_id
+                    .agg(lambda ids: ids.iloc[0] if ids.nunique() == 1 else ""))
+    title_id = resolved.title_key.map(known_titles).fillna("")
+    # A title and author can join edition records that Open Library assigns
+    # different work IDs; an authorless row joins only an unambiguous title.
+    resolved["group_id"] = pair_id.where(pair_id.ne(""), resolved.work_id)
+    authorless = resolved.author_key.eq("") & resolved.group_id.eq("")
+    resolved.loc[authorless, "group_id"] = title_id[authorless]
+    inferred = resolved.work_id.eq("") & resolved.group_id.ne("")
+    resolved.loc[inferred, "match"] = "same_title_as_catalog_match"
     # Catalog IDs are works (all editions). Where metadata is unavailable,
     # title is a conservative, inspectable fallback rather than an invented ISBN.
-    resolved["group_id"] = resolved.work_id.where(resolved.work_id.ne(""),
-                                                   "title:" + resolved.title_key)
+    fallback = "title:" + resolved.title_key + "|author:" + resolved.author_key
+    resolved["group_id"] = resolved.group_id.where(resolved.group_id.ne(""), fallback)
     resolved = resolved.drop_duplicates(["person", "group_id"])
-    resolved = resolved.drop(columns="title_key")
+    resolved = resolved.drop(columns=["title_key", "author_key"])
     resolved.to_csv(HERE / "resolved.csv", index=False)
     grouped = (resolved.groupby("group_id", as_index=False)
                .agg(title=("title", "first"),
