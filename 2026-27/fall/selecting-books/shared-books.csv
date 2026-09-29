@@ -26,7 +26,6 @@ group_id,title,people,people_count,match
 /works/OL1966488W,The Selfish Gene,Konnor; Meryl,2,isbn
 /works/OL267171W,War and Peace,Konnor; Meryl,2,isbn
 /works/OL42429940W,things in nature merely grow,Anon 5; Meryl,2,isbn; title_author
-/works/OL19731688W,1 [Yakusoku no Neverland 1],Meryl,1,isbn
 /works/OL32466W,A Christmas Carol,Konnor,1,isbn
 /works/OL261794W,A Clockwork Orange,Anon 2,1,title_author
 /works/OL63072W,A Farewell to Arms,Konnor,1,isbn
@@ -68,7 +67,7 @@ title:colorless tsukuru tazaki and his years of pilgrimage,Colorless Tsukuru Taz
 /works/OL5850729W,Come Closer,Serena,1,title_author
 /works/OL60358W,Common Sense,Konnor,1,isbn
 title:crime and punishment,Crime and Punishment,Meryl,1,unresolved
-/works/OL14933038W,Cu#ng for Stone,Konnor,1,isbn
+/works/OL14933038W,Cutting for Stone,Konnor,1,isbn
 /works/OL8662242W,David Copperfield,Konnor,1,title_author
 /works/OL18200468W,Death With Interruptions,Anon 6,1,title_author
 /works/OL65897W,Dharma Bums,Anon 2,1,title_author
@@ -91,11 +90,11 @@ title:eichmann in jerusalem a report on the banality of evil,Eichmann in Jerusal
 /works/OL46125W,"Foundation (Foundation, #1)",Meryl,1,isbn
 /works/OL98471W,Galápagos,Konnor,1,isbn
 /works/OL35951W,"General Theory of Employment, Interest, and Money",Konnor,1,isbn
-/works/OL18168037W,Get Out the Voteti: How to Increase Voter Turnout,Konnor,1,isbn
+/works/OL18168037W,Get Out the Vote!: How to Increase Voter Turnout,Konnor,1,isbn
 title:god or space,God or Space?,Serena,1,unresolved
 /works/OL37826565W,Good Energy: The Surprising Connection Between Metabolism and Limitless Health,Konnor,1,isbn
 /works/OL24145606W,Great Circle,Konnor,1,title_author
-/works/OL276558W,"Guns, Germs, and Steel: The Fates of Human Societies 約束のネバーランド",Meryl,1,isbn
+/works/OL276558W,"Guns, Germs, and Steel: The Fates of Human Societies",Meryl,1,isbn
 /works/OL46759W,Half Broke Horses,Anon 4,1,title_author
 title:hard boiled wonderland and the end of the world,Hard-Boiled Wonderland and the End of the World,Serena,1,unresolved
 /works/OL38663W,Heart of Darkness,Konnor,1,isbn
@@ -245,7 +244,7 @@ title:plague,The Plague,Serena,1,unresolved
 title:righteous mind why good people are divided by politics and religion,The Righteous Mind: Why Good People Are Divided by Politics and Religion,Konnor,1,unresolved
 /works/OL45262818W,The Sailor Who Fell from Grace with the Sea,Serena,1,title_author
 /works/OL455305W,The Scarlet Letter,Serena,1,title_author
-/works/OL20022363W,The Serengeti Rules: The Quest to Discover How Life Works and Why It Matters,Konnor,1,isbn
+/works/OL20022363W,The Serenge! Rules: The Quest to Discover How Life Works and Why It Matters,Konnor,1,isbn
 /works/OL31495975W,The Setting Sun,Serena,1,title_author
 /works/OL98485W,The Sirens of Titan,Konnor,1,title_author
 /works/OL9450331W,The Snowball: Warren Buffett and the Business of Life,Konnor,1,isbn
@@ -297,3 +296,4 @@ title:why fish don t exist a story of loss love and the hidden order of life,"Wh
 /works/OL21177W,Wuthering Heights,Konnor,1,title_author
 /works/OL29050559W,Yellowface,Meryl,1,title_author
 title:zeno s conscience la coscienza di zeno,Zeno's Conscience (La coscienza di Zeno),Serena,1,unresolved
+/works/OL19731688W,約束のネバーランド 1 [Yakusoku no Neverland 1],Meryl,1,isbn

@@ -80,10 +80,11 @@ def goodreads(path, person):
     for page in pdfplumber.open(path).pages:
         words = page.extract_words(x_tolerance=1)
         lines = {}
-        for word in words:
-            y = round(word["top"], 1)
+        for word in sorted(words, key=lambda w: w["top"]):
+            y = word["top"]
             if 55 <= y < 770:
-                lines.setdefault(y, []).append(word)
+                nearby = next((top for top in lines if abs(top - y) < 1.5), y)
+                lines.setdefault(nearby, []).append(word)
         for y, words in sorted(lines.items()):
             cols = [[], [], [], []]
             for word in sorted(words, key=lambda w: w["x0"]):
@@ -102,8 +103,9 @@ def goodreads(path, person):
                     rows.append(record)
                 match = re.search(r"\b97[89]\d{10}\b", isbn13)
                 record = [person, title, author, match.group() if match else "", path.name, ""]
-            elif record and title and not title.startswith(("!tle", "1 of", "2 of", "3 of", "4 of", "5 of", "6 of")):
-                record[1] += " " + title
+            elif record and not title.startswith(("!tle", "1 of", "2 of", "3 of", "4 of", "5 of", "6 of")):
+                if title:
+                    record[1] += " " + title
                 if author and not re.match(r"\d{4}$", author):
                     record[2] += " " + author
         # Keep record across page breaks, where a long title can continue.
@@ -118,8 +120,10 @@ def main():
         person = "Meryl" if path.name.startswith("Meryl") else "Konnor"
         rows.extend(goodreads(path, person))
     table = pd.DataFrame(rows, columns=["person", "title", "author", "isbn13", "source", "note"])
-    table["title"] = table.title.str.replace("!", "ti", regex=False).str.replace('"', "tt", regex=False)
+    table["title"] = table.title.str.replace(r"(?<=\w)!(?=\w)", "ti", regex=True).str.replace('"', "tt", regex=False)
     table["author"] = table.author.str.replace("!", "ti", regex=False).str.replace('"', "tt", regex=False)
+    table["title"] = table.title.str.replace("Cu#ng for Stone", "Cutting for Stone", regex=False)
+    table["author"] = table.author.str.replace("Ka$a", "Kafka", regex=False)
     # Duplicate Goodreads pages and duplicate suggestions by the same person count once.
     key = lambda value: re.sub(r"[^\w]+", "", unicodedata.normalize("NFKD", value).casefold())
     table["_key"] = table.title.map(key)
