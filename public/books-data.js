@@ -597,6 +597,54 @@ window.events = [
     tags: ["Discussion", "Monthly Book"],
     location: "Beckman Lawn",
     note: ""
+  },
+  {
+    "id": "anna-karenina-2026-10-20-1900",
+    "date": "2026-10-20",
+    "time": "19:00",
+    "title": "Anna Karenina Meeting",
+    "tags": [
+      "Discussion",
+      "Weekly Book"
+    ],
+    "location": "",
+    "note": "First weekly meeting. Subsequent reading assignments and meeting details will be announced."
+  },
+  {
+    "id": "never-let-me-go-2026-10-29-1900",
+    "date": "2026-10-29",
+    "time": "19:00",
+    "title": "Never Let Me Go Meeting",
+    "tags": [
+      "Discussion",
+      "Monthly Book"
+    ],
+    "location": "",
+    "note": "October monthly book."
+  },
+  {
+    "id": "the-sound-and-the-fury-2026-11-26-1900",
+    "date": "2026-11-26",
+    "time": "19:00",
+    "title": "The Sound and the Fury Meeting",
+    "tags": [
+      "Discussion",
+      "Monthly Book"
+    ],
+    "location": "",
+    "note": "November monthly book."
+  },
+  {
+    "id": "the-grapes-of-wrath-2027-01-07-1900",
+    "date": "2027-01-07",
+    "time": "19:00",
+    "title": "The Grapes of Wrath Meeting",
+    "tags": [
+      "Discussion",
+      "Monthly Book"
+    ],
+    "location": "",
+    "note": "December monthly book; discussion moved to early January."
   }
 ];
 
@@ -863,5 +911,65 @@ window.BOOKS = [
     events: ["how-big-things-get-done-2026-08-27-1800"],
     shortDescription: "A nonfiction look at why major projects succeed or fail.",
     description: "A nonfiction look at why major projects succeed or fail."
+  },
+  {
+    "id": "anna-karenina",
+    "title": "Anna Karenina",
+    "author": "Leo Tolstoy",
+    "cover": "https://covers.openlibrary.org/b/isbn/9780143035008-L.jpg",
+    "row": 1,
+    "tags": [
+      "Weekly"
+    ],
+    "events": [
+      "anna-karenina-2026-10-20-1900"
+    ],
+    "shortDescription": "A sweeping novel of love, family, and society in nineteenth-century Russia.",
+    "description": "A sweeping novel of love, family, and society in nineteenth-century Russia."
+  },
+  {
+    "id": "never-let-me-go",
+    "title": "Never Let Me Go",
+    "author": "Kazuo Ishiguro",
+    "cover": "https://covers.openlibrary.org/b/isbn/9781400078776-L.jpg",
+    "row": 2,
+    "tags": [
+      "Monthly"
+    ],
+    "events": [
+      "never-let-me-go-2026-10-29-1900"
+    ],
+    "shortDescription": "A haunting novel about friendship, memory, and what it means to be human.",
+    "description": "A haunting novel about friendship, memory, and what it means to be human."
+  },
+  {
+    "id": "the-sound-and-the-fury",
+    "title": "The Sound and the Fury",
+    "author": "William Faulkner",
+    "cover": "https://covers.openlibrary.org/b/isbn/9780679732242-L.jpg",
+    "row": 1,
+    "tags": [
+      "Monthly"
+    ],
+    "events": [
+      "the-sound-and-the-fury-2026-11-26-1900"
+    ],
+    "shortDescription": "A modernist novel tracing the decline of a Southern family through intertwined voices.",
+    "description": "A modernist novel tracing the decline of a Southern family through intertwined voices."
+  },
+  {
+    "id": "the-grapes-of-wrath",
+    "title": "The Grapes of Wrath",
+    "author": "John Steinbeck",
+    "cover": "https://covers.openlibrary.org/b/isbn/9780143039433-L.jpg",
+    "row": 2,
+    "tags": [
+      "Monthly"
+    ],
+    "events": [
+      "the-grapes-of-wrath-2027-01-07-1900"
+    ],
+    "shortDescription": "A novel of migration, hardship, and solidarity during the Great Depression.",
+    "description": "A novel of migration, hardship, and solidarity during the Great Depression."
   }
 ];
