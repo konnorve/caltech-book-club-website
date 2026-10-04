@@ -585,9 +585,9 @@ window.events = [
     title: "House of Leaves Weekly Meetings",
     tags: ["Discussion", "Weekly Book"],
     location: "",
-    ongoing: true,
+    ongoing: false,
     schedule: "Weekly; time and location vary",
-    note: "Specific meeting details are coordinated with the weekly reading group"
+    note: "Weekly reading completed."
   },
   {
     id: "the-help-2026-09-24-1800",
