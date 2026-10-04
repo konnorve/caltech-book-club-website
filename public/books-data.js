@@ -623,8 +623,8 @@ window.events = [
     "note": "October monthly book."
   },
   {
-    "id": "the-sound-and-the-fury-2026-11-26-1900",
-    "date": "2026-11-26",
+    "id": "the-sound-and-the-fury-2026-12-03-1900",
+    "date": "2026-12-03",
     "time": "19:00",
     "title": "The Sound and the Fury Meeting",
     "tags": [
@@ -632,7 +632,7 @@ window.events = [
       "Monthly Book"
     ],
     "location": "",
-    "note": "November monthly book."
+    "note": "November monthly book; discussion moved to the first week of December."
   },
   {
     "id": "the-grapes-of-wrath-2027-01-07-1900",
@@ -952,7 +952,7 @@ window.BOOKS = [
       "Monthly"
     ],
     "events": [
-      "the-sound-and-the-fury-2026-11-26-1900"
+      "the-sound-and-the-fury-2026-12-03-1900"
     ],
     "shortDescription": "A modernist novel tracing the decline of a Southern family through intertwined voices.",
     "description": "A modernist novel tracing the decline of a Southern family through intertwined voices."
