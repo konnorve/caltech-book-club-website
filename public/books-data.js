@@ -1110,7 +1110,7 @@ window.BOOKS = [
       "anna-karenina-2027-01-12-1900"
     ],
     "shortDescription": "A sweeping novel of love, family, and society in nineteenth-century Russia.",
-    "description": "A sweeping novel of love, family, and society in nineteenth-century Russia. Read the listed chapters before each Tuesday discussion. The 14-week schedule targets roughly 60 pages per week; page counts vary by edition, so follow the part and chapter numbers."
+    "description": "A sweeping novel of love, family, and society in nineteenth-century Russia."
   },
   {
     "id": "never-let-me-go",
