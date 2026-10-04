@@ -1,6 +1,10 @@
 "use strict";
 
 // Data-only file so non-technical maintainers can edit books in one place.
+// Anna Karenina pacing: approximate chapter lengths from the Garnett text
+// (https://www.gutenberg.org/ebooks/1399), scaled to Penguin ISBN 9780143035008
+// part lengths (116, 120, 116, 84, 114, 120, 98, ~48 pages).
+// Whole-chapter assignments favor part endings where practical; not exact pagination.
 window.events = [
   {
     id: "one-hundred-years-of-solitude-2025-04-15-1930",
@@ -599,6 +603,18 @@ window.events = [
     note: ""
   },
   {
+    "id": "club-lunch-2026-10-08-1230",
+    "date": "2026-10-08",
+    "time": "12:30",
+    "title": "Club Lunch",
+    "tags": [
+      "Social",
+      "Casual Lunch"
+    ],
+    "location": "TBD",
+    "note": ""
+  },
+  {
     "id": "anna-karenina-2026-10-13-1900",
     "date": "2026-10-13",
     "time": "19:00",
@@ -608,7 +624,163 @@ window.events = [
       "Weekly Book"
     ],
     "location": "",
-    "note": "First weekly meeting. Subsequent reading assignments and meeting details will be announced."
+    "note": "Read Part 1, Chapters 1–16 (inclusive)."
+  },
+  {
+    "id": "anna-karenina-2026-10-20-1900",
+    "date": "2026-10-20",
+    "time": "19:00",
+    "title": "Anna Karenina Meeting",
+    "tags": [
+      "Discussion",
+      "Weekly Book"
+    ],
+    "location": "",
+    "note": "Read Part 1, Chapters 17–34 (inclusive)."
+  },
+  {
+    "id": "anna-karenina-2026-10-27-1900",
+    "date": "2026-10-27",
+    "time": "19:00",
+    "title": "Anna Karenina Meeting",
+    "tags": [
+      "Discussion",
+      "Weekly Book"
+    ],
+    "location": "",
+    "note": "Read Part 2, Chapters 1–18 (inclusive)."
+  },
+  {
+    "id": "anna-karenina-2026-11-03-1900",
+    "date": "2026-11-03",
+    "time": "19:00",
+    "title": "Anna Karenina Meeting",
+    "tags": [
+      "Discussion",
+      "Weekly Book"
+    ],
+    "location": "",
+    "note": "Read Part 2, Chapters 19–35 (inclusive)."
+  },
+  {
+    "id": "anna-karenina-2026-11-10-1900",
+    "date": "2026-11-10",
+    "time": "19:00",
+    "title": "Anna Karenina Meeting",
+    "tags": [
+      "Discussion",
+      "Weekly Book"
+    ],
+    "location": "",
+    "note": "Read Part 3, Chapters 1–16 (inclusive)."
+  },
+  {
+    "id": "anna-karenina-2026-11-17-1900",
+    "date": "2026-11-17",
+    "time": "19:00",
+    "title": "Anna Karenina Meeting",
+    "tags": [
+      "Discussion",
+      "Weekly Book"
+    ],
+    "location": "",
+    "note": "Read Part 3, Chapters 17–32 (inclusive)."
+  },
+  {
+    "id": "anna-karenina-2026-11-24-1900",
+    "date": "2026-11-24",
+    "time": "19:00",
+    "title": "Anna Karenina Meeting",
+    "tags": [
+      "Discussion",
+      "Weekly Book"
+    ],
+    "location": "",
+    "note": "Read Part 4, Chapters 1–16 (inclusive)."
+  },
+  {
+    "id": "anna-karenina-2026-12-01-1900",
+    "date": "2026-12-01",
+    "time": "19:00",
+    "title": "Anna Karenina Meeting",
+    "tags": [
+      "Discussion",
+      "Weekly Book"
+    ],
+    "location": "",
+    "note": "Read Part 4, Chapters 17–23; Part 5, Chapters 1–9 (inclusive)."
+  },
+  {
+    "id": "anna-karenina-2026-12-08-1900",
+    "date": "2026-12-08",
+    "time": "19:00",
+    "title": "Anna Karenina Meeting",
+    "tags": [
+      "Discussion",
+      "Weekly Book"
+    ],
+    "location": "",
+    "note": "Read Part 5, Chapters 10–26 (inclusive)."
+  },
+  {
+    "id": "anna-karenina-2026-12-15-1900",
+    "date": "2026-12-15",
+    "time": "19:00",
+    "title": "Anna Karenina Meeting",
+    "tags": [
+      "Discussion",
+      "Weekly Book"
+    ],
+    "location": "",
+    "note": "Read Part 5, Chapters 27–33; Part 6, Chapters 1–9 (inclusive)."
+  },
+  {
+    "id": "anna-karenina-2026-12-22-1900",
+    "date": "2026-12-22",
+    "time": "19:00",
+    "title": "Anna Karenina Meeting",
+    "tags": [
+      "Discussion",
+      "Weekly Book"
+    ],
+    "location": "",
+    "note": "Read Part 6, Chapters 10–24 (inclusive)."
+  },
+  {
+    "id": "anna-karenina-2026-12-29-1900",
+    "date": "2026-12-29",
+    "time": "19:00",
+    "title": "Anna Karenina Meeting",
+    "tags": [
+      "Discussion",
+      "Weekly Book"
+    ],
+    "location": "",
+    "note": "Read Part 6, Chapters 25–32; Part 7, Chapters 1–10 (inclusive)."
+  },
+  {
+    "id": "anna-karenina-2027-01-05-1900",
+    "date": "2027-01-05",
+    "time": "19:00",
+    "title": "Anna Karenina Meeting",
+    "tags": [
+      "Discussion",
+      "Weekly Book"
+    ],
+    "location": "",
+    "note": "Read Part 7, Chapters 11–28 (inclusive)."
+  },
+  {
+    "id": "anna-karenina-2027-01-12-1900",
+    "date": "2027-01-12",
+    "time": "19:00",
+    "title": "Anna Karenina Meeting",
+    "tags": [
+      "Discussion",
+      "Weekly Book"
+    ],
+    "location": "",
+    "note": "Read Part 7, Chapters 29–31; Part 8, Chapters 1–19 (inclusive). Finish the novel."
   },
   {
     "id": "never-let-me-go-2026-10-29-1900",
@@ -922,10 +1094,23 @@ window.BOOKS = [
       "Weekly"
     ],
     "events": [
-      "anna-karenina-2026-10-13-1900"
+      "anna-karenina-2026-10-13-1900",
+      "anna-karenina-2026-10-20-1900",
+      "anna-karenina-2026-10-27-1900",
+      "anna-karenina-2026-11-03-1900",
+      "anna-karenina-2026-11-10-1900",
+      "anna-karenina-2026-11-17-1900",
+      "anna-karenina-2026-11-24-1900",
+      "anna-karenina-2026-12-01-1900",
+      "anna-karenina-2026-12-08-1900",
+      "anna-karenina-2026-12-15-1900",
+      "anna-karenina-2026-12-22-1900",
+      "anna-karenina-2026-12-29-1900",
+      "anna-karenina-2027-01-05-1900",
+      "anna-karenina-2027-01-12-1900"
     ],
     "shortDescription": "A sweeping novel of love, family, and society in nineteenth-century Russia.",
-    "description": "A sweeping novel of love, family, and society in nineteenth-century Russia."
+    "description": "A sweeping novel of love, family, and society in nineteenth-century Russia. Read the listed chapters before each Tuesday discussion. The 14-week schedule targets roughly 60 pages per week; page counts vary by edition, so follow the part and chapter numbers."
   },
   {
     "id": "never-let-me-go",

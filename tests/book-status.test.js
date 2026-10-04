@@ -120,8 +120,8 @@ assert.strictEqual(
 );
 assert.strictEqual(
   getStatus(sandbox, "house-of-leaves", "2026-09-30T12:00:00"),
-  "current",
-  "An ongoing weekly schedule should keep House of Leaves current"
+  "past",
+  "The completed House of Leaves schedule should be archived"
 );
 assert.strictEqual(
   vm.runInContext(`formatEventDateTime(getEventById("house-of-leaves-weekly-2026-09"))`, sandbox),
