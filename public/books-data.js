@@ -599,8 +599,8 @@ window.events = [
     note: ""
   },
   {
-    "id": "anna-karenina-2026-10-20-1900",
-    "date": "2026-10-20",
+    "id": "anna-karenina-2026-10-13-1900",
+    "date": "2026-10-13",
     "time": "19:00",
     "title": "Anna Karenina Meeting",
     "tags": [
@@ -922,7 +922,7 @@ window.BOOKS = [
       "Weekly"
     ],
     "events": [
-      "anna-karenina-2026-10-20-1900"
+      "anna-karenina-2026-10-13-1900"
     ],
     "shortDescription": "A sweeping novel of love, family, and society in nineteenth-century Russia.",
     "description": "A sweeping novel of love, family, and society in nineteenth-century Russia."
