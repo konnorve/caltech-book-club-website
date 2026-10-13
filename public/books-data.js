@@ -792,6 +792,7 @@ window.events = [
       "Monthly Book"
     ],
     "location": "TBD",
+    "schedule": "End of October · date and time TBD",
     "note": "Discussion date and time TBD (End of October)."
   },
   {
@@ -804,6 +805,7 @@ window.events = [
       "Monthly Book"
     ],
     "location": "TBD",
+    "schedule": "End of November · date and time TBD",
     "note": "Discussion date and time TBD (End of November)."
   },
   {
@@ -816,6 +818,7 @@ window.events = [
       "Monthly Book"
     ],
     "location": "TBD",
+    "schedule": "End of December · date and time TBD",
     "note": "Discussion date and time TBD (End of December)."
   }
 ];
