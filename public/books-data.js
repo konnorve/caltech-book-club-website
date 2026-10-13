@@ -791,9 +791,9 @@ window.events = [
       "Discussion",
       "Monthly Book"
     ],
-    "location": "TBD",
-    "schedule": "End of October · date and time TBD",
-    "note": "Discussion date and time TBD (End of October)."
+    "location": "",
+    "schedule": "End of October",
+    "note": ""
   },
   {
     "id": "the-sound-and-the-fury-2026-12-03-1900",
@@ -804,9 +804,9 @@ window.events = [
       "Discussion",
       "Monthly Book"
     ],
-    "location": "TBD",
-    "schedule": "End of November · date and time TBD",
-    "note": "Discussion date and time TBD (End of November)."
+    "location": "",
+    "schedule": "End of November",
+    "note": ""
   },
   {
     "id": "the-grapes-of-wrath-2027-01-07-1900",
@@ -817,9 +817,9 @@ window.events = [
       "Discussion",
       "Monthly Book"
     ],
-    "location": "TBD",
-    "schedule": "End of December · date and time TBD",
-    "note": "Discussion date and time TBD (End of December)."
+    "location": "",
+    "schedule": "End of December",
+    "note": ""
   }
 ];
 
