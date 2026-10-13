@@ -615,208 +615,208 @@ window.events = [
     "note": ""
   },
   {
-    "id": "anna-karenina-2026-10-13-1900",
-    "date": "2026-10-13",
+    "id": "anna-karenina-2026-10-19-1900",
+    "date": "2026-10-19",
     "time": "19:00",
     "title": "Anna Karenina Meeting",
     "tags": [
       "Discussion",
       "Weekly Book"
     ],
-    "location": "",
+    "location": "TBD",
     "note": "Read Part 1, Chapters 1–16 (inclusive)."
   },
   {
-    "id": "anna-karenina-2026-10-20-1900",
-    "date": "2026-10-20",
+    "id": "anna-karenina-2026-10-26-1900",
+    "date": "2026-10-26",
     "time": "19:00",
     "title": "Anna Karenina Meeting",
     "tags": [
       "Discussion",
       "Weekly Book"
     ],
-    "location": "",
+    "location": "TBD",
     "note": "Read Part 1, Chapters 17–34 (inclusive)."
   },
   {
-    "id": "anna-karenina-2026-10-27-1900",
-    "date": "2026-10-27",
+    "id": "anna-karenina-2026-11-02-1900",
+    "date": "2026-11-02",
     "time": "19:00",
     "title": "Anna Karenina Meeting",
     "tags": [
       "Discussion",
       "Weekly Book"
     ],
-    "location": "",
+    "location": "TBD",
     "note": "Read Part 2, Chapters 1–18 (inclusive)."
   },
   {
-    "id": "anna-karenina-2026-11-03-1900",
-    "date": "2026-11-03",
+    "id": "anna-karenina-2026-11-09-1900",
+    "date": "2026-11-09",
     "time": "19:00",
     "title": "Anna Karenina Meeting",
     "tags": [
       "Discussion",
       "Weekly Book"
     ],
-    "location": "",
+    "location": "TBD",
     "note": "Read Part 2, Chapters 19–35 (inclusive)."
   },
   {
-    "id": "anna-karenina-2026-11-10-1900",
-    "date": "2026-11-10",
+    "id": "anna-karenina-2026-11-16-1900",
+    "date": "2026-11-16",
     "time": "19:00",
     "title": "Anna Karenina Meeting",
     "tags": [
       "Discussion",
       "Weekly Book"
     ],
-    "location": "",
+    "location": "TBD",
     "note": "Read Part 3, Chapters 1–16 (inclusive)."
   },
   {
-    "id": "anna-karenina-2026-11-17-1900",
-    "date": "2026-11-17",
+    "id": "anna-karenina-2026-11-23-1900",
+    "date": "2026-11-23",
     "time": "19:00",
     "title": "Anna Karenina Meeting",
     "tags": [
       "Discussion",
       "Weekly Book"
     ],
-    "location": "",
+    "location": "TBD",
     "note": "Read Part 3, Chapters 17–32 (inclusive)."
   },
   {
-    "id": "anna-karenina-2026-11-24-1900",
-    "date": "2026-11-24",
+    "id": "anna-karenina-2026-11-30-1900",
+    "date": "2026-11-30",
     "time": "19:00",
     "title": "Anna Karenina Meeting",
     "tags": [
       "Discussion",
       "Weekly Book"
     ],
-    "location": "",
+    "location": "TBD",
     "note": "Read Part 4, Chapters 1–16 (inclusive)."
   },
   {
-    "id": "anna-karenina-2026-12-01-1900",
-    "date": "2026-12-01",
+    "id": "anna-karenina-2026-12-07-1900",
+    "date": "2026-12-07",
     "time": "19:00",
     "title": "Anna Karenina Meeting",
     "tags": [
       "Discussion",
       "Weekly Book"
     ],
-    "location": "",
+    "location": "TBD",
     "note": "Read Part 4, Chapters 17–23; Part 5, Chapters 1–9 (inclusive)."
   },
   {
-    "id": "anna-karenina-2026-12-08-1900",
-    "date": "2026-12-08",
+    "id": "anna-karenina-2026-12-14-1900",
+    "date": "2026-12-14",
     "time": "19:00",
     "title": "Anna Karenina Meeting",
     "tags": [
       "Discussion",
       "Weekly Book"
     ],
-    "location": "",
+    "location": "TBD",
     "note": "Read Part 5, Chapters 10–26 (inclusive)."
   },
   {
-    "id": "anna-karenina-2026-12-15-1900",
-    "date": "2026-12-15",
+    "id": "anna-karenina-2026-12-21-1900",
+    "date": "2026-12-21",
     "time": "19:00",
     "title": "Anna Karenina Meeting",
     "tags": [
       "Discussion",
       "Weekly Book"
     ],
-    "location": "",
+    "location": "TBD",
     "note": "Read Part 5, Chapters 27–33; Part 6, Chapters 1–9 (inclusive)."
   },
   {
-    "id": "anna-karenina-2026-12-22-1900",
-    "date": "2026-12-22",
+    "id": "anna-karenina-2026-12-28-1900",
+    "date": "2026-12-28",
     "time": "19:00",
     "title": "Anna Karenina Meeting",
     "tags": [
       "Discussion",
       "Weekly Book"
     ],
-    "location": "",
+    "location": "TBD",
     "note": "Read Part 6, Chapters 10–24 (inclusive)."
   },
   {
-    "id": "anna-karenina-2026-12-29-1900",
-    "date": "2026-12-29",
+    "id": "anna-karenina-2027-01-04-1900",
+    "date": "2027-01-04",
     "time": "19:00",
     "title": "Anna Karenina Meeting",
     "tags": [
       "Discussion",
       "Weekly Book"
     ],
-    "location": "",
+    "location": "TBD",
     "note": "Read Part 6, Chapters 25–32; Part 7, Chapters 1–10 (inclusive)."
   },
   {
-    "id": "anna-karenina-2027-01-05-1900",
-    "date": "2027-01-05",
+    "id": "anna-karenina-2027-01-11-1900",
+    "date": "2027-01-11",
     "time": "19:00",
     "title": "Anna Karenina Meeting",
     "tags": [
       "Discussion",
       "Weekly Book"
     ],
-    "location": "",
+    "location": "TBD",
     "note": "Read Part 7, Chapters 11–28 (inclusive)."
   },
   {
-    "id": "anna-karenina-2027-01-12-1900",
-    "date": "2027-01-12",
+    "id": "anna-karenina-2027-01-18-1900",
+    "date": "2027-01-18",
     "time": "19:00",
     "title": "Anna Karenina Meeting",
     "tags": [
       "Discussion",
       "Weekly Book"
     ],
-    "location": "",
+    "location": "TBD",
     "note": "Read Part 7, Chapters 29–31; Part 8, Chapters 1–19 (inclusive). Finish the novel."
   },
   {
     "id": "never-let-me-go-2026-10-29-1900",
-    "date": "2026-10-29",
-    "time": "19:00",
+    "date": "2026-10-31",
+    "time": "",
     "title": "Never Let Me Go Meeting",
     "tags": [
       "Discussion",
       "Monthly Book"
     ],
-    "location": "",
-    "note": "October monthly book."
+    "location": "TBD",
+    "note": "Discussion date and time TBD (End of October)."
   },
   {
     "id": "the-sound-and-the-fury-2026-12-03-1900",
-    "date": "2026-12-03",
-    "time": "19:00",
+    "date": "2026-11-30",
+    "time": "",
     "title": "The Sound and the Fury Meeting",
     "tags": [
       "Discussion",
       "Monthly Book"
     ],
-    "location": "",
-    "note": "November monthly book; discussion moved to the first week of December."
+    "location": "TBD",
+    "note": "Discussion date and time TBD (End of November)."
   },
   {
     "id": "the-grapes-of-wrath-2027-01-07-1900",
-    "date": "2027-01-07",
-    "time": "19:00",
+    "date": "2026-12-31",
+    "time": "",
     "title": "The Grapes of Wrath Meeting",
     "tags": [
       "Discussion",
       "Monthly Book"
     ],
-    "location": "",
-    "note": "December monthly book; discussion moved to early January."
+    "location": "TBD",
+    "note": "Discussion date and time TBD (End of December)."
   }
 ];
 
@@ -1094,20 +1094,20 @@ window.BOOKS = [
       "Weekly"
     ],
     "events": [
-      "anna-karenina-2026-10-13-1900",
-      "anna-karenina-2026-10-20-1900",
-      "anna-karenina-2026-10-27-1900",
-      "anna-karenina-2026-11-03-1900",
-      "anna-karenina-2026-11-10-1900",
-      "anna-karenina-2026-11-17-1900",
-      "anna-karenina-2026-11-24-1900",
-      "anna-karenina-2026-12-01-1900",
-      "anna-karenina-2026-12-08-1900",
-      "anna-karenina-2026-12-15-1900",
-      "anna-karenina-2026-12-22-1900",
-      "anna-karenina-2026-12-29-1900",
-      "anna-karenina-2027-01-05-1900",
-      "anna-karenina-2027-01-12-1900"
+      "anna-karenina-2026-10-19-1900",
+      "anna-karenina-2026-10-26-1900",
+      "anna-karenina-2026-11-02-1900",
+      "anna-karenina-2026-11-09-1900",
+      "anna-karenina-2026-11-16-1900",
+      "anna-karenina-2026-11-23-1900",
+      "anna-karenina-2026-11-30-1900",
+      "anna-karenina-2026-12-07-1900",
+      "anna-karenina-2026-12-14-1900",
+      "anna-karenina-2026-12-21-1900",
+      "anna-karenina-2026-12-28-1900",
+      "anna-karenina-2027-01-04-1900",
+      "anna-karenina-2027-01-11-1900",
+      "anna-karenina-2027-01-18-1900"
     ],
     "shortDescription": "A sweeping novel of love, family, and society in nineteenth-century Russia.",
     "description": "A sweeping novel of love, family, and society in nineteenth-century Russia."
