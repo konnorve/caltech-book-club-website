@@ -890,19 +890,10 @@ body[data-header-font="modern"] {
   }
 }
 
-/* Member information and shared navigation */
-.site-footer { margin-top: 3rem; padding: 2.4rem 0; border-top: 1px solid var(--line); background: #efede8; }
-.footer-grid { display: grid; grid-template-columns: 1.25fr .8fr 1.3fr .85fr; gap: 2rem; }
-.footer-brand { font: 600 1.5rem var(--section-header-font); text-decoration: none; }
-.footer-grid p { color: #505760; font-size: .85rem; line-height: 1.5; }
-.footer-grid h2 { font-family: inherit; font-weight: 600; font-size: .92rem; margin: 0 0 .8rem; }
-.footer-grid ul { list-style: none; padding: 0; margin: 0; display: grid; gap: .6rem; }
-.footer-grid li { font-size: .85rem; line-height: 1.5; }
-.footer-grid a { text-underline-offset: .2em; }
-@media (max-width: 700px) {
-  .footer-grid { grid-template-columns: 1fr 1fr; gap: 1.5rem; }
-}
-@media (max-width: 380px) { .footer-grid { grid-template-columns: 1fr; } }
+/* Minimal site footer */
+.site-footer { margin-top: 3rem; padding: 2rem 0; border-top: 1px solid var(--line); background: #efede8; }
+.footer-grid { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: .75rem 2rem; }
+.footer-grid a { font-size: .9rem; text-underline-offset: .2em; }
 
 #discussion.info-card h3 { margin: 1rem 0 .45rem; }
 #discussion.info-card > p { margin-top: 1rem; }
