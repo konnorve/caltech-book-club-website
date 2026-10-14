@@ -46,9 +46,18 @@
   <header class="site-header">
     <div class="container hero-simple">
       <h1>Caltech Book Club</h1>
-      <p style="text-align: center; margin-top: 0.4rem;">
-        <a href="announcements.html" style="font-size: 0.85rem; color: var(--muted); text-decoration: underline; text-underline-offset: 0.2em;">july announcement</a>
+      <p id="latest-announcement-link" style="text-align: center; margin-top: 0.4rem;" hidden>
+        <a href="announcements.html" style="font-size: 0.85rem; color: var(--muted); text-decoration: underline; text-underline-offset: 0.2em;">July announcement</a>
       </p>
+      <script>
+        (() => {
+          const announcementDate = new Date(2026, 6, 1);
+          const expires = new Date(announcementDate);
+          expires.setMonth(expires.getMonth() + 2);
+          const link = document.getElementById("latest-announcement-link");
+          if (link && new Date() < expires) link.hidden = false;
+        })();
+      </script>
     </div>
   </header>
 
