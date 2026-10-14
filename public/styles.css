@@ -570,12 +570,8 @@ body[data-header-font="modern"] {
   padding: 1.5rem 0 0.8rem;
 }
 
-.info-intro {
-  margin: 0.4rem auto 0;
-  max-width: 62ch;
-  text-align: center;
-  color: #4b5563;
-  line-height: 1.5;
+.placeholder-section #info-title {
+  font-size: clamp(2rem, 3.4vw, 2.6rem);
 }
 
 .info-grid {
@@ -661,13 +657,6 @@ body[data-header-font="modern"] {
 
 .info-card a:hover,
 .info-card a:focus-visible { color: #0f2b58; }
-
-.info-card .info-action {
-  margin-top: 1rem;
-  border-top: 1px solid #e8ebf0;
-  padding-top: 0.9rem;
-  font-weight: 600;
-}
 
 .info-card .info-card-more {
   margin-top: 1.05rem;
@@ -942,9 +931,6 @@ body[data-header-font="modern"] {
   .info-card { padding: 1.15rem 1.2rem; }
   .info-resource-list, .info-activity-list { grid-template-columns: 1fr; }
 
-  .info-intro {
-    text-align: left;
-  }
 }
 
 /* Consistent, compact footer on every page. */
