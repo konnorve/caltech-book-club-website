@@ -10,7 +10,7 @@ Keep member details separate from attendance so one person can attend many meeti
 
 | Record | Suggested fields |
 | --- | --- |
-| Member | Member ID, name, email, affiliation, date joined, active/inactive status, weekly/monthly reading preference, preferred contact method, mailing-list opt-in |
+| Member | Member ID, name, email, affiliation, date joined, active/inactive status, weekly/monthly reading preference, preferred contact method, WhatsApp-community opt-in |
 | Attendance | Member ID, event ID, meeting date, book, attendance status |
 
 Use a stable member ID to connect the records. Event IDs can refer to the existing events in `public/books-data.js`. Leave unknown fields blank; the supplied roster does not establish attendance, current status, or communication consent.
